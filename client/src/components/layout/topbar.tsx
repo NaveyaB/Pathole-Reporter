@@ -21,9 +21,9 @@ const TYPE_DOT: Record<string, string> = {
 
 export const Topbar = ({ onMenuClick }: { onMenuClick?: () => void }) => {
   const { user, logout } = useAuth();
-  const { unread, notifications, markAllRead } = useNotifications();
+  const { unread, markAllRead } = useNotifications();
   const navigate = useNavigate();
-  const [searchOpen, setSearchOpen] = useState(false);
+  const [, setSearchOpen] = useState(false);
 
   const home = user?.role === "admin" || user?.role === "super_admin" ? "/admin" : user?.role === "contractor" ? "/contractor" : "/dashboard";
 

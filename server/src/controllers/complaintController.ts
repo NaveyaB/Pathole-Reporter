@@ -46,8 +46,8 @@ export const createComplaint = asyncHandler(async (req: Request, res: Response) 
   const files = (req.files as Express.Multer.File[] | undefined) ?? [];
   const images = files.map((f) => ({ url: toPublicUrl(f.filename) }));
 
-  const aiFile = files[0] ?? { originalname: title as string, filename: `${Date.now()}.jpg` };
-  const ai = await analyzeImage(aiFile, userId.length);
+  if (files.length === 0) throw ApiError.badRequest("At least one photo is required for AI analysis");
+  const ai = await analyzeImage(files[0]);
 
   const nearby = await getComplaintsStore().find({ district: district ? String(district) : undefined });
   const dup = findDuplicates(parsedLocation, nearby.map((c) => ({ location: c.location, id: c.id })));

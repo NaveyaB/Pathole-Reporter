@@ -7,7 +7,6 @@ import { Tabs } from "@/components/ui/tabs";
 import { EmptyState } from "@/components/ui/empty-state";
 import { ComplaintTable } from "@/components/complaints/complaint-table";
 import { Pagination } from "@/components/ui/pagination";
-import { Skeleton } from "@/components/ui/skeleton";
 import { PageHeader } from "@/components/shared/page-header";
 import { useAuth } from "@/contexts/AuthContext";
 import { complaintApi } from "@/services";

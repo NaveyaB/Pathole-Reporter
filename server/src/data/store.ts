@@ -477,7 +477,7 @@ export const seedData = async () => {
       recommendation: recs[severity],
       isRoadImage: true,
       tags,
-      model: "yolov8-road-damage-v2",
+      model: "yolov8s-rdd2022-v1",
       analyzedAt: nowIso(),
       raw: {
         detections: [

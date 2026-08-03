@@ -1,95 +1,134 @@
 import type { AIAnalysis, RoadDamageType, Severity } from "../types/index.js";
 import { nowIso } from "../utils/datetime.js";
+import { config } from "../config/env.js";
+import { ApiError } from "../utils/ApiError.js";
+import { readFile } from "node:fs/promises";
+import path from "node:path";
 
 /**
  * AI Road Damage Detection Service
  *
- * Production implementation uses a Python (FastAPI + YOLOv8) microservice that
- * returns detection bounding boxes. This in-process engine mirrors the same
- * contract so the rest of the platform is fully decoupled from the ML layer.
+ * Delegates to the FastAPI + YOLOv8 microservice (`ml-service`). The
+ * microservice runs real object detection and returns damage detections
+ * with bounding boxes; this module adapts its response to the platform's
+ * `AIAnalysis` shape.
  */
 
 export interface AnalyzeResult {
   analysis: AIAnalysis;
   processed: boolean;
-  provider: "mock-v2" | "remote";
+  provider: "remote";
 }
 
-const damageTypes: RoadDamageType[] = [
-  "pothole",
-  "crack",
-  "rutting",
-  "depression",
-  "surface_damage",
-  "edge_damage",
-  "sinkhole",
-];
+interface MlDetection {
+  class: string;
+  label: string;
+  class_id: number;
+  confidence: number;
+  bbox: [number, number, number, number];
+  area_ratio: number;
+}
 
-const severityMap: Record<number, Severity> = {
-  0: "low",
-  1: "low",
-  2: "medium",
-  3: "medium",
-  4: "high",
-  5: "high",
+interface MlPrediction {
+  detected: string;
+  severity: Severity;
+  confidence: number;
+  recommendation: string;
+  is_road_image: boolean;
+  tags: string[];
+  model: string;
+  analyzed_at: string;
+  detections: MlDetection[];
+}
+
+interface MlHealth {
+  status: string;
+  provider?: string;
+  model?: string;
+  classes?: string[];
+  weights?: string;
+  error?: string;
+}
+
+const imageMimeType = (filename?: string): string => {
+  const ext = path.extname(filename ?? "").toLowerCase();
+  if (ext === ".png") return "image/png";
+  if (ext === ".webp") return "image/webp";
+  if (ext === ".gif") return "image/gif";
+  return "image/jpeg";
 };
 
-const recommendations: Record<Severity, string> = {
-  low: "Schedule routine inspection. Low-priority patching recommended within 30 days.",
-  medium: "Plan repair within the next 2 weeks. Monitor drainage to prevent expansion.",
-  high: "Immediate repair required. Potential risk to vehicles and two-wheelers.",
-  critical: "Urgent intervention required. Isolate area with signage and repair within 24 hours.",
-};
+const isRoadDamageType = (value: string): value is RoadDamageType =>
+  ["pothole", "crack", "rutting", "depression", "surface_damage", "edge_damage", "sinkhole", "other"].includes(
+    value
+  );
 
-/** Deterministic hash so the same image always yields the same prediction. */
-const hashString = (input: string): number => {
-  let hash = 0;
-  for (let i = 0; i < input.length; i++) {
-    hash = (hash * 31 + input.charCodeAt(i)) >>> 0;
+export const analyzeImage = async (file: {
+  path?: string;
+  filename?: string;
+  originalname?: string;
+}): Promise<AnalyzeResult> => {
+  if (!file.path) throw ApiError.badRequest("Uploaded image is missing from disk");
+
+  const buffer = await readFile(file.path);
+  const form = new FormData();
+  const name = file.filename ?? file.originalname ?? "image.jpg";
+  form.append("image", new Blob([buffer], { type: imageMimeType(name) }), name);
+
+  let res: Response;
+  try {
+    res = await fetch(`${config.mlServiceUrl}/predict`, {
+      method: "POST",
+      body: form,
+      signal: AbortSignal.timeout(config.mlServiceTimeout),
+    });
+  } catch {
+    throw new ApiError(
+      503,
+      "AI service unavailable",
+      "The road-damage detection service is not reachable. Start it with `npm run ml:dev`."
+    );
   }
-  return hash;
-};
 
-const predict = (seed: number) => {
-  const type = damageTypes[seed % damageTypes.length];
-  const severity = severityMap[(seed >> 2) % 6];
-  const confidence = 87 + (seed % 12);
-  return { type, severity, confidence };
-};
+  if (!res.ok) {
+    const detail = (await res.text()).slice(0, 300);
+    throw new ApiError(res.status, "AI analysis failed", detail || "The ML service returned an error.");
+  }
 
-export const analyzeImage = async (
-  file: { originalname: string; filename?: string; path?: string },
-  extraSeed = 0
-): Promise<AnalyzeResult> => {
-  const rawSeed = hashString(file.originalname || file.filename || "image") + extraSeed;
-  const { type, severity, confidence } = predict(rawSeed);
+  const ml = (await res.json()) as MlPrediction;
+  const detected = isRoadDamageType(ml.detected) ? ml.detected : "other";
 
-  const tags = [
-    type.replace("_", " "),
-    severity === "critical" ? "hazard" : severity === "high" ? "high-risk" : "maintenance",
-    rawSeed % 3 === 0 ? "water-damage" : rawSeed % 3 === 1 ? "wear-and-tear" : "drainage-issue",
-  ];
-
-  return {
-    provider: "mock-v2",
-    processed: true,
-    analysis: {
-      detected: type,
-      severity,
-      confidence,
-      recommendation: recommendations[severity],
-      isRoadImage: true,
-      tags,
-      model: "yolov8-road-damage-v2",
-      analyzedAt: nowIso(),
-      raw: {
-        detections: [
-          { label: type.replace("_", " "), confidence: confidence / 100, bbox: [120, 160, 240, 300] },
-          { label: "road-surface", confidence: 0.93, bbox: [40, 40, 400, 360] },
-        ],
-      },
+  const analysis: AIAnalysis = {
+    detected,
+    severity: ml.severity,
+    confidence: ml.confidence,
+    recommendation: ml.recommendation,
+    isRoadImage: ml.is_road_image,
+    tags: ml.tags ?? [],
+    model: ml.model,
+    analyzedAt: ml.analyzed_at ?? nowIso(),
+    raw: {
+      detections: (ml.detections ?? []).map((d) => ({
+        label: d.label,
+        confidence: d.confidence,
+        bbox: d.bbox,
+      })),
     },
   };
+
+  return { analysis, processed: true, provider: "remote" };
+};
+
+export const getMlServiceHealth = async (): Promise<MlHealth> => {
+  try {
+    const res = await fetch(`${config.mlServiceUrl}/health`, {
+      signal: AbortSignal.timeout(Math.min(config.mlServiceTimeout, 5000)),
+    });
+    if (!res.ok) return { status: "error", error: `ML service responded with HTTP ${res.status}` };
+    return (await res.json()) as MlHealth;
+  } catch (err) {
+    return { status: "unreachable", error: err instanceof Error ? err.message : "ML service unreachable" };
+  }
 };
 
 /** Returns a duplicate-match score (0-100) against existing complaints in the same district. */

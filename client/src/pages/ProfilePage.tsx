@@ -11,7 +11,7 @@ import { useAuth } from "@/contexts/AuthContext";
 import { useToast } from "@/contexts/ToastContext";
 import { authApi } from "@/services";
 import { DISTRICT_NAMES } from "@/constants";
-import { formatDate, initials } from "@/lib/utils";
+import { formatDate } from "@/lib/utils";
 
 export default function ProfilePage() {
   const { user, refreshUser } = useAuth();

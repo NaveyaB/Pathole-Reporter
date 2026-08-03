@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/button";
 import { Select } from "@/components/ui/select";
 import { Skeleton } from "@/components/ui/skeleton";
 import { ComplaintMap, severityLegend, type MapPoint } from "@/components/maps/complaint-map";
-import { PageHeader } from "@/components/shared/page-header";
 import { complaintApi } from "@/services";
 import { DISTRICT_NAMES, SEVERITY_OPTIONS, STATUS_OPTIONS, STATUS_META, SEVERITY_META } from "@/constants";
 import { titleCase, timeAgo } from "@/lib/utils";

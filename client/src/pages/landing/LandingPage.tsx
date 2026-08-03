@@ -472,11 +472,12 @@ export default function LandingPage() {
                   Computer vision built for roads
                 </h2>
                 <p className="mt-4 max-w-md leading-relaxed text-slate-400">
-                  Our YOLOv8 detection pipeline classifies 8 damage classes, scores severity, estimates confidence and
-                  generates repair recommendations — fully explainable for municipal review.
+                  Our YOLOv8 detection pipeline classifies road damage (potholes, cracks, surface distress),
+                  scores severity, estimates confidence and generates repair recommendations — fully explainable for
+                  municipal review.
                 </p>
                 <div className="mt-8 grid grid-cols-2 gap-4 max-w-md">
-                  {["Pothole", "Crack", "Rutting", "Depression", "Surface damage", "Edge damage", "Sinkhole", "Bounding boxes"].map((t) => (
+                  {["Pothole detection", "Crack detection", "Surface distress", "Severity scoring", "Confidence estimation", "Repair recommendations"].map((t) => (
                     <div key={t} className="flex items-center gap-2 rounded-lg border border-white/10 bg-white/5 px-3 py-2 text-xs font-medium text-slate-200">
                       <Sparkles className="h-3.5 w-3.5 text-amber-400" /> {t}
                     </div>
@@ -494,7 +495,7 @@ export default function LandingPage() {
                 <div className="flex items-center justify-between">
                   <p className="text-sm font-semibold text-white">AI Prediction Card</p>
                   <span className="flex items-center gap-1.5 rounded-full bg-emerald-500/15 px-2.5 py-1 text-xs font-medium text-emerald-400">
-                    <Brain className="h-3.5 w-3.5" /> yolov8-road-damage-v2
+                    <Brain className="h-3.5 w-3.5" /> yolov8s-rdd2022-v1
                   </span>
                 </div>
                 <div className="mt-6 flex flex-col items-center gap-6 sm:flex-row">

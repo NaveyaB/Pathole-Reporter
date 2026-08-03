@@ -2,7 +2,7 @@ import type { Request, Response } from "express";
 import { asyncHandler } from "../utils/asyncHandler.js";
 import { ApiError } from "../utils/ApiError.js";
 import { sendSuccess } from "../utils/response.js";
-import { analyzeImage } from "../services/aiService.js";
+import { analyzeImage, getMlServiceHealth } from "../services/aiService.js";
 import { toPublicUrl } from "../middleware/upload.js";
 
 export const analyze = asyncHandler(async (req: Request, res: Response) => {
@@ -22,10 +22,26 @@ export const analyze = asyncHandler(async (req: Request, res: Response) => {
 });
 
 export const health = asyncHandler(async (_req: Request, res: Response) => {
+  const upstream = await getMlServiceHealth();
+
+  if (upstream.status !== "ok") {
+    sendSuccess(
+      res,
+      {
+        status: upstream.status,
+        provider: "yolov8",
+        model: upstream.model ?? null,
+        error: upstream.error ?? "ML service unreachable",
+      },
+      "AI service health"
+    );
+    return;
+  }
+
   sendSuccess(res, {
     status: "ok",
-    model: "yolov8-road-damage-v2",
-    provider: "mock-v2",
-    capabilities: ["pothole", "crack", "rutting", "depression", "surface_damage", "edge_damage", "sinkhole"],
+    model: upstream.model ?? "yolov8s-rdd2022-v1",
+    provider: "yolov8",
+    capabilities: ["pothole", "crack", "surface_damage"],
   });
 });

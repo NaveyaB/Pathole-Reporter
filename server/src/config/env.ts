@@ -21,6 +21,8 @@ export const config = {
   mongoUri: env("MONGO_URI"),
   dbEngine: env("DB_ENGINE", "memory"),
   clientUrl: env("CLIENT_URL", "http://localhost:5173"),
+  mlServiceUrl: env("ML_SERVICE_URL", "http://localhost:8000"),
+  mlServiceTimeout: envInt("ML_SERVICE_TIMEOUT", 60000),
   uploadDir: env("UPLOAD_DIR", "uploads"),
   uploadsRoot: path.resolve(__dirname, "../../", env("UPLOAD_DIR", "uploads")),
   maxFileSize: env("MAX_FILE_SIZE", "10mb"),

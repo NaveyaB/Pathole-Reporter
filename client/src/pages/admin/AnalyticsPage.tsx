@@ -1,6 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import { motion } from "framer-motion";
-import { BarChart3, Brain, Building2, CheckCircle2, ClipboardList, ShieldCheck, Star } from "lucide-react";
+import { BarChart3, Building2, CheckCircle2, ClipboardList, ShieldCheck, Star } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { StatCard } from "@/components/dashboard/stat-card";
 import { Skeleton } from "@/components/ui/skeleton";
@@ -17,7 +16,6 @@ export default function AnalyticsPage() {
   const [trends, setTrends] = useState<Array<{ label: string; submitted: number; verified: number; completed: number }>>([]);
   const [districts, setDistricts] = useState<DistrictBreakdown[]>([]);
   const [statusData, setStatusData] = useState<Array<{ status: string; count: number }>>([]);
-  const [severityData, setSeverityData] = useState<Array<{ severity: string; count: number }>>([]);
   const [typesData, setTypesData] = useState<Array<{ type: string; count: number }>>([]);
   const [contractors, setContractors] = useState<RepairPerformance[]>([]);
   const [ai, setAi] = useState<AiAccuracy | null>(null);
@@ -29,16 +27,14 @@ export default function AnalyticsPage() {
       analyticsApi.trends(12),
       analyticsApi.districts(),
       analyticsApi.status(),
-      analyticsApi.severity(),
       analyticsApi.types(),
       analyticsApi.contractors(),
       analyticsApi.aiAccuracy(),
-    ]).then(([s, t, d, st, se, ty, c, a]) => {
+    ]).then(([s, t, d, st, ty, c, a]) => {
       if (s.status === "fulfilled") setStats(s.value);
       if (t.status === "fulfilled") setTrends(t.value);
       if (d.status === "fulfilled") setDistricts(d.value);
       if (st.status === "fulfilled") setStatusData(st.value);
-      if (se.status === "fulfilled") setSeverityData(se.value);
       if (ty.status === "fulfilled") setTypesData(ty.value);
       if (c.status === "fulfilled") setContractors(c.value);
       if (a.status === "fulfilled") setAi(a.value);

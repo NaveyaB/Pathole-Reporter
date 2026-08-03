@@ -1,18 +1,14 @@
 import { useCallback, useEffect, useMemo, useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import { motion } from "framer-motion";
 import {
-  AlertTriangle,
   ArrowLeft,
   ArrowRight,
   BadgeCheck,
   Calendar,
   CheckCircle2,
-  ClipboardList,
   Clock,
   Hammer,
   ImageIcon,
-  Link2,
   MapPin,
   Phone,
   Play,
@@ -29,9 +25,8 @@ import { Badge } from "@/components/ui/badge";
 import { Avatar } from "@/components/ui/avatar";
 import { Dialog } from "@/components/ui/dialog";
 import { Field, FormError } from "@/components/ui/form-field";
-import { Input, Textarea } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/input";
 import { Select } from "@/components/ui/select";
-import { Progress } from "@/components/ui/progress";
 import { Alert } from "@/components/ui/alert";
 import { Skeleton } from "@/components/ui/skeleton";
 import { StatusBadge, PriorityBadge, SeverityBadge, TypeBadge } from "@/components/shared/badges";
@@ -49,7 +44,7 @@ import type { Complaint, ContractorStats } from "@/types";
 export default function ComplaintDetailPage() {
   const { reportNumber = "" } = useParams();
   const { user, role } = useAuth();
-  const { success, error } = useToast();
+  const { success } = useToast();
 
   const [complaint, setComplaint] = useState<Complaint | null>(null);
   const [loading, setLoading] = useState(true);
@@ -110,8 +105,6 @@ export default function ComplaintDetailPage() {
         : null,
     [complaint]
   );
-
-  const currentStep = STATUS_ORDER.indexOf(complaint?.status ?? "submitted");
 
   const openAssign = async () => {
     setActionError(null);
@@ -232,7 +225,6 @@ export default function ComplaintDetailPage() {
   };
 
   const backPath = isAdmin ? "/admin/complaints" : isContractor ? "/contractor/jobs" : "/complaints";
-  const detailPath = isAdmin ? `/admin/complaints/${reportNumber}` : isContractor ? `/contractor/jobs/${reportNumber}` : `/complaints/${reportNumber}`;
 
   if (loading) {
     return (

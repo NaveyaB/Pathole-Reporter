@@ -2,7 +2,7 @@ import { useCallback, useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { CheckCircle2, Pencil, PlusCircle, Star, Truck, UserX, Users } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent } from "@/components/ui/card";
 import { Avatar } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
 import { Dialog } from "@/components/ui/dialog";
@@ -17,7 +17,7 @@ import { PageHeader } from "@/components/shared/page-header";
 import { useToast } from "@/contexts/ToastContext";
 import { userApi } from "@/services";
 import { DISTRICT_NAMES } from "@/constants";
-import { formatDate, formatDuration, initials } from "@/lib/utils";
+import { formatDate } from "@/lib/utils";
 import type { ContractorStats } from "@/types";
 
 const defaultForm = {

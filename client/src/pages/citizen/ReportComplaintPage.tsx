@@ -13,8 +13,8 @@ import {
   X,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
-import { Field, FormError } from "@/components/ui/form-field";
+import { Card, CardContent } from "@/components/ui/card";
+import { Field } from "@/components/ui/form-field";
 import { Input, Textarea } from "@/components/ui/input";
 import { Select } from "@/components/ui/select";
 import { Alert } from "@/components/ui/alert";
@@ -47,7 +47,7 @@ interface AiResult {
 
 export default function ReportComplaintPage() {
   const navigate = useNavigate();
-  const { success, error } = useToast();
+  const { success } = useToast();
   const fileInput = useRef<HTMLInputElement>(null);
 
   const [step, setStep] = useState(0);

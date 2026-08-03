@@ -1,5 +1,5 @@
 import { useMemo, useState, useEffect } from "react";
-import { CircleMarker, MapContainer, Marker, Popup, TileLayer, useMap, useMapEvents } from "react-leaflet";
+import { MapContainer, Marker, Popup, TileLayer, useMap, useMapEvents } from "react-leaflet";
 import L from "leaflet";
 import "leaflet/dist/leaflet.css";
 import { Link } from "react-router-dom";
@@ -38,8 +38,6 @@ const clusterIcon = (count: number) =>
     iconSize: [36, 36],
     iconAnchor: [18, 18],
   });
-
-const severityColor = (p: MapPoint): string => SEVERITY_META[p.severity ?? "medium"]?.hex ?? "#0ea5e9";
 
 const statusColor = (status: string): string => STATUS_META[status as keyof typeof STATUS_META]?.dot ?? "bg-slate-400";
 

@@ -9,7 +9,6 @@ import {
   Bell,
   UserRound,
   Settings,
-  ClipboardList,
   Users,
   Building2,
   BarChart3,
@@ -17,8 +16,6 @@ import {
   Wrench,
   X,
   Route,
-  ShieldCheck,
-  Home,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { Avatar } from "@/components/ui/avatar";
@@ -209,7 +206,6 @@ export const Sidebar = ({ mobileOpen: mobileOpenProp, setMobileOpen: setMobileOp
   const [internal, setInternal] = useState(false);
   const mobileOpen = mobileOpenProp ?? internal;
   const setMobileOpen = setMobileOpenProp ?? setInternal;
-  const location = useLocation();
 
   return (
     <>

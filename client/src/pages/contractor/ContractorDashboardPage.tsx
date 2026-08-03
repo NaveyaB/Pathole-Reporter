@@ -20,7 +20,6 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { ComplaintTable } from "@/components/complaints/complaint-table";
 import { ComplaintMap, type MapPoint } from "@/components/maps/complaint-map";
 import { EmptyState } from "@/components/ui/empty-state";
-import { PageHeader } from "@/components/shared/page-header";
 import { useAuth } from "@/contexts/AuthContext";
 import { complaintApi } from "@/services";
 import { STATUS_META } from "@/constants";

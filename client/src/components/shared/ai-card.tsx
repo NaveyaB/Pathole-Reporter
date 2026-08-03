@@ -58,7 +58,7 @@ export const AICard = ({ analysis, className, compact }: AICardProps) => {
           <div>
             <p className="text-sm font-semibold">AI Analysis</p>
             <p className="flex items-center gap-1 text-[11px] text-muted-foreground">
-              <Cpu className="h-3 w-3" /> {analysis.model ?? "yolov8-road-damage-v2"}
+              <Cpu className="h-3 w-3" /> {analysis.model ?? "yolov8s-rdd2022-v1"}
             </p>
           </div>
         </div>
