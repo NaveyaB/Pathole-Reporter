@@ -63,6 +63,7 @@ export default function ReportsPage() {
       const headers = [
         "Report Number",
         "Title",
+        "Exact Address",
         "Type",
         "Status",
         "Priority",
@@ -78,6 +79,7 @@ export default function ReportsPage() {
       const rows = filtered.map((c) => [
         c.reportNumber,
         `"${(c.title ?? "").replace(/"/g, '""')}"`,
+        `"${(c.exactAddress ?? c.address ?? "").replace(/"/g, '""')}"`,
         TYPE_META[c.type]?.label ?? c.type,
         STATUS_META[c.status]?.label ?? c.status,
         titleCase(c.priority),

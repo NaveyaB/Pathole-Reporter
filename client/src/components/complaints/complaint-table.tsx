@@ -29,6 +29,7 @@ export const ComplaintTable = ({ complaints, loading, basePath = "/complaints" }
         <TableRow>
           <TableHead>Report</TableHead>
           <TableHead>Title</TableHead>
+          <TableHead className="hidden xl:table-cell">Exact address</TableHead>
           <TableHead className="hidden lg:table-cell">Type</TableHead>
           <TableHead className="hidden md:table-cell">District</TableHead>
           <TableHead className="hidden sm:table-cell">Priority</TableHead>
@@ -50,6 +51,11 @@ export const ComplaintTable = ({ complaints, loading, basePath = "/complaints" }
               <Link to={`${basePath}/${c.reportNumber}`} className="line-clamp-1 font-medium text-foreground hover:text-primary">
                 {c.title}
               </Link>
+            </TableCell>
+            <TableCell className="hidden max-w-[220px] xl:table-cell">
+              <span className="line-clamp-1 text-sm text-muted-foreground">
+                {c.exactAddress ?? c.address ?? "—"}
+              </span>
             </TableCell>
             <TableCell className="hidden lg:table-cell">
               <TypeBadge type={c.type} />

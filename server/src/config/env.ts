@@ -35,6 +35,7 @@ export const config = {
     apiKey: env("CLOUDINARY_API_KEY"),
     apiSecret: env("CLOUDINARY_API_SECRET"),
   },
+  googleMapsApiKey: env("GOOGLE_MAPS_API_KEY"),
 } as const;
 
 export const isProd = config.env === "production";

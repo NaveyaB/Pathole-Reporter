@@ -530,9 +530,17 @@ export default function ComplaintDetailPage() {
               </div>
               <div className="flex items-start gap-2 border-t border-border pt-3 text-sm">
                 <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
-                <div>
-                  <p className="text-sm text-muted-foreground">{complaint.address ?? "Address not specified"}</p>
-                  <p className="mt-0.5 font-mono text-xs text-muted-foreground">
+                <div className="min-w-0">
+                  <p className="text-[11px] font-medium uppercase tracking-wide text-muted-foreground">
+                    Exact pothole address
+                  </p>
+                  <p className="font-medium text-foreground">
+                    {complaint.exactAddress ?? complaint.address ?? "Address not specified"}
+                  </p>
+                  {complaint.address && complaint.exactAddress && complaint.address !== complaint.exactAddress && (
+                    <p className="mt-0.5 text-xs text-muted-foreground">Map label: {complaint.address}</p>
+                  )}
+                  <p className="mt-1 font-mono text-xs text-muted-foreground">
                     {complaint.location.lat.toFixed(5)}, {complaint.location.lng.toFixed(5)}
                   </p>
                 </div>

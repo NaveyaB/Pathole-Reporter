@@ -1,14 +1,44 @@
 import type { ComplaintStatus, Priority, RoadDamageType, Severity } from "@/types";
 
 export const DISTRICT_NAMES = [
-  "Banjara Hills",
-  "Hitec City",
-  "Gachibowli",
-  "Old City",
-  "Secunderabad",
-  "Madhapur",
-  "Ameerpet",
-  "Kukatpally",
+  "Ariyalur",
+  "Chengalpattu",
+  "Chennai",
+  "Coimbatore",
+  "Cuddalore",
+  "Dharmapuri",
+  "Dindigul",
+  "Erode",
+  "Kallakurichi",
+  "Kanchipuram",
+  "Kanyakumari",
+  "Karur",
+  "Krishnagiri",
+  "Madurai",
+  "Mayiladuthurai",
+  "Nagapattinam",
+  "Namakkal",
+  "Nilgiris",
+  "Perambalur",
+  "Pudukkottai",
+  "Ramanathapuram",
+  "Ranipet",
+  "Salem",
+  "Sivaganga",
+  "Tenkasi",
+  "Thanjavur",
+  "Theni",
+  "Thoothukudi",
+  "Tiruchirappalli",
+  "Tirunelveli",
+  "Tirupathur",
+  "Tiruppur",
+  "Tiruvallur",
+  "Tiruvannamalai",
+  "Thiruvarur",
+  "Vellore",
+  "Viluppuram",
+  "Virudhunagar",
 ];
 
 export const STATUS_META: Record<
@@ -133,4 +163,12 @@ export const REPAIR_TYPES = [
   { value: "slab-replacement", label: "Slab Replacement" },
 ];
 
-export const CITY_CENTER: { lat: number; lng: number } = { lat: 17.4239, lng: 78.4738 };
+export const CITY_CENTER: { lat: number; lng: number } = { lat: 13.0827, lng: 80.2707 };
+
+/** Approximate Tamil Nadu bounds used to bias autocomplete suggestions. */
+export const TAMIL_NADU_BOUNDS = {
+  north: 13.8,
+  south: 8.0,
+  east: 80.4,
+  west: 76.0,
+};

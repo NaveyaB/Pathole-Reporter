@@ -5,6 +5,7 @@ import complaintRoutes from "./complaint.routes.js";
 import notificationRoutes from "./notification.routes.js";
 import analyticsRoutes from "./analytics.routes.js";
 import aiRoutes from "./ai.routes.js";
+import locationRoutes from "./location.routes.js";
 import { notFoundHandler } from "../utils/asyncHandler.js";
 
 const router = Router();
@@ -19,6 +20,7 @@ router.use("/complaints", complaintRoutes);
 router.use("/notifications", notificationRoutes);
 router.use("/analytics", analyticsRoutes);
 router.use("/ai", aiRoutes);
+router.use("/locations", locationRoutes);
 
 router.use(notFoundHandler);
 

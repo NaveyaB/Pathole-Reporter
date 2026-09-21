@@ -1,0 +1,952 @@
+[
+  {
+    "id": "usr_cit_001",
+    "name": "Arun Prakash",
+    "email": "arun.prakash@gmail.com",
+    "password": "$2a$10$vwH52koZwOEJvmS3BteMmezFheq/Kg.FFLVpqbT1jkuoNeQGEYTeq",
+    "phone": "+91 98400 12345",
+    "role": "citizen",
+    "avatar": "",
+    "address": "12, South Mada Street, T. Nagar, Chennai",
+    "district": "T. Nagar",
+    "location": {
+      "lat": 13.0418,
+      "lng": 80.2341
+    },
+    "status": "active",
+    "verified": true,
+    "createdAt": "2025-03-28T00:00:00.000Z",
+    "updatedAt": "2025-08-25T00:00:00.000Z"
+  },
+  {
+    "id": "usr_cit_002",
+    "name": "Lakshmi Devi",
+    "email": "lakshmi.devi@gmail.com",
+    "password": "$2a$10$vwH52koZwOEJvmS3BteMmezFheq/Kg.FFLVpqbT1jkuoNeQGEYTeq",
+    "phone": "+91 94430 23456",
+    "role": "citizen",
+    "avatar": "",
+    "address": "34, Lattice Bridge Road, Adyar, Chennai",
+    "district": "Adyar",
+    "location": {
+      "lat": 13.0067,
+      "lng": 80.2563
+    },
+    "status": "active",
+    "verified": true,
+    "createdAt": "2025-03-31T00:00:00.000Z",
+    "updatedAt": "2025-08-24T00:00:00.000Z"
+  },
+  {
+    "id": "usr_cit_003",
+    "name": "Mohammed Irfan",
+    "email": "m.irfan@yahoo.com",
+    "password": "$2a$10$vwH52koZwOEJvmS3BteMmezFheq/Kg.FFLVpqbT1jkuoNeQGEYTeq",
+    "phone": "+91 97890 34567",
+    "role": "citizen",
+    "avatar": "",
+    "address": "78, Velachery Main Road, Velachery, Chennai",
+    "district": "Velachery",
+    "location": {
+      "lat": 12.9815,
+      "lng": 80.218
+    },
+    "status": "active",
+    "verified": true,
+    "createdAt": "2025-04-03T00:00:00.000Z",
+    "updatedAt": "2025-08-23T00:00:00.000Z"
+  },
+  {
+    "id": "usr_cit_004",
+    "name": "Sundar Rajan",
+    "email": "sundar.rajan@outlook.com",
+    "password": "$2a$10$vwH52koZwOEJvmS3BteMmezFheq/Kg.FFLVpqbT1jkuoNeQGEYTeq",
+    "phone": "+91 95000 45678",
+    "role": "citizen",
+    "avatar": "",
+    "address": "5, 2nd Avenue, Anna Nagar, Chennai",
+    "district": "Anna Nagar",
+    "location": {
+      "lat": 13.085,
+      "lng": 80.2101
+    },
+    "status": "active",
+    "verified": true,
+    "createdAt": "2025-04-06T00:00:00.000Z",
+    "updatedAt": "2025-08-22T00:00:00.000Z"
+  },
+  {
+    "id": "usr_cit_005",
+    "name": "Kavitha Shanmugam",
+    "email": "kavitha.s@gmail.com",
+    "password": "$2a$10$vwH52koZwOEJvmS3BteMmezFheq/Kg.FFLVpqbT1jkuoNeQGEYTeq",
+    "phone": "+91 98765 56789",
+    "role": "citizen",
+    "avatar": "",
+    "address": "23, Ashok Nagar 3rd Main Road, Chennai",
+    "district": "Ashok Nagar",
+    "location": {
+      "lat": 13.0475,
+      "lng": 80.2168
+    },
+    "status": "active",
+    "verified": true,
+    "createdAt": "2025-04-09T00:00:00.000Z",
+    "updatedAt": "2025-08-21T00:00:00.000Z"
+  },
+  {
+    "id": "usr_cit_006",
+    "name": "Ranjith Kumar",
+    "email": "ranjith.k@rediffmail.com",
+    "password": "$2a$10$vwH52koZwOEJvmS3BteMmezFheq/Kg.FFLVpqbT1jkuoNeQGEYTeq",
+    "phone": "+91 94430 67890",
+    "role": "citizen",
+    "avatar": "",
+    "address": "45, Sholinganallur IT Expressway, Chennai",
+    "district": "Sholinganallur",
+    "location": {
+      "lat": 12.901,
+      "lng": 80.2279
+    },
+    "status": "active",
+    "verified": true,
+    "createdAt": "2025-04-12T00:00:00.000Z",
+    "updatedAt": "2025-08-20T00:00:00.000Z"
+  },
+  {
+    "id": "usr_cit_007",
+    "name": "Deepa Venkatesh",
+    "email": "deepa.v@gmail.com",
+    "password": "$2a$10$vwH52koZwOEJvmS3BteMmezFheq/Kg.FFLVpqbT1jkuoNeQGEYTeq",
+    "phone": "+91 98400 78901",
+    "role": "citizen",
+    "avatar": "",
+    "address": "18, Chromepet Main Road, Chennai",
+    "district": "Chromepet",
+    "location": {
+      "lat": 12.9516,
+      "lng": 80.1412
+    },
+    "status": "active",
+    "verified": true,
+    "createdAt": "2025-04-15T00:00:00.000Z",
+    "updatedAt": "2025-08-19T00:00:00.000Z"
+  },
+  {
+    "id": "usr_cit_008",
+    "name": "Prakash Sundaram",
+    "email": "prakash.s@yahoo.com",
+    "password": "$2a$10$vwH52koZwOEJvmS3BteMmezFheq/Kg.FFLVpqbT1jkuoNeQGEYTeq",
+    "phone": "+91 97890 89012",
+    "role": "citizen",
+    "avatar": "",
+    "address": "67, Tambaram Sanatorium Road, Chennai",
+    "district": "Tambaram",
+    "location": {
+      "lat": 12.9249,
+      "lng": 80.1
+    },
+    "status": "active",
+    "verified": true,
+    "createdAt": "2025-04-18T00:00:00.000Z",
+    "updatedAt": "2025-08-18T00:00:00.000Z"
+  },
+  {
+    "id": "usr_cit_009",
+    "name": "Sangeetha Ravi",
+    "email": "sangeetha.r@gmail.com",
+    "password": "$2a$10$vwH52koZwOEJvmS3BteMmezFheq/Kg.FFLVpqbT1jkuoNeQGEYTeq",
+    "phone": "+91 95000 90123",
+    "role": "citizen",
+    "avatar": "",
+    "address": "9, Kodambakkam High Road, Chennai",
+    "district": "Kodambakkam",
+    "location": {
+      "lat": 13.0518,
+      "lng": 80.226
+    },
+    "status": "active",
+    "verified": true,
+    "createdAt": "2025-04-21T00:00:00.000Z",
+    "updatedAt": "2025-08-17T00:00:00.000Z"
+  },
+  {
+    "id": "usr_cit_010",
+    "name": "Thangamani Pillai",
+    "email": "thangamani.p@outlook.com",
+    "password": "$2a$10$vwH52koZwOEJvmS3BteMmezFheq/Kg.FFLVpqbT1jkuoNeQGEYTeq",
+    "phone": "+91 98765 01234",
+    "role": "citizen",
+    "avatar": "",
+    "address": "22, Thiruvanmiyur Beach Road, Chennai",
+    "district": "Thiruvanmiyur",
+    "location": {
+      "lat": 12.983,
+      "lng": 80.263
+    },
+    "status": "active",
+    "verified": true,
+    "createdAt": "2025-04-24T00:00:00.000Z",
+    "updatedAt": "2025-08-16T00:00:00.000Z"
+  },
+  {
+    "id": "usr_cit_011",
+    "name": "Vijay Anand",
+    "email": "vijay.anand@gmail.com",
+    "password": "$2a$10$vwH52koZwOEJvmS3BteMmezFheq/Kg.FFLVpqbT1jkuoNeQGEYTeq",
+    "phone": "+91 94430 12345",
+    "role": "citizen",
+    "avatar": "",
+    "address": "51, T Nagar 1st Main Road, Chennai",
+    "district": "T. Nagar",
+    "location": {
+      "lat": 13.04,
+      "lng": 80.236
+    },
+    "status": "active",
+    "verified": true,
+    "createdAt": "2025-04-27T00:00:00.000Z",
+    "updatedAt": "2025-08-15T00:00:00.000Z"
+  },
+  {
+    "id": "usr_cit_012",
+    "name": "Priya Murugan",
+    "email": "priya.m@yahoo.com",
+    "password": "$2a$10$vwH52koZwOEJvmS3BteMmezFheq/Kg.FFLVpqbT1jkuoNeQGEYTeq",
+    "phone": "+91 98400 23456",
+    "role": "citizen",
+    "avatar": "",
+    "address": "33, Adyar Bridge Road, Chennai",
+    "district": "Adyar",
+    "location": {
+      "lat": 13.005,
+      "lng": 80.258
+    },
+    "status": "active",
+    "verified": true,
+    "createdAt": "2025-04-30T00:00:00.000Z",
+    "updatedAt": "2025-08-14T00:00:00.000Z"
+  },
+  {
+    "id": "usr_cit_013",
+    "name": "Ashok Kumar",
+    "email": "ashok.k@gmail.com",
+    "password": "$2a$10$vwH52koZwOEJvmS3BteMmezFheq/Kg.FFLVpqbT1jkuoNeQGEYTeq",
+    "phone": "+91 97890 34567",
+    "role": "citizen",
+    "avatar": "",
+    "address": "88, Velachery Tambaram Main Road, Chennai",
+    "district": "Velachery",
+    "location": {
+      "lat": 12.983,
+      "lng": 80.215
+    },
+    "status": "active",
+    "verified": true,
+    "createdAt": "2025-05-03T00:00:00.000Z",
+    "updatedAt": "2025-08-13T00:00:00.000Z"
+  },
+  {
+    "id": "usr_cit_014",
+    "name": "Divya Shankar",
+    "email": "divya.s@rediffmail.com",
+    "password": "$2a$10$vwH52koZwOEJvmS3BteMmezFheq/Kg.FFLVpqbT1jkuoNeQGEYTeq",
+    "phone": "+91 95000 45678",
+    "role": "citizen",
+    "avatar": "",
+    "address": "14, Anna Nagar West Extension, Chennai",
+    "district": "Anna Nagar",
+    "location": {
+      "lat": 13.087,
+      "lng": 80.208
+    },
+    "status": "active",
+    "verified": true,
+    "createdAt": "2025-05-06T00:00:00.000Z",
+    "updatedAt": "2025-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "usr_cit_015",
+    "name": "Mohan Das",
+    "email": "mohan.d@gmail.com",
+    "password": "$2a$10$vwH52koZwOEJvmS3BteMmezFheq/Kg.FFLVpqbT1jkuoNeQGEYTeq",
+    "phone": "+91 98765 56789",
+    "role": "citizen",
+    "avatar": "",
+    "address": "67, Ashok Nagar 100 Feet Road, Chennai",
+    "district": "Ashok Nagar",
+    "location": {
+      "lat": 13.049,
+      "lng": 80.215
+    },
+    "status": "active",
+    "verified": true,
+    "createdAt": "2025-05-09T00:00:00.000Z",
+    "updatedAt": "2025-08-11T00:00:00.000Z"
+  },
+  {
+    "id": "usr_cit_016",
+    "name": "Anitha Krishnan",
+    "email": "anitha.k@yahoo.com",
+    "password": "$2a$10$vwH52koZwOEJvmS3BteMmezFheq/Kg.FFLVpqbT1jkuoNeQGEYTeq",
+    "phone": "+91 94430 67890",
+    "role": "citizen",
+    "avatar": "",
+    "address": "29, Sholinganallur Navalur Road, Chennai",
+    "district": "Sholinganallur",
+    "location": {
+      "lat": 12.903,
+      "lng": 80.226
+    },
+    "status": "active",
+    "verified": true,
+    "createdAt": "2025-05-12T00:00:00.000Z",
+    "updatedAt": "2025-08-10T00:00:00.000Z"
+  },
+  {
+    "id": "usr_cit_017",
+    "name": "Rajesh Nair",
+    "email": "rajesh.n@outlook.com",
+    "password": "$2a$10$vwH52koZwOEJvmS3BteMmezFheq/Kg.FFLVpqbT1jkuoNeQGEYTeq",
+    "phone": "+91 98400 78901",
+    "role": "citizen",
+    "avatar": "",
+    "address": "55, Chromepet Radial Road, Chennai",
+    "district": "Chromepet",
+    "location": {
+      "lat": 12.953,
+      "lng": 80.139
+    },
+    "status": "active",
+    "verified": true,
+    "createdAt": "2025-05-15T00:00:00.000Z",
+    "updatedAt": "2025-08-09T00:00:00.000Z"
+  },
+  {
+    "id": "usr_cit_018",
+    "name": "Selvam Rajendran",
+    "email": "selvam.r@gmail.com",
+    "password": "$2a$10$vwH52koZwOEJvmS3BteMmezFheq/Kg.FFLVpqbT1jkuoNeQGEYTeq",
+    "phone": "+91 97890 89012",
+    "role": "citizen",
+    "avatar": "",
+    "address": "41, Tambaram SEL Vellakal, Chennai",
+    "district": "Tambaram",
+    "location": {
+      "lat": 12.926,
+      "lng": 80.098
+    },
+    "status": "active",
+    "verified": true,
+    "createdAt": "2025-05-18T00:00:00.000Z",
+    "updatedAt": "2025-08-08T00:00:00.000Z"
+  },
+  {
+    "id": "usr_cit_019",
+    "name": "Meena Subramanian",
+    "email": "meena.s@yahoo.com",
+    "password": "$2a$10$vwH52koZwOEJvmS3BteMmezFheq/Kg.FFLVpqbT1jkuoNeQGEYTeq",
+    "phone": "+91 95000 90123",
+    "role": "citizen",
+    "avatar": "",
+    "address": "16, Kodambakkam Salai, Chennai",
+    "district": "Kodambakkam",
+    "location": {
+      "lat": 13.053,
+      "lng": 80.224
+    },
+    "status": "active",
+    "verified": true,
+    "createdAt": "2025-05-21T00:00:00.000Z",
+    "updatedAt": "2025-08-07T00:00:00.000Z"
+  },
+  {
+    "id": "usr_cit_020",
+    "name": "Kumaravel Mudaliar",
+    "email": "kumaravel.m@rediffmail.com",
+    "password": "$2a$10$vwH52koZwOEJvmS3BteMmezFheq/Kg.FFLVpqbT1jkuoNeQGEYTeq",
+    "phone": "+91 98765 01234",
+    "role": "citizen",
+    "avatar": "",
+    "address": "72, Thiruvanmiyur Temple Road, Chennai",
+    "district": "Thiruvanmiyur",
+    "location": {
+      "lat": 12.985,
+      "lng": 80.261
+    },
+    "status": "active",
+    "verified": true,
+    "createdAt": "2025-05-24T00:00:00.000Z",
+    "updatedAt": "2025-08-06T00:00:00.000Z"
+  },
+  {
+    "id": "usr_cit_021",
+    "name": "Ilango Durai",
+    "email": "ilango.d@gmail.com",
+    "password": "$2a$10$vwH52koZwOEJvmS3BteMmezFheq/Kg.FFLVpqbT1jkuoNeQGEYTeq",
+    "phone": "+91 94430 12345",
+    "role": "citizen",
+    "avatar": "",
+    "address": "38, Gandhipuram 4th Street, Coimbatore",
+    "district": "Gandhipuram",
+    "location": {
+      "lat": 11.0168,
+      "lng": 76.9558
+    },
+    "status": "active",
+    "verified": true,
+    "createdAt": "2025-05-27T00:00:00.000Z",
+    "updatedAt": "2025-08-05T00:00:00.000Z"
+  },
+  {
+    "id": "usr_cit_022",
+    "name": "Ramya Balasubramanian",
+    "email": "ramya.b@yahoo.com",
+    "password": "$2a$10$vwH52koZwOEJvmS3BteMmezFheq/Kg.FFLVpqbT1jkuoNeQGEYTeq",
+    "phone": "+91 98400 23456",
+    "role": "citizen",
+    "avatar": "",
+    "address": "21, Peelamedu Avinashi Road, Coimbatore",
+    "district": "Peelamedu",
+    "location": {
+      "lat": 11.03,
+      "lng": 76.99
+    },
+    "status": "active",
+    "verified": true,
+    "createdAt": "2025-05-30T00:00:00.000Z",
+    "updatedAt": "2025-08-04T00:00:00.000Z"
+  },
+  {
+    "id": "usr_cit_023",
+    "name": "Ganapathi Suresh",
+    "email": "ganapathi.s@gmail.com",
+    "password": "$2a$10$vwH52koZwOEJvmS3BteMmezFheq/Kg.FFLVpqbT1jkuoNeQGEYTeq",
+    "phone": "+91 97890 34567",
+    "role": "citizen",
+    "avatar": "",
+    "address": "9, RS Puram Cross Street, Coimbatore",
+    "district": "RS Puram",
+    "location": {
+      "lat": 11.005,
+      "lng": 76.953
+    },
+    "status": "active",
+    "verified": true,
+    "createdAt": "2025-06-02T00:00:00.000Z",
+    "updatedAt": "2025-08-03T00:00:00.000Z"
+  },
+  {
+    "id": "usr_cit_024",
+    "name": "Vanitha Mohan",
+    "email": "vanitha.m@outlook.com",
+    "password": "$2a$10$vwH52koZwOEJvmS3BteMmezFheq/Kg.FFLVpqbT1jkuoNeQGEYTeq",
+    "phone": "+91 95000 45678",
+    "role": "citizen",
+    "avatar": "",
+    "address": "64, Singanallur OS Road, Coimbatore",
+    "district": "Singanallur",
+    "location": {
+      "lat": 11.012,
+      "lng": 77.01
+    },
+    "status": "active",
+    "verified": true,
+    "createdAt": "2025-06-05T00:00:00.000Z",
+    "updatedAt": "2025-08-02T00:00:00.000Z"
+  },
+  {
+    "id": "usr_cit_025",
+    "name": "Karthik Raj",
+    "email": "karthik.raj@gmail.com",
+    "password": "$2a$10$vwH52koZwOEJvmS3BteMmezFheq/Kg.FFLVpqbT1jkuoNeQGEYTeq",
+    "phone": "+91 98765 56789",
+    "role": "citizen",
+    "avatar": "",
+    "address": "15, KK Nagar 6th Street, Madurai",
+    "district": "KK Nagar",
+    "location": {
+      "lat": 9.946,
+      "lng": 78.122
+    },
+    "status": "active",
+    "verified": true,
+    "createdAt": "2025-06-08T00:00:00.000Z",
+    "updatedAt": "2025-08-01T00:00:00.000Z"
+  },
+  {
+    "id": "usr_cit_026",
+    "name": "Saranya Kumari",
+    "email": "saranya.k@yahoo.com",
+    "password": "$2a$10$vwH52koZwOEJvmS3BteMmezFheq/Kg.FFLVpqbT1jkuoNeQGEYTeq",
+    "phone": "+91 94430 67890",
+    "role": "citizen",
+    "avatar": "",
+    "address": "28, Alagar Koil Road, Madurai",
+    "district": "Madurai Central",
+    "location": {
+      "lat": 9.928,
+      "lng": 78.118
+    },
+    "status": "active",
+    "verified": true,
+    "createdAt": "2025-06-11T00:00:00.000Z",
+    "updatedAt": "2025-07-31T00:00:00.000Z"
+  },
+  {
+    "id": "usr_cit_027",
+    "name": "Marimuthu Gounder",
+    "email": "marimuthu.g@gmail.com",
+    "password": "$2a$10$vwH52koZwOEJvmS3BteMmezFheq/Kg.FFLVpqbT1jkuoNeQGEYTeq",
+    "phone": "+91 98400 78901",
+    "role": "citizen",
+    "avatar": "",
+    "address": "43, Pasumalai Hill Road, Madurai",
+    "district": "Pasumalai",
+    "location": {
+      "lat": 9.918,
+      "lng": 78.13
+    },
+    "status": "active",
+    "verified": true,
+    "createdAt": "2025-06-14T00:00:00.000Z",
+    "updatedAt": "2025-07-30T00:00:00.000Z"
+  },
+  {
+    "id": "usr_cit_028",
+    "name": "Poongodi Shanmugam",
+    "email": "poongodi.s@rediffmail.com",
+    "password": "$2a$10$vwH52koZwOEJvmS3BteMmezFheq/Kg.FFLVpqbT1jkuoNeQGEYTeq",
+    "phone": "+91 97890 89012",
+    "role": "citizen",
+    "avatar": "",
+    "address": "57, Thiruppalai Main Road, Madurai",
+    "district": "Thiruppalai",
+    "location": {
+      "lat": 9.96,
+      "lng": 78.14
+    },
+    "status": "active",
+    "verified": true,
+    "createdAt": "2025-06-17T00:00:00.000Z",
+    "updatedAt": "2025-07-29T00:00:00.000Z"
+  },
+  {
+    "id": "usr_cit_029",
+    "name": "Ramanathan Settu",
+    "email": "ramanathan.s@gmail.com",
+    "password": "$2a$10$vwH52koZwOEJvmS3BteMmezFheq/Kg.FFLVpqbT1jkuoNeQGEYTeq",
+    "phone": "+91 95000 01234",
+    "role": "citizen",
+    "avatar": "",
+    "address": "19, Attur Bazaar Road, Salem",
+    "district": "Salem",
+    "location": {
+      "lat": 11.6643,
+      "lng": 78.146
+    },
+    "status": "active",
+    "verified": true,
+    "createdAt": "2025-06-20T00:00:00.000Z",
+    "updatedAt": "2025-07-28T00:00:00.000Z"
+  },
+  {
+    "id": "usr_cit_030",
+    "name": "Brindha Devi",
+    "email": "brindha.d@yahoo.com",
+    "password": "$2a$10$vwH52koZwOEJvmS3BteMmezFheq/Kg.FFLVpqbT1jkuoNeQGEYTeq",
+    "phone": "+91 98765 12345",
+    "role": "citizen",
+    "avatar": "",
+    "address": "36, Fairlands Main Road, Salem",
+    "district": "Fairlands",
+    "location": {
+      "lat": 11.655,
+      "lng": 78.15
+    },
+    "status": "active",
+    "verified": true,
+    "createdAt": "2025-06-23T00:00:00.000Z",
+    "updatedAt": "2025-07-27T00:00:00.000Z"
+  },
+  {
+    "id": "usr_cit_031",
+    "name": "Thirumalai Prasad",
+    "email": "tprasad@outlook.com",
+    "password": "$2a$10$vwH52koZwOEJvmS3BteMmezFheq/Kg.FFLVpqbT1jkuoNeQGEYTeq",
+    "phone": "+91 94430 23456",
+    "role": "citizen",
+    "avatar": "",
+    "address": "47, Hasthampatti Main Road, Salem",
+    "district": "Hasthampatti",
+    "location": {
+      "lat": 11.67,
+      "lng": 78.138
+    },
+    "status": "active",
+    "verified": true,
+    "createdAt": "2025-06-26T00:00:00.000Z",
+    "updatedAt": "2025-07-26T00:00:00.000Z"
+  },
+  {
+    "id": "usr_cit_032",
+    "name": "Pandiyan Selvan",
+    "email": "pandiyanselvan@gmail.com",
+    "password": "$2a$10$vwH52koZwOEJvmS3BteMmezFheq/Kg.FFLVpqbT1jkuoNeQGEYTeq",
+    "phone": "+91 98400 34567",
+    "role": "citizen",
+    "avatar": "",
+    "address": "24, Brough Road, Tiruchirappalli",
+    "district": "Tiruchirappalli",
+    "location": {
+      "lat": 10.7905,
+      "lng": 78.7047
+    },
+    "status": "active",
+    "verified": true,
+    "createdAt": "2025-06-29T00:00:00.000Z",
+    "updatedAt": "2025-07-25T00:00:00.000Z"
+  },
+  {
+    "id": "usr_cit_033",
+    "name": "Kamala Kannan",
+    "email": "kamala.k@yahoo.com",
+    "password": "$2a$10$vwH52koZwOEJvmS3BteMmezFheq/Kg.FFLVpqbT1jkuoNeQGEYTeq",
+    "phone": "+91 97890 45678",
+    "role": "citizen",
+    "avatar": "",
+    "address": "53, Thillai Nagar 10th Street, Trichy",
+    "district": "Thillai Nagar",
+    "location": {
+      "lat": 10.805,
+      "lng": 78.685
+    },
+    "status": "active",
+    "verified": true,
+    "createdAt": "2025-07-02T00:00:00.000Z",
+    "updatedAt": "2025-07-24T00:00:00.000Z"
+  },
+  {
+    "id": "usr_cit_034",
+    "name": "Senthil Nathan",
+    "email": "senthil.n@gmail.com",
+    "password": "$2a$10$vwH52koZwOEJvmS3BteMmezFheq/Kg.FFLVpqbT1jkuoNeQGEYTeq",
+    "phone": "+91 95000 56789",
+    "role": "citizen",
+    "avatar": "",
+    "address": "31, Srirangam Island Road, Trichy",
+    "district": "Srirangam",
+    "location": {
+      "lat": 10.855,
+      "lng": 78.695
+    },
+    "status": "active",
+    "verified": true,
+    "createdAt": "2025-07-05T00:00:00.000Z",
+    "updatedAt": "2025-07-23T00:00:00.000Z"
+  },
+  {
+    "id": "usr_cit_035",
+    "name": "Palaniappan Chettiar",
+    "email": "palaniappan.c@rediffmail.com",
+    "password": "$2a$10$vwH52koZwOEJvmS3BteMmezFheq/Kg.FFLVpqbT1jkuoNeQGEYTeq",
+    "phone": "+91 98765 67890",
+    "role": "citizen",
+    "avatar": "",
+    "address": "17, Perundurai Road, Erode",
+    "district": "Erode",
+    "location": {
+      "lat": 11.341,
+      "lng": 77.7172
+    },
+    "status": "active",
+    "verified": true,
+    "createdAt": "2025-07-08T00:00:00.000Z",
+    "updatedAt": "2025-07-22T00:00:00.000Z"
+  },
+  {
+    "id": "usr_cit_036",
+    "name": "Thavamani Palani",
+    "email": "thavamani.p@gmail.com",
+    "password": "$2a$10$vwH52koZwOEJvmS3BteMmezFheq/Kg.FFLVpqbT1jkuoNeQGEYTeq",
+    "phone": "+91 94430 78901",
+    "role": "citizen",
+    "avatar": "",
+    "address": "42, Bypass Road, Erode",
+    "district": "Erode",
+    "location": {
+      "lat": 11.335,
+      "lng": 77.725
+    },
+    "status": "active",
+    "verified": true,
+    "createdAt": "2025-07-11T00:00:00.000Z",
+    "updatedAt": "2025-07-21T00:00:00.000Z"
+  },
+  {
+    "id": "usr_cit_037",
+    "name": "Chandrasekar Reddy",
+    "email": "chandru.r@yahoo.com",
+    "password": "$2a$10$vwH52koZwOEJvmS3BteMmezFheq/Kg.FFLVpqbT1jkuoNeQGEYTeq",
+    "phone": "+91 98400 89012",
+    "role": "citizen",
+    "avatar": "",
+    "address": "25, Katpadi Road, Vellore",
+    "district": "Vellore",
+    "location": {
+      "lat": 12.9165,
+      "lng": 79.1325
+    },
+    "status": "active",
+    "verified": true,
+    "createdAt": "2025-07-14T00:00:00.000Z",
+    "updatedAt": "2025-07-20T00:00:00.000Z"
+  },
+  {
+    "id": "usr_cit_038",
+    "name": "Revathi Srinivasan",
+    "email": "revathi.s@gmail.com",
+    "password": "$2a$10$vwH52koZwOEJvmS3BteMmezFheq/Kg.FFLVpqbT1jkuoNeQGEYTeq",
+    "phone": "+91 97890 90123",
+    "role": "citizen",
+    "avatar": "",
+    "address": "58, Sripuram Temple Road, Vellore",
+    "district": "Sripuram",
+    "location": {
+      "lat": 12.88,
+      "lng": 79.135
+    },
+    "status": "active",
+    "verified": true,
+    "createdAt": "2025-07-17T00:00:00.000Z",
+    "updatedAt": "2025-07-19T00:00:00.000Z"
+  },
+  {
+    "id": "usr_cit_039",
+    "name": "Chelladurai",
+    "email": "chelladurai@gmail.com",
+    "password": "$2a$10$vwH52koZwOEJvmS3BteMmezFheq/Kg.FFLVpqbT1jkuoNeQGEYTeq",
+    "phone": "+91 95000 01234",
+    "role": "citizen",
+    "avatar": "",
+    "address": "34, Palayamkottai Road, Tirunelveli",
+    "district": "Tirunelveli",
+    "location": {
+      "lat": 8.7139,
+      "lng": 77.7567
+    },
+    "status": "active",
+    "verified": true,
+    "createdAt": "2025-07-20T00:00:00.000Z",
+    "updatedAt": "2025-07-18T00:00:00.000Z"
+  },
+  {
+    "id": "usr_cit_040",
+    "name": "Thangam Raj",
+    "email": "thangam.r@outlook.com",
+    "password": "$2a$10$vwH52koZwOEJvmS3BteMmezFheq/Kg.FFLVpqbT1jkuoNeQGEYTeq",
+    "phone": "+91 98765 12345",
+    "role": "citizen",
+    "avatar": "",
+    "address": "61, Melapalayam Road, Tirunelveli",
+    "district": "Melapalayam",
+    "location": {
+      "lat": 8.72,
+      "lng": 77.748
+    },
+    "status": "active",
+    "verified": true,
+    "createdAt": "2025-07-23T00:00:00.000Z",
+    "updatedAt": "2025-07-17T00:00:00.000Z"
+  },
+  {
+    "id": "usr_cit_041",
+    "name": "Suresh Babu",
+    "email": "suresh.babu@gmail.com",
+    "password": "$2a$10$vwH52koZwOEJvmS3BteMmezFheq/Kg.FFLVpqbT1jkuoNeQGEYTeq",
+    "phone": "+91 94430 23456",
+    "role": "citizen",
+    "avatar": "",
+    "address": "13, Kanchipuram MGR Road, Kanchipuram",
+    "district": "Kanchipuram",
+    "location": {
+      "lat": 12.8342,
+      "lng": 79.7036
+    },
+    "status": "active",
+    "verified": true,
+    "createdAt": "2025-07-26T00:00:00.000Z",
+    "updatedAt": "2025-07-16T00:00:00.000Z"
+  },
+  {
+    "id": "usr_cit_042",
+    "name": "Saravanan Iyer",
+    "email": "saravanan.i@yahoo.com",
+    "password": "$2a$10$vwH52koZwOEJvmS3BteMmezFheq/Kg.FFLVpqbT1jkuoNeQGEYTeq",
+    "phone": "+91 98400 34567",
+    "role": "citizen",
+    "avatar": "",
+    "address": "46, Kamakshi Temple Road, Kanchipuram",
+    "district": "Kanchipuram",
+    "location": {
+      "lat": 12.838,
+      "lng": 79.7
+    },
+    "status": "active",
+    "verified": true,
+    "createdAt": "2025-07-29T00:00:00.000Z",
+    "updatedAt": "2025-07-15T00:00:00.000Z"
+  },
+  {
+    "id": "usr_cit_043",
+    "name": "Ramanujam Iyengar",
+    "email": "ramanujam.i@rediffmail.com",
+    "password": "$2a$10$vwH52koZwOEJvmS3BteMmezFheq/Kg.FFLVpqbT1jkuoNeQGEYTeq",
+    "phone": "+91 97890 45678",
+    "role": "citizen",
+    "avatar": "",
+    "address": "27, Mission Street, Pondicherry",
+    "district": "Pondicherry",
+    "location": {
+      "lat": 11.9416,
+      "lng": 79.8083
+    },
+    "status": "active",
+    "verified": true,
+    "createdAt": "2025-08-01T00:00:00.000Z",
+    "updatedAt": "2025-07-14T00:00:00.000Z"
+  },
+  {
+    "id": "usr_cit_044",
+    "name": "Jayashree Devi",
+    "email": "jayashree.d@gmail.com",
+    "password": "$2a$10$vwH52koZwOEJvmS3BteMmezFheq/Kg.FFLVpqbT1jkuoNeQGEYTeq",
+    "phone": "+91 95000 56789",
+    "role": "citizen",
+    "avatar": "",
+    "address": "59, NECC Street, Pondicherry",
+    "district": "Pondicherry",
+    "location": {
+      "lat": 11.935,
+      "lng": 79.81
+    },
+    "status": "active",
+    "verified": true,
+    "createdAt": "2025-08-04T00:00:00.000Z",
+    "updatedAt": "2025-07-13T00:00:00.000Z"
+  },
+  {
+    "id": "usr_cit_045",
+    "name": "Manikandan Vel",
+    "email": "manikandan.v@gmail.com",
+    "password": "$2a$10$vwH52koZwOEJvmS3BteMmezFheq/Kg.FFLVpqbT1jkuoNeQGEYTeq",
+    "phone": "+91 98765 67890",
+    "role": "citizen",
+    "avatar": "",
+    "address": "40, Chidambaram Road, Pondicherry",
+    "district": "Pondicherry",
+    "location": {
+      "lat": 11.938,
+      "lng": 79.805
+    },
+    "status": "active",
+    "verified": true,
+    "createdAt": "2025-08-07T00:00:00.000Z",
+    "updatedAt": "2025-07-12T00:00:00.000Z"
+  },
+  {
+    "id": "usr_cit_046",
+    "name": "Vijayalakshmi Devi",
+    "email": "vijayalakshmi.d@outlook.com",
+    "password": "$2a$10$vwH52koZwOEJvmS3BteMmezFheq/Kg.FFLVpqbT1jkuoNeQGEYTeq",
+    "phone": "+91 94430 78901",
+    "role": "citizen",
+    "avatar": "",
+    "address": "8, Gandhi Road, Mount Road, Chennai",
+    "district": "Chennai Central",
+    "location": {
+      "lat": 13.0827,
+      "lng": 80.2707
+    },
+    "status": "active",
+    "verified": true,
+    "createdAt": "2025-08-10T00:00:00.000Z",
+    "updatedAt": "2025-07-11T00:00:00.000Z"
+  },
+  {
+    "id": "usr_cit_047",
+    "name": "Narayanan Rajagopal",
+    "email": "narayanan.r@yahoo.com",
+    "password": "$2a$10$vwH52koZwOEJvmS3BteMmezFheq/Kg.FFLVpqbT1jkuoNeQGEYTeq",
+    "phone": "+91 98400 89012",
+    "role": "citizen",
+    "avatar": "",
+    "address": "71, Nungambakkam High Road, Chennai",
+    "district": "Chennai Central",
+    "location": {
+      "lat": 13.06,
+      "lng": 80.245
+    },
+    "status": "active",
+    "verified": true,
+    "createdAt": "2025-08-13T00:00:00.000Z",
+    "updatedAt": "2025-07-10T00:00:00.000Z"
+  },
+  {
+    "id": "usr_cit_048",
+    "name": "Nirmala Devi",
+    "email": "nirmala.d@gmail.com",
+    "password": "$2a$10$vwH52koZwOEJvmS3BteMmezFheq/Kg.FFLVpqbT1jkuoNeQGEYTeq",
+    "phone": "+91 97890 90123",
+    "role": "citizen",
+    "avatar": "",
+    "address": "3, Vepery High Road, Chennai",
+    "district": "Chennai Central",
+    "location": {
+      "lat": 13.07,
+      "lng": 80.25
+    },
+    "status": "active",
+    "verified": true,
+    "createdAt": "2025-08-16T00:00:00.000Z",
+    "updatedAt": "2025-07-09T00:00:00.000Z"
+  },
+  {
+    "id": "usr_cit_049",
+    "name": "Balaji Raman",
+    "email": "balaji.r@rediffmail.com",
+    "password": "$2a$10$vwH52koZwOEJvmS3BteMmezFheq/Kg.FFLVpqbT1jkuoNeQGEYTeq",
+    "phone": "+91 95000 01234",
+    "role": "citizen",
+    "avatar": "",
+    "address": "82, Purasawalkam High Road, Chennai",
+    "district": "Chennai Central",
+    "location": {
+      "lat": 13.058,
+      "lng": 80.252
+    },
+    "status": "active",
+    "verified": true,
+    "createdAt": "2025-08-19T00:00:00.000Z",
+    "updatedAt": "2025-07-08T00:00:00.000Z"
+  },
+  {
+    "id": "usr_cit_050",
+    "name": "Geetha Srinivasan",
+    "email": "geetha.s@gmail.com",
+    "password": "$2a$10$vwH52koZwOEJvmS3BteMmezFheq/Kg.FFLVpqbT1jkuoNeQGEYTeq",
+    "phone": "+91 98765 12345",
+    "role": "citizen",
+    "avatar": "",
+    "address": "19, Chetpet High Road, Chennai",
+    "district": "Chetpet",
+    "location": {
+      "lat": 13.071,
+      "lng": 80.243
+    },
+    "status": "active",
+    "verified": true,
+    "createdAt": "2025-08-22T00:00:00.000Z",
+    "updatedAt": "2025-07-07T00:00:00.000Z"
+  }
+]

@@ -226,7 +226,7 @@ export default function ContractorDashboardPage() {
                 </div>
                 <p className="text-sm font-semibold text-foreground">{nextJob.title}</p>
                 <p className="flex items-center gap-1 text-xs text-muted-foreground">
-                  <MapPin className="h-3.5 w-3.5" /> {nextJob.district ?? "Unknown"} · {nextJob.address ?? "No address"}
+                  <MapPin className="h-3.5 w-3.5" /> {nextJob.district ?? "Unknown"} · {nextJob.exactAddress ?? nextJob.address ?? "No address"}
                 </p>
                 {nextJob.aiAnalysis && (
                   <div className="flex items-center gap-2 rounded-lg bg-violet-50 px-3 py-2 text-xs font-medium text-violet-700">

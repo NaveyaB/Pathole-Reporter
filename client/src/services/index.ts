@@ -7,6 +7,7 @@ import type {
   MapComplaint,
   NotificationItem,
   User,
+  ValidatedLocation,
 } from "@/types";
 
 export interface AuthResponse {
@@ -125,4 +126,18 @@ export const aiApi = {
 export const uploadApi = {
   image: (formData: FormData) =>
     extractData<{ url: string; name: string; size: number; mimetype: string }>(api.post("/ai/upload", formData)),
+};
+
+export interface NearbyDuplicate {
+  complaintId: string;
+  reportNumber: string;
+  title: string;
+  distanceMeters: number;
+}
+
+export const locationApi = {
+  validate: (payload: { lat: number; lng: number; placeId?: string }) =>
+    extractData<ValidatedLocation>(api.post("/locations/validate", payload)),
+  duplicateCheck: (payload: { lat: number; lng: number; thresholdMeters?: number }) =>
+    extractData<NearbyDuplicate | null>(api.post("/locations/duplicate-check", payload)),
 };

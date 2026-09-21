@@ -1,0 +1,1342 @@
+[
+  {
+    "id": "ntf_001",
+    "user": "usr_adm_001",
+    "type": "complaint",
+    "title": "New complaint submitted",
+    "message": "3 new complaints await verification today.",
+    "link": "/admin/complaints",
+    "read": false,
+    "createdAt": "2025-08-23T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_002",
+    "user": "usr_adm_001",
+    "type": "info",
+    "title": "Weekly report ready",
+    "message": "Your weekly road-damage analytics report is ready to download.",
+    "link": "/admin/analytics",
+    "read": false,
+    "createdAt": "2025-08-25T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_003",
+    "user": "usr_adm_001",
+    "type": "feedback",
+    "title": "New citizen feedback",
+    "message": "A citizen rated the completed repair 5/5.",
+    "link": "/admin/reports",
+    "read": false,
+    "createdAt": "2025-08-24T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_004",
+    "user": "usr_adm_001",
+    "type": "complaint",
+    "title": "Critical complaint alert",
+    "message": "Sinkhole reported near Gandhipuram signal requires urgent attention.",
+    "link": "/admin/complaints",
+    "read": true,
+    "createdAt": "2025-08-22T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_005",
+    "user": "usr_cit_001",
+    "type": "complaint",
+    "title": "Complaint registered",
+    "message": "Your complaint TNR-2001 has been registered and is under AI review.",
+    "link": "/complaints/TNR-2001",
+    "read": true,
+    "createdAt": "2025-05-27T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_006",
+    "user": "usr_cit_001",
+    "type": "ai",
+    "title": "AI analysis complete",
+    "message": "AI detected a undefined severity pothole with 95% confidence in TNR-2001.",
+    "link": "/complaints/TNR-2001",
+    "read": true,
+    "createdAt": "2025-05-28T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_007",
+    "user": "usr_cit_002",
+    "type": "complaint",
+    "title": "Complaint registered",
+    "message": "Your complaint TNR-2002 has been registered and is under AI review.",
+    "link": "/complaints/TNR-2002",
+    "read": true,
+    "createdAt": "2025-05-28T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_008",
+    "user": "usr_cit_002",
+    "type": "ai",
+    "title": "AI analysis complete",
+    "message": "AI detected a undefined severity crack with 91% confidence in TNR-2002.",
+    "link": "/complaints/TNR-2002",
+    "read": true,
+    "createdAt": "2025-05-29T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_009",
+    "user": "usr_cit_003",
+    "type": "complaint",
+    "title": "Complaint registered",
+    "message": "Your complaint TNR-2003 has been registered and is under AI review.",
+    "link": "/complaints/TNR-2003",
+    "read": true,
+    "createdAt": "2025-05-29T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_010",
+    "user": "usr_cit_003",
+    "type": "ai",
+    "title": "AI analysis complete",
+    "message": "AI detected a undefined severity pothole with 98% confidence in TNR-2003.",
+    "link": "/complaints/TNR-2003",
+    "read": true,
+    "createdAt": "2025-05-30T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_011",
+    "user": "usr_cit_004",
+    "type": "complaint",
+    "title": "Complaint registered",
+    "message": "Your complaint TNR-2004 has been registered and is under AI review.",
+    "link": "/complaints/TNR-2004",
+    "read": true,
+    "createdAt": "2025-05-31T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_012",
+    "user": "usr_cit_004",
+    "type": "ai",
+    "title": "AI analysis complete",
+    "message": "AI detected a undefined severity surface damage with 94% confidence in TNR-2004.",
+    "link": "/complaints/TNR-2004",
+    "read": true,
+    "createdAt": "2025-06-01T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_013",
+    "user": "usr_cit_021",
+    "type": "complaint",
+    "title": "Complaint registered",
+    "message": "Your complaint TNR-2005 has been registered and is under AI review.",
+    "link": "/complaints/TNR-2005",
+    "read": true,
+    "createdAt": "2025-06-01T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_014",
+    "user": "usr_cit_021",
+    "type": "ai",
+    "title": "AI analysis complete",
+    "message": "AI detected a undefined severity sinkhole with 90% confidence in TNR-2005.",
+    "link": "/complaints/TNR-2005",
+    "read": true,
+    "createdAt": "2025-06-02T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_015",
+    "user": "usr_cit_029",
+    "type": "complaint",
+    "title": "Complaint registered",
+    "message": "Your complaint TNR-2010 has been registered and is under AI review.",
+    "link": "/complaints/TNR-2010",
+    "read": true,
+    "createdAt": "2025-06-02T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_016",
+    "user": "usr_cit_029",
+    "type": "ai",
+    "title": "AI analysis complete",
+    "message": "AI detected a undefined severity crack with 92% confidence in TNR-2010.",
+    "link": "/complaints/TNR-2010",
+    "read": true,
+    "createdAt": "2025-06-03T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_017",
+    "user": "usr_cit_035",
+    "type": "complaint",
+    "title": "Complaint registered",
+    "message": "Your complaint TNR-2011 has been registered and is under AI review.",
+    "link": "/complaints/TNR-2011",
+    "read": true,
+    "createdAt": "2025-06-03T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_018",
+    "user": "usr_cit_035",
+    "type": "ai",
+    "title": "AI analysis complete",
+    "message": "AI detected a undefined severity pothole with 88% confidence in TNR-2011.",
+    "link": "/complaints/TNR-2011",
+    "read": true,
+    "createdAt": "2025-06-04T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_019",
+    "user": "usr_cit_037",
+    "type": "complaint",
+    "title": "Complaint registered",
+    "message": "Your complaint TNR-2012 has been registered and is under AI review.",
+    "link": "/complaints/TNR-2012",
+    "read": true,
+    "createdAt": "2025-06-04T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_020",
+    "user": "usr_cit_037",
+    "type": "ai",
+    "title": "AI analysis complete",
+    "message": "AI detected a undefined severity surface damage with 95% confidence in TNR-2012.",
+    "link": "/complaints/TNR-2012",
+    "read": true,
+    "createdAt": "2025-06-05T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_021",
+    "user": "usr_cit_033",
+    "type": "complaint",
+    "title": "Complaint registered",
+    "message": "Your complaint TNR-2015 has been registered and is under AI review.",
+    "link": "/complaints/TNR-2015",
+    "read": true,
+    "createdAt": "2025-06-06T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_022",
+    "user": "usr_cit_033",
+    "type": "ai",
+    "title": "AI analysis complete",
+    "message": "AI detected a undefined severity pothole with 94% confidence in TNR-2015.",
+    "link": "/complaints/TNR-2015",
+    "read": true,
+    "createdAt": "2025-06-07T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_023",
+    "user": "usr_cit_033",
+    "type": "complaint",
+    "title": "Complaint verified",
+    "message": "TNR-2015 was verified by the municipality and marked for repair.",
+    "link": "/complaints/TNR-2015",
+    "read": true,
+    "createdAt": "2025-06-08T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_024",
+    "user": "usr_cit_043",
+    "type": "complaint",
+    "title": "Complaint registered",
+    "message": "Your complaint TNR-2021 has been registered and is under AI review.",
+    "link": "/complaints/TNR-2021",
+    "read": true,
+    "createdAt": "2025-06-07T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_025",
+    "user": "usr_cit_043",
+    "type": "ai",
+    "title": "AI analysis complete",
+    "message": "AI detected a undefined severity pothole with 92% confidence in TNR-2021.",
+    "link": "/complaints/TNR-2021",
+    "read": true,
+    "createdAt": "2025-06-08T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_026",
+    "user": "usr_cit_043",
+    "type": "complaint",
+    "title": "Complaint verified",
+    "message": "TNR-2021 was verified by the municipality and marked for repair.",
+    "link": "/complaints/TNR-2021",
+    "read": true,
+    "createdAt": "2025-06-09T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_027",
+    "user": "usr_cit_027",
+    "type": "complaint",
+    "title": "Complaint registered",
+    "message": "Your complaint TNR-2025 has been registered and is under AI review.",
+    "link": "/complaints/TNR-2025",
+    "read": true,
+    "createdAt": "2025-06-08T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_028",
+    "user": "usr_cit_027",
+    "type": "ai",
+    "title": "AI analysis complete",
+    "message": "AI detected a undefined severity pothole with 98% confidence in TNR-2025.",
+    "link": "/complaints/TNR-2025",
+    "read": true,
+    "createdAt": "2025-06-09T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_029",
+    "user": "usr_cit_027",
+    "type": "complaint",
+    "title": "Complaint verified",
+    "message": "TNR-2025 was verified by the municipality and marked for repair.",
+    "link": "/complaints/TNR-2025",
+    "read": true,
+    "createdAt": "2025-06-10T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_030",
+    "user": "usr_cit_031",
+    "type": "complaint",
+    "title": "Complaint registered",
+    "message": "Your complaint TNR-2026 has been registered and is under AI review.",
+    "link": "/complaints/TNR-2026",
+    "read": true,
+    "createdAt": "2025-06-09T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_031",
+    "user": "usr_cit_031",
+    "type": "ai",
+    "title": "AI analysis complete",
+    "message": "AI detected a undefined severity crack with 94% confidence in TNR-2026.",
+    "link": "/complaints/TNR-2026",
+    "read": true,
+    "createdAt": "2025-06-10T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_032",
+    "user": "usr_cit_031",
+    "type": "complaint",
+    "title": "Complaint verified",
+    "message": "TNR-2026 was verified by the municipality and marked for repair.",
+    "link": "/complaints/TNR-2026",
+    "read": true,
+    "createdAt": "2025-06-11T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_033",
+    "user": "usr_cit_024",
+    "type": "complaint",
+    "title": "Complaint registered",
+    "message": "Your complaint TNR-2028 has been registered and is under AI review.",
+    "link": "/complaints/TNR-2028",
+    "read": true,
+    "createdAt": "2025-06-10T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_034",
+    "user": "usr_cit_024",
+    "type": "ai",
+    "title": "AI analysis complete",
+    "message": "AI detected a undefined severity pothole with 97% confidence in TNR-2028.",
+    "link": "/complaints/TNR-2028",
+    "read": true,
+    "createdAt": "2025-06-11T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_035",
+    "user": "usr_cit_024",
+    "type": "complaint",
+    "title": "Complaint verified",
+    "message": "TNR-2028 was verified by the municipality and marked for repair.",
+    "link": "/complaints/TNR-2028",
+    "read": true,
+    "createdAt": "2025-06-12T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_036",
+    "user": "usr_cit_008",
+    "type": "complaint",
+    "title": "Complaint registered",
+    "message": "Your complaint TNR-2032 has been registered and is under AI review.",
+    "link": "/complaints/TNR-2032",
+    "read": true,
+    "createdAt": "2025-06-12T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_037",
+    "user": "usr_cit_008",
+    "type": "ai",
+    "title": "AI analysis complete",
+    "message": "AI detected a undefined severity pothole with 92% confidence in TNR-2032.",
+    "link": "/complaints/TNR-2032",
+    "read": true,
+    "createdAt": "2025-06-13T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_038",
+    "user": "usr_cit_008",
+    "type": "complaint",
+    "title": "Complaint verified",
+    "message": "TNR-2032 was verified by the municipality and marked for repair.",
+    "link": "/complaints/TNR-2032",
+    "read": true,
+    "createdAt": "2025-06-14T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_039",
+    "user": "usr_cit_041",
+    "type": "complaint",
+    "title": "Complaint registered",
+    "message": "Your complaint TNR-2035 has been registered and is under AI review.",
+    "link": "/complaints/TNR-2035",
+    "read": true,
+    "createdAt": "2025-06-13T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_040",
+    "user": "usr_cit_041",
+    "type": "ai",
+    "title": "AI analysis complete",
+    "message": "AI detected a undefined severity pothole with 91% confidence in TNR-2035.",
+    "link": "/complaints/TNR-2035",
+    "read": true,
+    "createdAt": "2025-06-14T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_041",
+    "user": "usr_cit_041",
+    "type": "complaint",
+    "title": "Complaint verified",
+    "message": "TNR-2035 was verified by the municipality and marked for repair.",
+    "link": "/complaints/TNR-2035",
+    "read": true,
+    "createdAt": "2025-06-15T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_042",
+    "user": "usr_cit_004",
+    "type": "complaint",
+    "title": "Complaint registered",
+    "message": "Your complaint TNR-2039 has been registered and is under AI review.",
+    "link": "/complaints/TNR-2039",
+    "read": true,
+    "createdAt": "2025-06-14T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_043",
+    "user": "usr_cit_004",
+    "type": "ai",
+    "title": "AI analysis complete",
+    "message": "AI detected a undefined severity pothole with 97% confidence in TNR-2039.",
+    "link": "/complaints/TNR-2039",
+    "read": true,
+    "createdAt": "2025-06-15T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_044",
+    "user": "usr_cit_004",
+    "type": "complaint",
+    "title": "Complaint verified",
+    "message": "TNR-2039 was verified by the municipality and marked for repair.",
+    "link": "/complaints/TNR-2039",
+    "read": true,
+    "createdAt": "2025-06-16T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_045",
+    "user": "usr_cit_004",
+    "type": "completion",
+    "title": "Repair completed",
+    "message": "The pothole in TNR-2039 has been repaired. Please share your feedback.",
+    "link": "/complaints/TNR-2039",
+    "read": true,
+    "createdAt": "2025-06-20T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_046",
+    "user": "usr_cit_025",
+    "type": "complaint",
+    "title": "Complaint registered",
+    "message": "Your complaint TNR-2040 has been registered and is under AI review.",
+    "link": "/complaints/TNR-2040",
+    "read": true,
+    "createdAt": "2025-06-15T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_047",
+    "user": "usr_cit_025",
+    "type": "ai",
+    "title": "AI analysis complete",
+    "message": "AI detected a undefined severity depression with 93% confidence in TNR-2040.",
+    "link": "/complaints/TNR-2040",
+    "read": true,
+    "createdAt": "2025-06-16T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_048",
+    "user": "usr_cit_025",
+    "type": "complaint",
+    "title": "Complaint verified",
+    "message": "TNR-2040 was verified by the municipality and marked for repair.",
+    "link": "/complaints/TNR-2040",
+    "read": true,
+    "createdAt": "2025-06-17T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_049",
+    "user": "usr_cit_025",
+    "type": "completion",
+    "title": "Repair completed",
+    "message": "The depression in TNR-2040 has been repaired. Please share your feedback.",
+    "link": "/complaints/TNR-2040",
+    "read": true,
+    "createdAt": "2025-06-21T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_050",
+    "user": "usr_cit_015",
+    "type": "complaint",
+    "title": "Complaint registered",
+    "message": "Your complaint TNR-2041 has been registered and is under AI review.",
+    "link": "/complaints/TNR-2041",
+    "read": true,
+    "createdAt": "2025-06-16T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_051",
+    "user": "usr_cit_015",
+    "type": "ai",
+    "title": "AI analysis complete",
+    "message": "AI detected a undefined severity pothole with 89% confidence in TNR-2041.",
+    "link": "/complaints/TNR-2041",
+    "read": true,
+    "createdAt": "2025-06-17T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_052",
+    "user": "usr_cit_015",
+    "type": "complaint",
+    "title": "Complaint verified",
+    "message": "TNR-2041 was verified by the municipality and marked for repair.",
+    "link": "/complaints/TNR-2041",
+    "read": true,
+    "createdAt": "2025-06-18T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_053",
+    "user": "usr_cit_015",
+    "type": "completion",
+    "title": "Repair completed",
+    "message": "The pothole in TNR-2041 has been repaired. Please share your feedback.",
+    "link": "/complaints/TNR-2041",
+    "read": true,
+    "createdAt": "2025-06-22T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_054",
+    "user": "usr_cit_039",
+    "type": "complaint",
+    "title": "Complaint registered",
+    "message": "Your complaint TNR-2043 has been registered and is under AI review.",
+    "link": "/complaints/TNR-2043",
+    "read": true,
+    "createdAt": "2025-06-18T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_055",
+    "user": "usr_cit_039",
+    "type": "ai",
+    "title": "AI analysis complete",
+    "message": "AI detected a undefined severity rutting with 92% confidence in TNR-2043.",
+    "link": "/complaints/TNR-2043",
+    "read": true,
+    "createdAt": "2025-06-19T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_056",
+    "user": "usr_cit_039",
+    "type": "complaint",
+    "title": "Complaint verified",
+    "message": "TNR-2043 was verified by the municipality and marked for repair.",
+    "link": "/complaints/TNR-2043",
+    "read": true,
+    "createdAt": "2025-06-20T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_057",
+    "user": "usr_cit_039",
+    "type": "completion",
+    "title": "Repair completed",
+    "message": "The rutting in TNR-2043 has been repaired. Please share your feedback.",
+    "link": "/complaints/TNR-2043",
+    "read": true,
+    "createdAt": "2025-06-24T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_058",
+    "user": "usr_cit_011",
+    "type": "complaint",
+    "title": "Complaint registered",
+    "message": "Your complaint TNR-2044 has been registered and is under AI review.",
+    "link": "/complaints/TNR-2044",
+    "read": true,
+    "createdAt": "2025-06-19T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_059",
+    "user": "usr_cit_011",
+    "type": "ai",
+    "title": "AI analysis complete",
+    "message": "AI detected a undefined severity pothole with 88% confidence in TNR-2044.",
+    "link": "/complaints/TNR-2044",
+    "read": true,
+    "createdAt": "2025-06-20T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_060",
+    "user": "usr_cit_011",
+    "type": "complaint",
+    "title": "Complaint verified",
+    "message": "TNR-2044 was verified by the municipality and marked for repair.",
+    "link": "/complaints/TNR-2044",
+    "read": true,
+    "createdAt": "2025-06-21T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_061",
+    "user": "usr_cit_011",
+    "type": "completion",
+    "title": "Repair completed",
+    "message": "The pothole in TNR-2044 has been repaired. Please share your feedback.",
+    "link": "/complaints/TNR-2044",
+    "read": true,
+    "createdAt": "2025-06-25T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_062",
+    "user": "usr_cit_010",
+    "type": "complaint",
+    "title": "Complaint registered",
+    "message": "Your complaint TNR-2046 has been registered and is under AI review.",
+    "link": "/complaints/TNR-2046",
+    "read": true,
+    "createdAt": "2025-06-20T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_063",
+    "user": "usr_cit_010",
+    "type": "ai",
+    "title": "AI analysis complete",
+    "message": "AI detected a undefined severity pothole with 91% confidence in TNR-2046.",
+    "link": "/complaints/TNR-2046",
+    "read": true,
+    "createdAt": "2025-06-21T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_064",
+    "user": "usr_cit_010",
+    "type": "complaint",
+    "title": "Complaint verified",
+    "message": "TNR-2046 was verified by the municipality and marked for repair.",
+    "link": "/complaints/TNR-2046",
+    "read": true,
+    "createdAt": "2025-06-22T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_065",
+    "user": "usr_cit_010",
+    "type": "completion",
+    "title": "Repair completed",
+    "message": "The pothole in TNR-2046 has been repaired. Please share your feedback.",
+    "link": "/complaints/TNR-2046",
+    "read": true,
+    "createdAt": "2025-06-26T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_066",
+    "user": "usr_cit_019",
+    "type": "complaint",
+    "title": "Complaint registered",
+    "message": "Your complaint TNR-2047 has been registered and is under AI review.",
+    "link": "/complaints/TNR-2047",
+    "read": true,
+    "createdAt": "2025-06-21T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_067",
+    "user": "usr_cit_019",
+    "type": "ai",
+    "title": "AI analysis complete",
+    "message": "AI detected a undefined severity pothole with 98% confidence in TNR-2047.",
+    "link": "/complaints/TNR-2047",
+    "read": true,
+    "createdAt": "2025-06-22T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_068",
+    "user": "usr_cit_019",
+    "type": "complaint",
+    "title": "Complaint verified",
+    "message": "TNR-2047 was verified by the municipality and marked for repair.",
+    "link": "/complaints/TNR-2047",
+    "read": true,
+    "createdAt": "2025-06-23T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_069",
+    "user": "usr_cit_019",
+    "type": "completion",
+    "title": "Repair completed",
+    "message": "The pothole in TNR-2047 has been repaired. Please share your feedback.",
+    "link": "/complaints/TNR-2047",
+    "read": true,
+    "createdAt": "2025-06-27T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_070",
+    "user": "usr_cit_043",
+    "type": "complaint",
+    "title": "Complaint registered",
+    "message": "Your complaint TNR-2048 has been registered and is under AI review.",
+    "link": "/complaints/TNR-2048",
+    "read": true,
+    "createdAt": "2025-06-22T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_071",
+    "user": "usr_cit_043",
+    "type": "ai",
+    "title": "AI analysis complete",
+    "message": "AI detected a undefined severity crack with 94% confidence in TNR-2048.",
+    "link": "/complaints/TNR-2048",
+    "read": true,
+    "createdAt": "2025-06-23T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_072",
+    "user": "usr_cit_043",
+    "type": "complaint",
+    "title": "Complaint verified",
+    "message": "TNR-2048 was verified by the municipality and marked for repair.",
+    "link": "/complaints/TNR-2048",
+    "read": true,
+    "createdAt": "2025-06-24T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_073",
+    "user": "usr_cit_043",
+    "type": "completion",
+    "title": "Repair completed",
+    "message": "The crack in TNR-2048 has been repaired. Please share your feedback.",
+    "link": "/complaints/TNR-2048",
+    "read": true,
+    "createdAt": "2025-06-28T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_074",
+    "user": "usr_cit_012",
+    "type": "complaint",
+    "title": "Complaint registered",
+    "message": "Your complaint TNR-2049 has been registered and is under AI review.",
+    "link": "/complaints/TNR-2049",
+    "read": true,
+    "createdAt": "2025-06-24T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_075",
+    "user": "usr_cit_012",
+    "type": "ai",
+    "title": "AI analysis complete",
+    "message": "AI detected a undefined severity pothole with 90% confidence in TNR-2049.",
+    "link": "/complaints/TNR-2049",
+    "read": true,
+    "createdAt": "2025-06-25T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_076",
+    "user": "usr_cit_012",
+    "type": "complaint",
+    "title": "Complaint verified",
+    "message": "TNR-2049 was verified by the municipality and marked for repair.",
+    "link": "/complaints/TNR-2049",
+    "read": true,
+    "createdAt": "2025-06-26T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_077",
+    "user": "usr_cit_012",
+    "type": "completion",
+    "title": "Repair completed",
+    "message": "The pothole in TNR-2049 has been repaired. Please share your feedback.",
+    "link": "/complaints/TNR-2049",
+    "read": true,
+    "createdAt": "2025-06-30T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_078",
+    "user": "usr_cit_026",
+    "type": "complaint",
+    "title": "Complaint registered",
+    "message": "Your complaint TNR-2050 has been registered and is under AI review.",
+    "link": "/complaints/TNR-2050",
+    "read": true,
+    "createdAt": "2025-06-25T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_079",
+    "user": "usr_cit_026",
+    "type": "ai",
+    "title": "AI analysis complete",
+    "message": "AI detected a undefined severity pothole with 97% confidence in TNR-2050.",
+    "link": "/complaints/TNR-2050",
+    "read": true,
+    "createdAt": "2025-06-26T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_080",
+    "user": "usr_cit_026",
+    "type": "complaint",
+    "title": "Complaint verified",
+    "message": "TNR-2050 was verified by the municipality and marked for repair.",
+    "link": "/complaints/TNR-2050",
+    "read": true,
+    "createdAt": "2025-06-27T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_081",
+    "user": "usr_cit_026",
+    "type": "completion",
+    "title": "Repair completed",
+    "message": "The pothole in TNR-2050 has been repaired. Please share your feedback.",
+    "link": "/complaints/TNR-2050",
+    "read": true,
+    "createdAt": "2025-07-01T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_082",
+    "user": "usr_cit_046",
+    "type": "complaint",
+    "title": "Complaint registered",
+    "message": "Your complaint TNR-2052 has been registered and is under AI review.",
+    "link": "/complaints/TNR-2052",
+    "read": true,
+    "createdAt": "2025-06-26T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_083",
+    "user": "usr_cit_046",
+    "type": "ai",
+    "title": "AI analysis complete",
+    "message": "AI detected a undefined severity pothole with 89% confidence in TNR-2052.",
+    "link": "/complaints/TNR-2052",
+    "read": true,
+    "createdAt": "2025-06-27T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_084",
+    "user": "usr_cit_046",
+    "type": "complaint",
+    "title": "Complaint verified",
+    "message": "TNR-2052 was verified by the municipality and marked for repair.",
+    "link": "/complaints/TNR-2052",
+    "read": true,
+    "createdAt": "2025-06-28T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_085",
+    "user": "usr_cit_046",
+    "type": "completion",
+    "title": "Repair completed",
+    "message": "The pothole in TNR-2052 has been repaired. Please share your feedback.",
+    "link": "/complaints/TNR-2052",
+    "read": true,
+    "createdAt": "2025-07-02T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_086",
+    "user": "usr_cit_006",
+    "type": "complaint",
+    "title": "Complaint registered",
+    "message": "Your complaint TNR-2053 has been registered and is under AI review.",
+    "link": "/complaints/TNR-2053",
+    "read": true,
+    "createdAt": "2025-06-27T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_087",
+    "user": "usr_cit_006",
+    "type": "ai",
+    "title": "AI analysis complete",
+    "message": "AI detected a undefined severity pothole with 96% confidence in TNR-2053.",
+    "link": "/complaints/TNR-2053",
+    "read": true,
+    "createdAt": "2025-06-28T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_088",
+    "user": "usr_cit_006",
+    "type": "complaint",
+    "title": "Complaint verified",
+    "message": "TNR-2053 was verified by the municipality and marked for repair.",
+    "link": "/complaints/TNR-2053",
+    "read": true,
+    "createdAt": "2025-06-29T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_089",
+    "user": "usr_cit_006",
+    "type": "completion",
+    "title": "Repair completed",
+    "message": "The pothole in TNR-2053 has been repaired. Please share your feedback.",
+    "link": "/complaints/TNR-2053",
+    "read": true,
+    "createdAt": "2025-07-03T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_090",
+    "user": "usr_cit_001",
+    "type": "system",
+    "title": "Welcome to Smart Pothole Reporter",
+    "message": "Help keep our city roads safe by reporting road damage in under 60 seconds.",
+    "read": true,
+    "createdAt": "2025-03-28T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_091",
+    "user": "usr_cit_002",
+    "type": "system",
+    "title": "Welcome to Smart Pothole Reporter",
+    "message": "Help keep our city roads safe by reporting road damage in under 60 seconds.",
+    "read": true,
+    "createdAt": "2025-03-31T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_092",
+    "user": "usr_cit_003",
+    "type": "system",
+    "title": "Welcome to Smart Pothole Reporter",
+    "message": "Help keep our city roads safe by reporting road damage in under 60 seconds.",
+    "read": true,
+    "createdAt": "2025-04-03T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_093",
+    "user": "usr_cit_004",
+    "type": "system",
+    "title": "Welcome to Smart Pothole Reporter",
+    "message": "Help keep our city roads safe by reporting road damage in under 60 seconds.",
+    "read": true,
+    "createdAt": "2025-04-06T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_094",
+    "user": "usr_cit_005",
+    "type": "system",
+    "title": "Welcome to Smart Pothole Reporter",
+    "message": "Help keep our city roads safe by reporting road damage in under 60 seconds.",
+    "read": true,
+    "createdAt": "2025-04-09T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_095",
+    "user": "usr_cit_006",
+    "type": "system",
+    "title": "Welcome to Smart Pothole Reporter",
+    "message": "Help keep our city roads safe by reporting road damage in under 60 seconds.",
+    "read": true,
+    "createdAt": "2025-04-12T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_096",
+    "user": "usr_cit_007",
+    "type": "system",
+    "title": "Welcome to Smart Pothole Reporter",
+    "message": "Help keep our city roads safe by reporting road damage in under 60 seconds.",
+    "read": true,
+    "createdAt": "2025-04-15T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_097",
+    "user": "usr_cit_008",
+    "type": "system",
+    "title": "Welcome to Smart Pothole Reporter",
+    "message": "Help keep our city roads safe by reporting road damage in under 60 seconds.",
+    "read": true,
+    "createdAt": "2025-04-18T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_098",
+    "user": "usr_cit_009",
+    "type": "system",
+    "title": "Welcome to Smart Pothole Reporter",
+    "message": "Help keep our city roads safe by reporting road damage in under 60 seconds.",
+    "read": true,
+    "createdAt": "2025-04-21T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_099",
+    "user": "usr_cit_010",
+    "type": "system",
+    "title": "Welcome to Smart Pothole Reporter",
+    "message": "Help keep our city roads safe by reporting road damage in under 60 seconds.",
+    "read": true,
+    "createdAt": "2025-04-24T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_100",
+    "user": "usr_cit_011",
+    "type": "system",
+    "title": "Welcome to Smart Pothole Reporter",
+    "message": "Help keep our city roads safe by reporting road damage in under 60 seconds.",
+    "read": true,
+    "createdAt": "2025-04-27T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_101",
+    "user": "usr_cit_012",
+    "type": "system",
+    "title": "Welcome to Smart Pothole Reporter",
+    "message": "Help keep our city roads safe by reporting road damage in under 60 seconds.",
+    "read": true,
+    "createdAt": "2025-04-30T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_102",
+    "user": "usr_cit_013",
+    "type": "system",
+    "title": "Welcome to Smart Pothole Reporter",
+    "message": "Help keep our city roads safe by reporting road damage in under 60 seconds.",
+    "read": true,
+    "createdAt": "2025-05-03T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_103",
+    "user": "usr_cit_014",
+    "type": "system",
+    "title": "Welcome to Smart Pothole Reporter",
+    "message": "Help keep our city roads safe by reporting road damage in under 60 seconds.",
+    "read": true,
+    "createdAt": "2025-05-06T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_104",
+    "user": "usr_cit_015",
+    "type": "system",
+    "title": "Welcome to Smart Pothole Reporter",
+    "message": "Help keep our city roads safe by reporting road damage in under 60 seconds.",
+    "read": true,
+    "createdAt": "2025-05-09T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_105",
+    "user": "usr_cit_016",
+    "type": "system",
+    "title": "Welcome to Smart Pothole Reporter",
+    "message": "Help keep our city roads safe by reporting road damage in under 60 seconds.",
+    "read": true,
+    "createdAt": "2025-05-12T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_106",
+    "user": "usr_cit_017",
+    "type": "system",
+    "title": "Welcome to Smart Pothole Reporter",
+    "message": "Help keep our city roads safe by reporting road damage in under 60 seconds.",
+    "read": true,
+    "createdAt": "2025-05-15T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_107",
+    "user": "usr_cit_018",
+    "type": "system",
+    "title": "Welcome to Smart Pothole Reporter",
+    "message": "Help keep our city roads safe by reporting road damage in under 60 seconds.",
+    "read": true,
+    "createdAt": "2025-05-18T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_108",
+    "user": "usr_cit_019",
+    "type": "system",
+    "title": "Welcome to Smart Pothole Reporter",
+    "message": "Help keep our city roads safe by reporting road damage in under 60 seconds.",
+    "read": true,
+    "createdAt": "2025-05-21T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_109",
+    "user": "usr_cit_020",
+    "type": "system",
+    "title": "Welcome to Smart Pothole Reporter",
+    "message": "Help keep our city roads safe by reporting road damage in under 60 seconds.",
+    "read": true,
+    "createdAt": "2025-05-24T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_110",
+    "user": "usr_cit_021",
+    "type": "system",
+    "title": "Welcome to Smart Pothole Reporter",
+    "message": "Help keep our city roads safe by reporting road damage in under 60 seconds.",
+    "read": true,
+    "createdAt": "2025-05-27T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_111",
+    "user": "usr_cit_022",
+    "type": "system",
+    "title": "Welcome to Smart Pothole Reporter",
+    "message": "Help keep our city roads safe by reporting road damage in under 60 seconds.",
+    "read": true,
+    "createdAt": "2025-05-30T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_112",
+    "user": "usr_cit_023",
+    "type": "system",
+    "title": "Welcome to Smart Pothole Reporter",
+    "message": "Help keep our city roads safe by reporting road damage in under 60 seconds.",
+    "read": true,
+    "createdAt": "2025-06-02T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_113",
+    "user": "usr_cit_024",
+    "type": "system",
+    "title": "Welcome to Smart Pothole Reporter",
+    "message": "Help keep our city roads safe by reporting road damage in under 60 seconds.",
+    "read": true,
+    "createdAt": "2025-06-05T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_114",
+    "user": "usr_cit_025",
+    "type": "system",
+    "title": "Welcome to Smart Pothole Reporter",
+    "message": "Help keep our city roads safe by reporting road damage in under 60 seconds.",
+    "read": true,
+    "createdAt": "2025-06-08T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_115",
+    "user": "usr_cit_026",
+    "type": "system",
+    "title": "Welcome to Smart Pothole Reporter",
+    "message": "Help keep our city roads safe by reporting road damage in under 60 seconds.",
+    "read": true,
+    "createdAt": "2025-06-11T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_116",
+    "user": "usr_cit_027",
+    "type": "system",
+    "title": "Welcome to Smart Pothole Reporter",
+    "message": "Help keep our city roads safe by reporting road damage in under 60 seconds.",
+    "read": true,
+    "createdAt": "2025-06-14T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_117",
+    "user": "usr_cit_028",
+    "type": "system",
+    "title": "Welcome to Smart Pothole Reporter",
+    "message": "Help keep our city roads safe by reporting road damage in under 60 seconds.",
+    "read": true,
+    "createdAt": "2025-06-17T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_118",
+    "user": "usr_cit_029",
+    "type": "system",
+    "title": "Welcome to Smart Pothole Reporter",
+    "message": "Help keep our city roads safe by reporting road damage in under 60 seconds.",
+    "read": true,
+    "createdAt": "2025-06-20T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_119",
+    "user": "usr_cit_030",
+    "type": "system",
+    "title": "Welcome to Smart Pothole Reporter",
+    "message": "Help keep our city roads safe by reporting road damage in under 60 seconds.",
+    "read": true,
+    "createdAt": "2025-06-23T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_120",
+    "user": "usr_cit_031",
+    "type": "system",
+    "title": "Welcome to Smart Pothole Reporter",
+    "message": "Help keep our city roads safe by reporting road damage in under 60 seconds.",
+    "read": true,
+    "createdAt": "2025-06-26T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_121",
+    "user": "usr_cit_032",
+    "type": "system",
+    "title": "Welcome to Smart Pothole Reporter",
+    "message": "Help keep our city roads safe by reporting road damage in under 60 seconds.",
+    "read": true,
+    "createdAt": "2025-06-29T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_122",
+    "user": "usr_cit_033",
+    "type": "system",
+    "title": "Welcome to Smart Pothole Reporter",
+    "message": "Help keep our city roads safe by reporting road damage in under 60 seconds.",
+    "read": true,
+    "createdAt": "2025-07-02T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_123",
+    "user": "usr_cit_034",
+    "type": "system",
+    "title": "Welcome to Smart Pothole Reporter",
+    "message": "Help keep our city roads safe by reporting road damage in under 60 seconds.",
+    "read": true,
+    "createdAt": "2025-07-05T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_124",
+    "user": "usr_cit_035",
+    "type": "system",
+    "title": "Welcome to Smart Pothole Reporter",
+    "message": "Help keep our city roads safe by reporting road damage in under 60 seconds.",
+    "read": true,
+    "createdAt": "2025-07-08T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_125",
+    "user": "usr_cit_036",
+    "type": "system",
+    "title": "Welcome to Smart Pothole Reporter",
+    "message": "Help keep our city roads safe by reporting road damage in under 60 seconds.",
+    "read": true,
+    "createdAt": "2025-07-11T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_126",
+    "user": "usr_cit_037",
+    "type": "system",
+    "title": "Welcome to Smart Pothole Reporter",
+    "message": "Help keep our city roads safe by reporting road damage in under 60 seconds.",
+    "read": true,
+    "createdAt": "2025-07-14T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_127",
+    "user": "usr_cit_038",
+    "type": "system",
+    "title": "Welcome to Smart Pothole Reporter",
+    "message": "Help keep our city roads safe by reporting road damage in under 60 seconds.",
+    "read": true,
+    "createdAt": "2025-07-17T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_128",
+    "user": "usr_cit_039",
+    "type": "system",
+    "title": "Welcome to Smart Pothole Reporter",
+    "message": "Help keep our city roads safe by reporting road damage in under 60 seconds.",
+    "read": true,
+    "createdAt": "2025-07-20T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_129",
+    "user": "usr_cit_040",
+    "type": "system",
+    "title": "Welcome to Smart Pothole Reporter",
+    "message": "Help keep our city roads safe by reporting road damage in under 60 seconds.",
+    "read": true,
+    "createdAt": "2025-07-23T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_130",
+    "user": "usr_cit_041",
+    "type": "system",
+    "title": "Welcome to Smart Pothole Reporter",
+    "message": "Help keep our city roads safe by reporting road damage in under 60 seconds.",
+    "read": true,
+    "createdAt": "2025-07-26T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_131",
+    "user": "usr_cit_042",
+    "type": "system",
+    "title": "Welcome to Smart Pothole Reporter",
+    "message": "Help keep our city roads safe by reporting road damage in under 60 seconds.",
+    "read": true,
+    "createdAt": "2025-07-29T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_132",
+    "user": "usr_cit_043",
+    "type": "system",
+    "title": "Welcome to Smart Pothole Reporter",
+    "message": "Help keep our city roads safe by reporting road damage in under 60 seconds.",
+    "read": true,
+    "createdAt": "2025-08-01T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_133",
+    "user": "usr_cit_044",
+    "type": "system",
+    "title": "Welcome to Smart Pothole Reporter",
+    "message": "Help keep our city roads safe by reporting road damage in under 60 seconds.",
+    "read": true,
+    "createdAt": "2025-08-04T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_134",
+    "user": "usr_cit_045",
+    "type": "system",
+    "title": "Welcome to Smart Pothole Reporter",
+    "message": "Help keep our city roads safe by reporting road damage in under 60 seconds.",
+    "read": true,
+    "createdAt": "2025-08-07T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_135",
+    "user": "usr_cit_046",
+    "type": "system",
+    "title": "Welcome to Smart Pothole Reporter",
+    "message": "Help keep our city roads safe by reporting road damage in under 60 seconds.",
+    "read": true,
+    "createdAt": "2025-08-10T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_136",
+    "user": "usr_cit_047",
+    "type": "system",
+    "title": "Welcome to Smart Pothole Reporter",
+    "message": "Help keep our city roads safe by reporting road damage in under 60 seconds.",
+    "read": true,
+    "createdAt": "2025-08-13T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_137",
+    "user": "usr_cit_048",
+    "type": "system",
+    "title": "Welcome to Smart Pothole Reporter",
+    "message": "Help keep our city roads safe by reporting road damage in under 60 seconds.",
+    "read": true,
+    "createdAt": "2025-08-16T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_138",
+    "user": "usr_cit_049",
+    "type": "system",
+    "title": "Welcome to Smart Pothole Reporter",
+    "message": "Help keep our city roads safe by reporting road damage in under 60 seconds.",
+    "read": true,
+    "createdAt": "2025-08-19T00:00:00.000Z"
+  },
+  {
+    "id": "ntf_139",
+    "user": "usr_cit_050",
+    "type": "system",
+    "title": "Welcome to Smart Pothole Reporter",
+    "message": "Help keep our city roads safe by reporting road damage in under 60 seconds.",
+    "read": true,
+    "createdAt": "2025-08-22T00:00:00.000Z"
+  }
+]

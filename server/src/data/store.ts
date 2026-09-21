@@ -9,6 +9,7 @@ import type {
 } from "../types/index.js";
 import { addDays, nowIso, subtractDays, generateId } from "../utils/datetime.js";
 import { isMongoConnected } from "../config/db.js";
+import { haversineMeters } from "../utils/geo.js";
 import { mongoCollections } from "./mongo.js";
 import bcrypt from "bcryptjs";
 
@@ -54,6 +55,17 @@ export interface Collection<T extends { id: string }> {
   deleteById(id: string): Promise<boolean>;
   count(filter?: Filter<T>): Promise<number>;
   all(): Promise<T[]>;
+  /** Nearby documents within `maxDistance` metres of `coordinates` ([lng, lat]). */
+  geoNear(opts: {
+    coordinates: [number, number];
+    maxDistance: number;
+    limit?: number;
+  }): Promise<Array<{ doc: T; distance: number }>>;
+}
+
+export interface GeoNearResult<T extends { id: string }> {
+  doc: T;
+  distance: number;
 }
 
 const getValue = (obj: Record<string, unknown>, path: string): unknown => {
@@ -194,6 +206,25 @@ class MemoryCollectionImpl<T extends { id: string }> implements Collection<T> {
   async all(): Promise<T[]> {
     return Array.from(this.docs.values());
   }
+
+  async geoNear(opts: {
+    coordinates: [number, number];
+    maxDistance: number;
+    limit?: number;
+  }): Promise<Array<{ doc: T; distance: number }>> {
+    const [lng, lat] = opts.coordinates;
+    const matches: Array<{ doc: T; distance: number }> = [];
+    for (const doc of this.docs.values()) {
+      const loc = (doc as unknown as Record<string, unknown>).location as
+        | { lat?: number; lng?: number }
+        | undefined;
+      if (!loc || typeof loc.lat !== "number" || typeof loc.lng !== "number") continue;
+      const distance = haversineMeters({ lat, lng }, { lat: loc.lat, lng: loc.lng });
+      if (distance <= opts.maxDistance) matches.push({ doc, distance });
+    }
+    matches.sort((a, b) => a.distance - b.distance);
+    return opts.limit ? matches.slice(0, opts.limit) : matches;
+  }
 }
 
 export interface DataStore {
@@ -265,14 +296,44 @@ export interface SeedUserInput {
 }
 
 export const districtNames = [
-  "Banjara Hills",
-  "Hitec City",
-  "Gachibowli",
-  "Old City",
-  "Secunderabad",
-  "Madhapur",
-  "Ameerpet",
-  "Kukatpally",
+  "Ariyalur",
+  "Chengalpattu",
+  "Chennai",
+  "Coimbatore",
+  "Cuddalore",
+  "Dharmapuri",
+  "Dindigul",
+  "Erode",
+  "Kallakurichi",
+  "Kanchipuram",
+  "Kanyakumari",
+  "Karur",
+  "Krishnagiri",
+  "Madurai",
+  "Mayiladuthurai",
+  "Nagapattinam",
+  "Namakkal",
+  "Nilgiris",
+  "Perambalur",
+  "Pudukkottai",
+  "Ramanathapuram",
+  "Ranipet",
+  "Salem",
+  "Sivaganga",
+  "Tenkasi",
+  "Thanjavur",
+  "Theni",
+  "Thoothukudi",
+  "Tiruchirappalli",
+  "Tirunelveli",
+  "Tirupathur",
+  "Tiruppur",
+  "Tiruvallur",
+  "Tiruvannamalai",
+  "Thiruvarur",
+  "Vellore",
+  "Viluppuram",
+  "Virudhunagar",
 ];
 
 export const complainDraft = (
@@ -283,12 +344,13 @@ export const complainDraft = (
     title: "Sample road damage",
     description: "",
     images: [],
-    location: { lat: 17.385, lng: 78.4867 },
+    location: { lat: 13.0827, lng: 80.2707 },
     type: "pothole",
     status: "submitted",
     priority: "medium",
     reporter: "user_missing",
     aiAnalysis: null,
+    source: "seed",
     timestamps: { created: now, updated: now },
     ...overrides,
   };
@@ -325,24 +387,24 @@ export const seedData = async () => {
   }
 
   const userRows: SeedUserInput[] = [
-    { name: "Aarav Mehta", email: "admin@demo.com", password: "demo1234", phone: "+91 98480 11223", role: "admin", district: "Hitec City", address: "Municipal HQ, Cyber Towers" },
-    { name: "Priya Sharma", email: "citizen@demo.com", password: "demo1234", phone: "+91 90000 11223", role: "citizen", district: "Gachibowli", address: "Flat 402, Lakeview Residency", location: { lat: 17.4401, lng: 78.3489 } },
-    { name: "Ram Builders", email: "contractor@demo.com", password: "demo1234", phone: "+91 98490 55667", role: "contractor", district: "Madhapur", contractor: { specialty: "Asphalt & Paving", teamSize: 24, rating: 4.6, completedJobs: 142 } },
-    { name: "Metro Road Works", email: "metro@demo.com", password: "demo1234", phone: "+91 97010 44556", role: "contractor", district: "Secunderabad", contractor: { specialty: "Road Reconstruction", teamSize: 18, rating: 4.3, completedJobs: 98 } },
-    { name: "City Paving Co", email: "paving@demo.com", password: "demo1234", phone: "+91 99899 77889", role: "contractor", district: "Ameerpet", contractor: { specialty: "Pothole Repair", teamSize: 12, rating: 4.8, completedJobs: 210 } },
-    { name: "Green Way Infra", email: "greenway@demo.com", password: "demo1234", phone: "+91 95500 22334", role: "contractor", district: "Kukatpally", contractor: { specialty: "Surface Treatment", teamSize: 9, rating: 4.1, completedJobs: 64 } },
+    { name: "Aarav Mehta", email: "admin@demo.com", password: "demo1234", phone: "+91 98480 11223", role: "admin", district: "Chennai", address: "Municipal HQ, Ripon Building, Chennai" },
+    { name: "Priya Sharma", email: "citizen@demo.com", password: "demo1234", phone: "+91 90000 11223", role: "citizen", district: "Dindigul", address: "Nagal Nagar, Dindigul", location: { lat: 10.377, lng: 77.992 } },
+    { name: "Ram Builders", email: "contractor@demo.com", password: "demo1234", phone: "+91 98490 55667", role: "contractor", district: "Coimbatore", contractor: { specialty: "Asphalt & Paving", teamSize: 24, rating: 4.6, completedJobs: 142 } },
+    { name: "Metro Road Works", email: "metro@demo.com", password: "demo1234", phone: "+91 97010 44556", role: "contractor", district: "Chennai", contractor: { specialty: "Road Reconstruction", teamSize: 18, rating: 4.3, completedJobs: 98 } },
+    { name: "City Paving Co", email: "paving@demo.com", password: "demo1234", phone: "+91 99899 77889", role: "contractor", district: "Vellore", contractor: { specialty: "Pothole Repair", teamSize: 12, rating: 4.8, completedJobs: 210 } },
+    { name: "Green Way Infra", email: "greenway@demo.com", password: "demo1234", phone: "+91 95500 22334", role: "contractor", district: "Tiruchirappalli", contractor: { specialty: "Surface Treatment", teamSize: 9, rating: 4.1, completedJobs: 64 } },
   ];
 
   const allRows: SeedUserInput[] = [...userRows];
   const extraCitizens: Array<{ name: string; district: string; lat: number; lng: number }> = [
-    { name: "Rohit Verma", district: "Banjara Hills", lat: 17.4239, lng: 78.4437 },
-    { name: "Sneha Reddy", district: "Hitec City", lat: 17.4435, lng: 78.3772 },
-    { name: "Arjun Nair", district: "Old City", lat: 17.3616, lng: 78.4747 },
-    { name: "Kavitha Rao", district: "Secunderabad", lat: 17.4399, lng: 78.4983 },
-    { name: "Vikram Singh", district: "Madhapur", lat: 17.4483, lng: 78.3915 },
-    { name: "Meera Iyer", district: "Ameerpet", lat: 17.4373, lng: 78.4464 },
-    { name: "Farhan Ali", district: "Kukatpally", lat: 17.4849, lng: 78.3995 },
-    { name: "Divya Menon", district: "Gachibowli", lat: 17.4401, lng: 78.3489 },
+    { name: "Rohit Verma", district: "Chennai", lat: 13.0827, lng: 80.2707 },
+    { name: "Sneha Reddy", district: "Madurai", lat: 9.9252, lng: 78.1198 },
+    { name: "Arjun Nair", district: "Coimbatore", lat: 11.0168, lng: 76.9558 },
+    { name: "Kavitha Rao", district: "Salem", lat: 11.6643, lng: 78.1613 },
+    { name: "Vikram Singh", district: "Thoothukudi", lat: 8.7642, lng: 78.1339 },
+    { name: "Meera Iyer", district: "Vellore", lat: 12.9165, lng: 79.1322 },
+    { name: "Farhan Ali", district: "Tiruchirappalli", lat: 10.7905, lng: 78.7047 },
+    { name: "Divya Menon", district: "Kanyakumari", lat: 8.0883, lng: 77.5327 },
   ];
   extraCitizens.forEach((c, i) => {
     allRows.push({
@@ -391,14 +453,22 @@ export const seedData = async () => {
   const statusPool: ComplaintStatus[] = ["submitted", "under_review", "verified", "assigned", "in_progress", "completed", "rejected"];
 
   const locations: Record<string, Array<{ lat: number; lng: number }>> = {
-    "Banjara Hills": [{ lat: 17.4239, lng: 78.4437 }, { lat: 17.4212, lng: 78.4477 }, { lat: 17.4268, lng: 78.4403 }],
-    "Hitec City": [{ lat: 17.4435, lng: 78.3772 }, { lat: 17.4482, lng: 78.3789 }, { lat: 17.4406, lng: 78.3822 }],
-    "Gachibowli": [{ lat: 17.4401, lng: 78.3489 }, { lat: 17.4366, lng: 78.3531 }, { lat: 17.4452, lng: 78.3411 }],
-    "Old City": [{ lat: 17.3616, lng: 78.4747 }, { lat: 17.3644, lng: 78.4682 }, { lat: 17.3572, lng: 78.4788 }],
-    "Secunderabad": [{ lat: 17.4399, lng: 78.4983 }, { lat: 17.4346, lng: 78.5012 }, { lat: 17.4455, lng: 78.4938 }],
-    "Madhapur": [{ lat: 17.4483, lng: 78.3915 }, { lat: 17.4459, lng: 78.3954 }, { lat: 17.4511, lng: 78.3862 }],
-    "Ameerpet": [{ lat: 17.4373, lng: 78.4464 }, { lat: 17.4357, lng: 78.4512 }, { lat: 17.4409, lng: 78.4429 }],
-    "Kukatpally": [{ lat: 17.4849, lng: 78.3995 }, { lat: 17.4881, lng: 78.4033 }, { lat: 17.4802, lng: 78.3942 }],
+    "Chennai": [{ lat: 13.0827, lng: 80.2707 }, { lat: 13.0875, lng: 80.2785 }, { lat: 13.0784, lng: 80.2629 }],
+    "Madurai": [{ lat: 9.9252, lng: 78.1198 }, { lat: 9.9306, lng: 78.1267 }, { lat: 9.919, lng: 78.1123 }],
+    "Coimbatore": [{ lat: 11.0168, lng: 76.9558 }, { lat: 11.0218, lng: 76.9626 }, { lat: 11.0108, lng: 76.9484 }],
+    "Salem": [{ lat: 11.6643, lng: 78.1613 }, { lat: 11.6695, lng: 78.1681 }, { lat: 11.6577, lng: 78.1539 }],
+    "Thoothukudi": [{ lat: 8.7642, lng: 78.1339 }, { lat: 8.7695, lng: 78.1407 }, { lat: 8.7582, lng: 78.1268 }],
+    "Vellore": [{ lat: 12.9165, lng: 79.1322 }, { lat: 12.9218, lng: 79.139, }, { lat: 12.9107, lng: 79.125 }],
+    "Tiruchirappalli": [{ lat: 10.7905, lng: 78.7047 }, { lat: 10.7957, lng: 78.7115 }, { lat: 10.785, lng: 78.6975 }],
+    "Kanyakumari": [{ lat: 8.0883, lng: 77.5327 }, { lat: 8.0933, lng: 77.5396 }, { lat: 8.0829, lng: 77.5254 }],
+    "Dindigul": [{ lat: 10.3624, lng: 77.9769 }, { lat: 10.3676, lng: 77.9837 }, { lat: 10.3566, lng: 77.9697 }],
+    "Erode": [{ lat: 11.341, lng: 77.7126 }, { lat: 11.3462, lng: 77.7194 }, { lat: 11.3353, lng: 77.7054 }],
+    "Thanjavur": [{ lat: 10.787, lng: 79.1391 }, { lat: 10.7922, lng: 79.1459 }, { lat: 10.7813, lng: 79.132 }],
+    "Nagapattinam": [{ lat: 10.7676, lng: 79.8421 }, { lat: 10.7728, lng: 79.8489 }, { lat: 10.7619, lng: 79.835 }],
+    "Cuddalore": [{ lat: 11.7445, lng: 79.7641 }, { lat: 11.7497, lng: 79.7709 }, { lat: 11.7388, lng: 79.757 }],
+    "Tiruvannamalai": [{ lat: 12.2253, lng: 79.067 }, { lat: 12.2305, lng: 79.0738 }, { lat: 12.2196, lng: 79.0598 }],
+    "Ramanathapuram": [{ lat: 9.3636, lng: 78.8354 }, { lat: 9.3688, lng: 78.8422 }, { lat: 9.3579, lng: 78.8282 }],
+    "Tirunelveli": [{ lat: 8.7139, lng: 77.7558 }, { lat: 8.7191, lng: 77.7626 }, { lat: 8.7082, lng: 77.7486 }],
   };
 
   const titles = [
@@ -517,15 +587,19 @@ export const seedData = async () => {
     const priority: Complaint["priority"] =
       severity === "critical" ? "critical" : severity === "high" ? "high" : severity === "medium" ? "medium" : "low";
 
+    const complaintLat = spot.lat + (i % 3) * 0.0012;
+    const complaintLng = spot.lng + (i % 2) * 0.0014;
     const complaint: Complaint = {
       id: generateId("cmp"),
       reportNumber,
       title: titles[i % titles.length],
       description: descTemplates[i % descTemplates.length],
       images: [],
-      location: { lat: spot.lat + (i % 3) * 0.0012, lng: spot.lng + (i % 2) * 0.0014 },
+      location: { lat: complaintLat, lng: complaintLng },
+      geopoint: { type: "Point", coordinates: [complaintLng, complaintLat] },
       address: `Near ${district} Main Road, ${district}`,
       district,
+      source: "seed",
       type,
       status,
       priority,
@@ -588,10 +662,13 @@ export const seedData = async () => {
   // A duplicate linked to an existing complaint
   const dupeSource = (await complaints.find({ status: "completed" }, { sort: { "timestamps.created": -1 }, limit: 1 }))[0];
   if (dupeSource) {
+    const dupLat = dupeSource.location.lat + 0.0004;
+    const dupLng = dupeSource.location.lng - 0.0002;
     const dup = complainDraft({
       title: "Same pothole near bus stop (duplicate)",
       description: "Reporting the same pothole reported last week.",
-      location: { lat: dupeSource.location.lat + 0.0004, lng: dupeSource.location.lng - 0.0002 },
+      location: { lat: dupLat, lng: dupLng },
+      geopoint: { type: "Point", coordinates: [dupLng, dupLat] },
       district: dupeSource.district,
       type: dupeSource.type,
       status: "rejected",

@@ -29,7 +29,9 @@ Requires Python 3.10+.
 
 ```bash
 # 1. Create a virtual environment
-py -m venv .venv
+py -m venv .venv //
+
+# .\.venv\Scripts\Activate.ps1
 .venv\Scripts\activate        # Windows
 # source .venv/bin/activate   # macOS / Linux
 

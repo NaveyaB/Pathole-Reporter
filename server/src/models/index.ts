@@ -36,8 +36,24 @@ export const complaintSchema = new mongoose.Schema(
     description: String,
     images: [{ url: String, publicId: String, width: Number, height: Number }],
     location: { lat: { type: Number, required: true }, lng: { type: Number, required: true } },
+    geopoint: {
+      type: { type: String, enum: ["Point"], default: "Point" },
+      coordinates: { type: [Number], required: true },
+    },
+    exactAddress: String,
     address: String,
+    formattedAddress: String,
+    placeId: { type: String, index: true },
+    locality: String,
+    city: String,
     district: String,
+    source: {
+      type: String,
+      enum: ["citizen", "ai", "imported", "seed"],
+      default: "citizen",
+      index: true,
+    },
+    reporterLocation: { lat: Number, lng: Number },
     type: { type: String, enum: ["pothole", "crack", "rutting", "depression", "surface_damage", "edge_damage", "sinkhole", "other"], index: true },
     status: { type: String, enum: ["submitted", "under_review", "verified", "assigned", "in_progress", "completed", "rejected"], default: "submitted", index: true },
     priority: { type: String, enum: ["low", "medium", "high", "critical"], default: "medium", index: true },
@@ -75,6 +91,8 @@ export const complaintSchema = new mongoose.Schema(
   },
   { id: false, versionKey: false, collection: "complaints" }
 );
+
+complaintSchema.index({ geopoint: "2dsphere" });
 
 export const notificationSchema = new mongoose.Schema(
   {

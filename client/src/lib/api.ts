@@ -4,9 +4,12 @@ export const API_URL = import.meta.env.VITE_API_URL ?? "/api";
 
 export const TOKEN_KEY = "spr_token";
 
+// NOTE: do not set a default "Content-Type" here. Axios serializes FormData
+// bodies to JSON when the instance default is application/json, which strips
+// the multipart body before it reaches multer. Axios sets application/json
+// automatically for plain-object payloads.
 export const api = axios.create({
   baseURL: API_URL,
-  headers: { "Content-Type": "application/json" },
   timeout: 30000,
 });
 

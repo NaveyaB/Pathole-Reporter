@@ -1,0 +1,97 @@
+[
+  {
+    "id": "usr_adm_001",
+    "name": "Dr. K. Senthilvel",
+    "email": "senthilvel@tn.gov.in",
+    "password": "$2a$10$vwH52koZwOEJvmS3BteMmezFheq/Kg.FFLVpqbT1jkuoNeQGEYTeq",
+    "phone": "+91 98400 12345",
+    "role": "super_admin",
+    "avatar": "",
+    "address": "Corporation of Chennai, Ripon Buildings, 3rd Floor",
+    "district": "Chennai Central",
+    "location": {
+      "lat": 13.0827,
+      "lng": 80.2707
+    },
+    "status": "active",
+    "verified": true,
+    "createdAt": "2025-02-26T00:00:00.000Z",
+    "updatedAt": "2025-08-20T00:00:00.000Z"
+  },
+  {
+    "id": "usr_adm_002",
+    "name": "M. Balachandar",
+    "email": "balachandar@tn.gov.in",
+    "password": "$2a$10$vwH52koZwOEJvmS3BteMmezFheq/Kg.FFLVpqbT1jkuoNeQGEYTeq",
+    "phone": "+91 94430 67890",
+    "role": "admin",
+    "avatar": "",
+    "address": "Chennai Corporation Zonal Office, T. Nagar",
+    "district": "T. Nagar",
+    "location": {
+      "lat": 13.0418,
+      "lng": 80.2341
+    },
+    "status": "active",
+    "verified": true,
+    "createdAt": "2025-02-26T00:00:00.000Z",
+    "updatedAt": "2025-08-20T00:00:00.000Z"
+  },
+  {
+    "id": "usr_adm_003",
+    "name": "S. Revathi",
+    "email": "revathi@coimbatore.gov.in",
+    "password": "$2a$10$vwH52koZwOEJvmS3BteMmezFheq/Kg.FFLVpqbT1jkuoNeQGEYTeq",
+    "phone": "+91 97890 11223",
+    "role": "admin",
+    "avatar": "",
+    "address": "Coimbatore City Municipal Corporation, Town Hall",
+    "district": "Gandhipuram",
+    "location": {
+      "lat": 11.0168,
+      "lng": 76.9558
+    },
+    "status": "active",
+    "verified": true,
+    "createdAt": "2025-02-26T00:00:00.000Z",
+    "updatedAt": "2025-08-20T00:00:00.000Z"
+  },
+  {
+    "id": "usr_adm_004",
+    "name": "P. Karthikeyan",
+    "email": "karthikeyan@madurai.gov.in",
+    "password": "$2a$10$vwH52koZwOEJvmS3BteMmezFheq/Kg.FFLVpqbT1jkuoNeQGEYTeq",
+    "phone": "+91 95000 44556",
+    "role": "admin",
+    "avatar": "",
+    "address": "Madurai Corporation Office, Alagar Koil Road",
+    "district": "Madurai Central",
+    "location": {
+      "lat": 9.9252,
+      "lng": 78.1198
+    },
+    "status": "active",
+    "verified": true,
+    "createdAt": "2025-02-26T00:00:00.000Z",
+    "updatedAt": "2025-08-20T00:00:00.000Z"
+  },
+  {
+    "id": "usr_adm_005",
+    "name": "V. Anandhakrishnan",
+    "email": "anandhak@trichy.gov.in",
+    "password": "$2a$10$vwH52koZwOEJvmS3BteMmezFheq/Kg.FFLVpqbT1jkuoNeQGEYTeq",
+    "phone": "+91 98765 78901",
+    "role": "admin",
+    "avatar": "",
+    "address": "Tiruchirappalli City Municipal Corporation, Medical College Road",
+    "district": "Tiruchirappalli",
+    "location": {
+      "lat": 10.7905,
+      "lng": 78.7047
+    },
+    "status": "active",
+    "verified": true,
+    "createdAt": "2025-02-26T00:00:00.000Z",
+    "updatedAt": "2025-08-20T00:00:00.000Z"
+  }
+]

@@ -23,9 +23,28 @@ export type RoadDamageType =
   | "sinkhole"
   | "other";
 
+export type ComplaintSource = "citizen" | "ai" | "imported" | "seed";
+
 export interface GeoPoint {
   lat: number;
   lng: number;
+}
+
+/** Server-approved pothole location. Stored before submission. */
+export interface ValidatedLocation {
+  valid: boolean;
+  inTamilNadu: boolean;
+  boundaryMethod: "geocode" | "polygon" | "bbox" | "unresolved";
+  lat: number;
+  lng: number;
+  formattedAddress?: string;
+  district?: string;
+  locality?: string;
+  city?: string;
+  state?: string;
+  placeId?: string;
+  reason?: string;
+  confirmed?: boolean;
 }
 
 export interface ImageAsset {
@@ -107,8 +126,16 @@ export interface Complaint {
   description?: string;
   images: ImageAsset[];
   location: GeoPoint;
+  /** Citizen-entered exact address of the damage (required). */
+  exactAddress?: string;
   address?: string;
+  formattedAddress?: string;
+  placeId?: string;
+  locality?: string;
+  city?: string;
   district?: string;
+  source?: ComplaintSource;
+  reporterLocation?: GeoPoint;
   type: RoadDamageType;
   status: ComplaintStatus;
   priority: Priority;

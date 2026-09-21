@@ -1,4 +1,4 @@
-import { useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import {
@@ -6,7 +6,6 @@ import {
   CheckCircle2,
   ImagePlus,
   Loader2,
-  LocateFixed,
   MapPin,
   Send,
   Sparkles,
@@ -18,14 +17,14 @@ import { Field } from "@/components/ui/form-field";
 import { Input, Textarea } from "@/components/ui/input";
 import { Select } from "@/components/ui/select";
 import { Alert } from "@/components/ui/alert";
-import { LocationPicker } from "@/components/maps/location-picker";
+import { GoogleLocationPicker } from "@/components/maps/google-location-picker";
 import { PageHeader } from "@/components/shared/page-header";
 import { SeverityBadge, TypeBadge } from "@/components/shared/badges";
 import { useToast } from "@/contexts/ToastContext";
 import { aiApi, complaintApi } from "@/services";
-import { DISTRICT_NAMES, TYPE_OPTIONS } from "@/constants";
+import { TYPE_OPTIONS } from "@/constants";
 import { titleCase } from "@/lib/utils";
-import type { GeoPoint, RoadDamageType } from "@/types";
+import type { GeoPoint, RoadDamageType, ValidatedLocation } from "@/types";
 
 const steps = [
   { id: 0, label: "Photos" },
@@ -56,14 +55,35 @@ export default function ReportComplaintPage() {
   const [analyzing, setAnalyzing] = useState(false);
   const [ai, setAi] = useState<AiResult | null>(null);
   const [aiSkipped, setAiSkipped] = useState(false);
-  const [location, setLocation] = useState<GeoPoint | null>(null);
-  const [district, setDistrict] = useState("");
-  const [address, setAddress] = useState("");
+  const [draftLocation, setDraftLocation] = useState<ValidatedLocation | null>(null);
+  const [confirmedLocation, setConfirmedLocation] = useState<ValidatedLocation | null>(null);
+  const [reporterLocation, setReporterLocation] = useState<GeoPoint | null>(null);
+  const [exactAddress, setExactAddress] = useState("");
+  const [exactAddressTouched, setExactAddressTouched] = useState(false);
+  const [exactAddressError, setExactAddressError] = useState<string | null>(null);
   const [title, setTitle] = useState("");
   const [description, setDescription] = useState("");
   const [type, setType] = useState<RoadDamageType>("pothole");
   const [errorMsg, setErrorMsg] = useState<string | null>(null);
   const [submitting, setSubmitting] = useState(false);
+
+  /**
+   * Reverse-geocoded address → optional suggestion for the exact-address box.
+   * It only pre-fills while the citizen hasn't typed anything (so a moving
+   * marker never overwrites a manually entered address).
+   */
+  useEffect(() => {
+    if (exactAddressTouched) return;
+    const suggestion = draftLocation?.formattedAddress ?? draftLocation?.locality ?? "";
+    if (!suggestion) return;
+    setExactAddress((prev) => (prev && prev.trim() ? prev : suggestion));
+  }, [draftLocation, exactAddressTouched]);
+
+  const updateExactAddress = (value: string) => {
+    setExactAddress(value);
+    setExactAddressTouched(true);
+    if (value.trim()) setExactAddressError(null);
+  };
 
   const addFiles = (list: FileList | null) => {
     if (!list) return;
@@ -127,8 +147,8 @@ export default function ReportComplaintPage() {
       setStep(0);
       return;
     }
-    if (!location) {
-      setErrorMsg("Please pin the location on the map.");
+    if (!confirmedLocation) {
+      setErrorMsg("Please confirm the location on the map.");
       setStep(2);
       return;
     }
@@ -138,15 +158,31 @@ export default function ReportComplaintPage() {
       return;
     }
 
+    const potholePoint = { lat: confirmedLocation.lat, lng: confirmedLocation.lng };
+
+    if (!exactAddress.trim()) {
+      setExactAddressError("Please enter the exact address where the pothole is located.");
+      setErrorMsg("Please enter the exact pothole address before submitting.");
+      setStep(2);
+      return;
+    }
+
     setSubmitting(true);
     try {
       const formData = new FormData();
       files.forEach((f) => formData.append("images", f));
       formData.append("title", title.trim());
       formData.append("description", description.trim());
-      formData.append("location", JSON.stringify(location));
-      formData.append("district", district);
-      formData.append("address", address.trim());
+      formData.append("location", JSON.stringify(potholePoint));
+      formData.append("exactAddress", exactAddress.trim());
+      formData.append("formattedAddress", confirmedLocation.formattedAddress ?? "");
+      formData.append("address", confirmedLocation.formattedAddress ?? "");
+      formData.append("district", confirmedLocation.district ?? "");
+      formData.append("locality", confirmedLocation.locality ?? "");
+      formData.append("city", confirmedLocation.city ?? "");
+      formData.append("placeId", confirmedLocation.placeId ?? "");
+      formData.append("confirmed", "true");
+      if (reporterLocation) formData.append("reporterLocation", JSON.stringify(reporterLocation));
       formData.append("type", type);
       const complaint = await complaintApi.create(formData);
       success("Complaint submitted", `${complaint.reportNumber} is now in review.`);
@@ -158,13 +194,22 @@ export default function ReportComplaintPage() {
     }
   };
 
+  const locationConfirmed = useMemo(
+    () =>
+      confirmedLocation != null &&
+      draftLocation != null &&
+      confirmedLocation.lat === draftLocation.lat &&
+      confirmedLocation.lng === draftLocation.lng,
+    [confirmedLocation, draftLocation]
+  );
+
   const canGoNext = useMemo(() => {
     if (step === 0) return files.length > 0;
     if (step === 1) return true;
-    if (step === 2) return location != null;
+    if (step === 2) return locationConfirmed && exactAddress.trim().length > 0;
     if (step === 3) return title.trim().length > 0;
     return true;
-  }, [step, files, location, title]);
+  }, [step, files, locationConfirmed, exactAddress, title]);
 
   const next = () => {
     setErrorMsg(null);
@@ -185,8 +230,13 @@ export default function ReportComplaintPage() {
       return;
     }
     if (step === 2) {
-      if (!location) {
-        setErrorMsg("Pin the exact spot on the map.");
+      if (!locationConfirmed) {
+        setErrorMsg("Search, pin, or drag the marker to the exact spot, then confirm the location.");
+        return;
+      }
+      if (!exactAddress.trim()) {
+        setExactAddressError("Please enter the exact address where the pothole is located.");
+        setErrorMsg("Please enter the exact pothole address before continuing.");
         return;
       }
       setStep(3);
@@ -391,39 +441,46 @@ export default function ReportComplaintPage() {
           {/* Step 2: location */}
           {step === 2 && (
             <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="space-y-5">
-              <div className="flex items-center justify-between">
-                <div>
-                  <p className="font-medium text-foreground">Pin the exact location</p>
-                  <p className="text-sm text-muted-foreground">Click on the map to drop a marker, or use your location.</p>
-                </div>
-                <Button
-                  variant="outline"
-                  size="sm"
-                  className="gap-1.5"
-                  onClick={() => {
-                    if (!navigator.geolocation) return;
-                    navigator.geolocation.getCurrentPosition((pos) =>
-                      setLocation({ lat: pos.coords.latitude, lng: pos.coords.longitude })
-                    );
-                  }}
-                >
-                  <LocateFixed className="h-4 w-4" /> Use my location
-                </Button>
+              <div>
+                <p className="font-medium text-foreground">Pin the exact pothole location</p>
+                <p className="mt-1 text-sm text-muted-foreground">
+                  Search any town in Tamil Nadu, tap the map, or use your GPS. The precise spot is reverse-geocoded
+                  and validated against the Tamil Nadu boundary before you continue — remote reporting is allowed
+                  anywhere in the state.
+                </p>
               </div>
-              <LocationPicker value={location ?? undefined} onChange={setLocation} height={340} />
-              <div className="grid gap-4 sm:grid-cols-2">
-                <Field label="District">
-                  <Select
-                    value={district}
-                    onChange={setDistrict}
-                    placeholder="Select district"
-                    options={DISTRICT_NAMES.map((d) => ({ value: d, label: d }))}
-                  />
-                </Field>
-                <Field label="Landmark / address">
-                  <Input value={address} onChange={(e) => setAddress(e.target.value)} placeholder="e.g. Near Hitec City metro station" />
-                </Field>
-              </div>
+
+              <GoogleLocationPicker
+                confirmedLocation={confirmedLocation}
+                initial={confirmedLocation ?? draftLocation}
+                onDraft={(loc) => {
+                  setDraftLocation(loc);
+                  if (
+                    confirmedLocation &&
+                    (confirmedLocation.lat !== loc.lat || confirmedLocation.lng !== loc.lng)
+                  ) {
+                    setConfirmedLocation(null);
+                  }
+                }}
+                onConfirm={setConfirmedLocation}
+                onConfirmReset={() => setConfirmedLocation(null)}
+                onReporterLocation={setReporterLocation}
+                exactAddress={exactAddress}
+                onExactAddressChange={updateExactAddress}
+                exactAddressError={exactAddressError}
+                height={360}
+              />
+
+              {locationConfirmed && confirmedLocation && (
+                <Alert variant="success" title="Location confirmed">
+                  <p className="text-sm">
+                    {confirmedLocation.formattedAddress ??
+                      `${confirmedLocation.lat.toFixed(5)}, ${confirmedLocation.lng.toFixed(5)}`}
+                    {confirmedLocation.district ? ` · ${confirmedLocation.district} district` : ""}
+                  </p>
+                </Alert>
+              )}
+
               <div className="flex justify-end">
                 <Button onClick={next} disabled={!canGoNext}>
                   Continue <span className="ml-1">→</span>
@@ -460,12 +517,15 @@ export default function ReportComplaintPage() {
               </Field>
               <div className="flex items-start gap-3 rounded-xl border border-primary/20 bg-primary/5 p-4">
                 <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
-                <div className="text-sm">
+                <div className="min-w-0 text-sm">
                   <p className="font-medium text-foreground">
-                    {district || "District not selected"} {address && `· ${address}`}
+                    {exactAddress.trim() ||
+                      (confirmedLocation?.formattedAddress ?? confirmedLocation?.locality ?? "Location not confirmed")}
                   </p>
                   <p className="mt-0.5 font-mono text-xs text-muted-foreground">
-                    {location ? `${location.lat.toFixed(5)}, ${location.lng.toFixed(5)}` : "No location"}
+                    {confirmedLocation
+                      ? `${confirmedLocation.lat.toFixed(5)}, ${confirmedLocation.lng.toFixed(5)}`
+                      : "No location"}
                   </p>
                 </div>
               </div>

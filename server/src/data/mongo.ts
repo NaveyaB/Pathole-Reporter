@@ -18,6 +18,7 @@ type ModelLike = {
   findByIdAndDelete: (id: string) => unknown;
   deleteOne: (filter: Record<string, unknown>) => unknown;
   countDocuments: (filter?: Record<string, unknown>) => unknown;
+  aggregate: (pipeline: Record<string, unknown>[]) => unknown;
   lean: () => unknown;
   sort: (sort: Record<string, 1 | -1>) => unknown;
   skip: (n: number) => unknown;
@@ -100,6 +101,33 @@ export class MongoCollection<T extends { id: string }> implements Collection<T> 
 
   async all(): Promise<T[]> {
     return this.find({});
+  }
+
+  async geoNear(opts: {
+    coordinates: [number, number];
+    maxDistance: number;
+    limit?: number;
+  }): Promise<Array<{ doc: T; distance: number }>> {
+    const pipeline = [
+      {
+        $geoNear: {
+          near: { type: "Point", coordinates: opts.coordinates },
+          distanceField: "sprGeoDistance",
+          maxDistance: opts.maxDistance,
+          spherical: true,
+          key: "geopoint",
+        },
+      },
+      ...(opts.limit ? [{ $limit: opts.limit }] : []),
+    ];
+    const raw = (await this.model.aggregate(pipeline)) as Array<Record<string, unknown>>;
+    return raw.map((d) => {
+      const { sprGeoDistance, ...rest } = d;
+      return {
+        doc: strip(rest as unknown) as unknown as T,
+        distance: Number(sprGeoDistance),
+      };
+    });
   }
 }
 

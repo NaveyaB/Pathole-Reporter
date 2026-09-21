@@ -4,10 +4,16 @@ import { ApiError } from "../utils/ApiError.js";
 import { sendSuccess } from "../utils/response.js";
 import { generateId, nowIso, daysBetween } from "../utils/datetime.js";
 import { getComplaintsStore, getUsersStore, nextReportNumber } from "../data/store.js";
-import { analyzeImage, findDuplicates } from "../services/aiService.js";
+import { analyzeImage } from "../services/aiService.js";
+import {
+  validateLocation,
+  findNearbyDuplicate,
+  validateReporterLocation,
+  parseCoordinate,
+} from "../services/geoService.js";
 import { notify } from "../services/notificationService.js";
 import { toPublicUrl } from "../middleware/upload.js";
-import type { Complaint, ComplaintStatus } from "../types/index.js";
+import type { Complaint, ComplaintStatus, GeoPoint } from "../types/index.js";
 import { getOverviewStats } from "../services/analyticsService.js";
 
 const VALID_STATUS: ComplaintStatus[] = ["submitted", "under_review", "verified", "assigned", "in_progress", "completed", "rejected"];
@@ -31,16 +37,50 @@ export const createComplaint = asyncHandler(async (req: Request, res: Response) 
   const userId = req.user?.id;
   if (!userId) throw ApiError.unauthorized();
 
-  const { title, description, location, district, address, type } = req.body as Record<string, unknown>;
+  const {
+    title,
+    description,
+    location,
+    district,
+    exactAddress,
+    address,
+    type,
+    placeId,
+    formattedAddress,
+    locality,
+    city,
+    confirmed,
+    reporterLocation,
+  } = req.body as Record<string, unknown>;
 
-  if (!title || !location) throw ApiError.badRequest("Title and location are required");
+  if (!title) throw ApiError.badRequest("Title is required");
+  if (!location) throw ApiError.badRequest("Location is required");
+
+  const parsedExactAddress =
+    typeof exactAddress === "string" ? exactAddress.trim() : "";
+  if (!parsedExactAddress) {
+    throw ApiError.badRequest("Exact pothole address is required.");
+  }
 
   const parsedLocation =
     typeof location === "string"
       ? JSON.parse(location)
-      : (location as { lat: number; lng: number });
-  if (!parsedLocation?.lat || !parsedLocation?.lng) {
-    throw ApiError.badRequest("Valid GPS location is required");
+      : (location as { lat: unknown; lng: unknown });
+
+  const lat = parseCoordinate(parsedLocation.lat, "lat");
+  const lng = parseCoordinate(parsedLocation.lng, "lng");
+
+  const validated = await validateLocation({
+    lat,
+    lng,
+    placeId: typeof placeId === "string" && placeId ? placeId : undefined,
+  });
+
+  if (!validated.valid) {
+    throw ApiError.badRequest(validated.reason ?? "The selected location is not valid or is outside Tamil Nadu.");
+  }
+  if (confirmed !== true && confirmed !== "true") {
+    throw ApiError.badRequest("Please confirm the selected location before reporting.");
   }
 
   const files = (req.files as Express.Multer.File[] | undefined) ?? [];
@@ -49,21 +89,32 @@ export const createComplaint = asyncHandler(async (req: Request, res: Response) 
   if (files.length === 0) throw ApiError.badRequest("At least one photo is required for AI analysis");
   const ai = await analyzeImage(files[0]);
 
-  const nearby = await getComplaintsStore().find({ district: district ? String(district) : undefined });
-  const dup = findDuplicates(parsedLocation, nearby.map((c) => ({ location: c.location, id: c.id })));
+  const duplicate = await findNearbyDuplicate(validated.lat, validated.lng, 25);
 
   const now = nowIso();
   const reportNumber = await nextReportNumber();
+
+  const reporterPoint: GeoPoint | undefined = validateReporterLocation(reporterLocation);
   const complaint: Complaint = {
     id: generateId("cmp"),
     reportNumber,
     title: String(title),
     description: description ? String(description) : undefined,
     images,
-    location: { lat: parsedLocation.lat, lng: parsedLocation.lng },
-    address: address ? String(address) : undefined,
-    district: district ? String(district) : undefined,
-    type: ai.analysis.detected,
+    location: { lat: validated.lat, lng: validated.lng },
+    geopoint: { type: "Point", coordinates: [validated.lng, validated.lat] },
+    exactAddress: parsedExactAddress,
+    address: validated.formattedAddress || (address ? String(address) : undefined),
+    formattedAddress: validated.formattedAddress || (formattedAddress ? String(formattedAddress) : undefined),
+    placeId: validated.placeId,
+    locality: validated.locality || (locality ? String(locality) : undefined),
+    city: validated.city || (city ? String(city) : undefined),
+    district: validated.district || (district ? String(district) : undefined),
+    source: "citizen",
+    reporterLocation: reporterPoint,
+    type: type && ["pothole", "crack", "rutting", "depression", "surface_damage", "edge_damage", "sinkhole", "other"].includes(String(type))
+      ? (String(type) as Complaint["type"])
+      : ai.analysis.detected,
     status: "submitted",
     priority:
       ai.analysis.severity === "critical"
@@ -75,7 +126,7 @@ export const createComplaint = asyncHandler(async (req: Request, res: Response) 
         : "low",
     reporter: userId,
     aiAnalysis: ai.analysis,
-    duplicateOf: dup.score > 82 ? dup.matchId : undefined,
+    duplicateOf: duplicate ? duplicate.complaintId : undefined,
     timestamps: { created: now, updated: now },
   };
 
@@ -107,7 +158,14 @@ export const createComplaint = asyncHandler(async (req: Request, res: Response) 
     });
   }
 
-  sendSuccess(res, toDto(complaint), "Complaint submitted successfully", 201);
+  sendSuccess(
+    res,
+    { ...toDto(complaint), duplicate },
+    duplicate
+      ? `Complaint submitted. Note: a report ${duplicate.reportNumber} already exists ${duplicate.distanceMeters} m away.`
+      : "Complaint submitted successfully",
+    201
+  );
 });
 
 /* ---------------- List complaints ---------------- */
@@ -132,7 +190,11 @@ export const listComplaints = asyncHandler(async (req: Request, res: Response) =
   if (search) {
     const regex = new RegExp(String(search), "i");
     result = result.filter(
-      (c) => regex.test(c.title) || regex.test(c.reportNumber) || regex.test(c.address ?? "")
+      (c) =>
+        regex.test(c.title) ||
+        regex.test(c.reportNumber) ||
+        regex.test(c.exactAddress ?? "") ||
+        regex.test(c.address ?? "")
     );
   }
 

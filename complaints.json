@@ -1,0 +1,2620 @@
+[
+  {
+    "id": "cmp_001",
+    "reportNumber": "TNR-2001",
+    "title": "Deep pothole near T. Nagar bus depot",
+    "description": "A large pothole has formed right in front of the T. Nagar bus depot. Multiple buses and two-wheelers swerve daily to avoid it. Very dangerous during evening rush hour.",
+    "images": [],
+    "location": {
+      "lat": 13.042,
+      "lng": 80.2345
+    },
+    "address": "Near T. Nagar Bus Depot, South Mada Street, T. Nagar",
+    "district": "T. Nagar",
+    "type": "pothole",
+    "status": "submitted",
+    "priority": "high",
+    "reporter": "usr_cit_001",
+    "aiAnalysis": {
+      "detected": "pothole",
+      "severity": "high",
+      "confidence": 95,
+      "recommendation": "Immediate repair required. Potential risk to vehicles and two-wheelers.",
+      "isRoadImage": true,
+      "tags": [
+        "pothole",
+        "high-risk",
+        "wear-and-tear"
+      ],
+      "model": "yolov8s-rdd2022-v1",
+      "analyzedAt": "2025-05-28T00:00:00.000Z"
+    },
+    "timestamps": {
+      "created": "2025-05-27T00:00:00.000Z",
+      "updated": "2025-05-28T00:00:00.000Z"
+    }
+  },
+  {
+    "id": "cmp_002",
+    "reportNumber": "TNR-2002",
+    "title": "Cracked asphalt on Adyar Bridge Road",
+    "description": "Longitudinal cracks running along the center of Adyar Bridge Road. Rainwater seeps through and worsens the damage during monsoon. Multiple vehicles have reported tire damage.",
+    "images": [],
+    "location": {
+      "lat": 13.007,
+      "lng": 80.257
+    },
+    "address": "Adyar Bridge Road, near Indian Bank, Adyar",
+    "district": "Adyar",
+    "type": "crack",
+    "status": "submitted",
+    "priority": "medium",
+    "reporter": "usr_cit_002",
+    "aiAnalysis": {
+      "detected": "crack",
+      "severity": "medium",
+      "confidence": 91,
+      "recommendation": "Plan repair within the next 2 weeks. Monitor drainage to prevent expansion.",
+      "isRoadImage": true,
+      "tags": [
+        "crack",
+        "maintenance",
+        "wear-and-tear"
+      ],
+      "model": "yolov8s-rdd2022-v1",
+      "analyzedAt": "2025-05-29T00:00:00.000Z"
+    },
+    "timestamps": {
+      "created": "2025-05-29T00:00:00.000Z",
+      "updated": "2025-05-29T00:00:00.000Z"
+    }
+  },
+  {
+    "id": "cmp_003",
+    "reportNumber": "TNR-2003",
+    "title": "Pothole cluster on Velachery Main Road",
+    "description": "Three interconnected potholes near the Velachery junction. During heavy rain, they fill with water and become invisible to drivers. A motorcyclist fell here last week.",
+    "images": [],
+    "location": {
+      "lat": 12.982,
+      "lng": 80.2185
+    },
+    "address": "Velachery Main Road, near MRTS Station",
+    "district": "Velachery",
+    "type": "pothole",
+    "status": "submitted",
+    "priority": "critical",
+    "reporter": "usr_cit_003",
+    "aiAnalysis": {
+      "detected": "pothole",
+      "severity": "critical",
+      "confidence": 98,
+      "recommendation": "Urgent intervention required. Isolate area with signage and repair within 24 hours.",
+      "isRoadImage": true,
+      "tags": [
+        "pothole",
+        "hazard",
+        "water-damage"
+      ],
+      "model": "yolov8s-rdd2022-v1",
+      "analyzedAt": "2025-05-30T00:00:00.000Z"
+    },
+    "timestamps": {
+      "created": "2025-05-30T00:00:00.000Z",
+      "updated": "2025-05-30T00:00:00.000Z"
+    }
+  },
+  {
+    "id": "cmp_004",
+    "reportNumber": "TNR-2004",
+    "title": "Surface peeling on Anna Nagar 2nd Avenue",
+    "description": "The top layer of asphalt is peeling off in large patches on 2nd Avenue. Exposed aggregate underneath causes rough rides for two-wheelers.",
+    "images": [],
+    "location": {
+      "lat": 13.0855,
+      "lng": 80.211
+    },
+    "address": "2nd Avenue, Anna Nagar",
+    "district": "Anna Nagar",
+    "type": "surface_damage",
+    "status": "submitted",
+    "priority": "medium",
+    "reporter": "usr_cit_004",
+    "aiAnalysis": {
+      "detected": "surface_damage",
+      "severity": "medium",
+      "confidence": 94,
+      "recommendation": "Plan repair within the next 2 weeks. Monitor drainage to prevent expansion.",
+      "isRoadImage": true,
+      "tags": [
+        "surface damage",
+        "maintenance",
+        "wear-and-tear"
+      ],
+      "model": "yolov8s-rdd2022-v1",
+      "analyzedAt": "2025-05-31T00:00:00.000Z"
+    },
+    "timestamps": {
+      "created": "2025-05-31T00:00:00.000Z",
+      "updated": "2025-06-01T00:00:00.000Z"
+    }
+  },
+  {
+    "id": "cmp_005",
+    "reportNumber": "TNR-2005",
+    "title": "Large sinkhole near Gandhipuram signal",
+    "description": "A sinkhole has opened up near the Gandhipuram traffic signal. It is approximately 2 feet wide and deep. Vehicles are unable to use the left lane.",
+    "images": [],
+    "location": {
+      "lat": 11.0175,
+      "lng": 76.9565
+    },
+    "address": "Gandhipuram 4th Signal, Coimbatore",
+    "district": "Gandhipuram",
+    "type": "sinkhole",
+    "status": "submitted",
+    "priority": "critical",
+    "reporter": "usr_cit_021",
+    "aiAnalysis": {
+      "detected": "sinkhole",
+      "severity": "critical",
+      "confidence": 90,
+      "recommendation": "Urgent intervention required. Isolate area with signage and repair within 24 hours.",
+      "isRoadImage": true,
+      "tags": [
+        "sinkhole",
+        "hazard",
+        "wear-and-tear"
+      ],
+      "model": "yolov8s-rdd2022-v1",
+      "analyzedAt": "2025-06-01T00:00:00.000Z"
+    },
+    "timestamps": {
+      "created": "2025-06-01T00:00:00.000Z",
+      "updated": "2025-06-02T00:00:00.000Z"
+    }
+  },
+  {
+    "id": "cmp_006",
+    "reportNumber": "TNR-2006",
+    "title": "Deep rutting on KK Nagar 6th Street",
+    "description": "Severe rutting along the wheel path on KK Nagar 6th Street. Buses leaving deep grooves in the road surface. Bikes struggle to maintain balance.",
+    "images": [],
+    "location": {
+      "lat": 9.9465,
+      "lng": 78.1225
+    },
+    "address": "6th Street, KK Nagar, Madurai",
+    "district": "KK Nagar",
+    "type": "rutting",
+    "status": "submitted",
+    "priority": "high",
+    "reporter": "usr_cit_025",
+    "aiAnalysis": {
+      "detected": "rutting",
+      "severity": "high",
+      "confidence": 97,
+      "recommendation": "Immediate repair required. Potential risk to vehicles and two-wheelers.",
+      "isRoadImage": true,
+      "tags": [
+        "rutting",
+        "high-risk",
+        "water-damage"
+      ],
+      "model": "yolov8s-rdd2022-v1",
+      "analyzedAt": "2025-06-03T00:00:00.000Z"
+    },
+    "timestamps": {
+      "created": "2025-06-02T00:00:00.000Z",
+      "updated": "2025-06-03T00:00:00.000Z"
+    }
+  },
+  {
+    "id": "cmp_007",
+    "reportNumber": "TNR-2007",
+    "title": "Edge damage on Palayamkottai Road divider",
+    "description": "Road edge has broken away near the divider on Palayamkottai Road. Exposed rebar visible. Pedestrians and two-wheelers at risk.",
+    "images": [],
+    "location": {
+      "lat": 8.7145,
+      "lng": 77.7575
+    },
+    "address": "Palayamkottai Road, near Controller Office",
+    "district": "Tirunelveli",
+    "type": "edge_damage",
+    "status": "submitted",
+    "priority": "high",
+    "reporter": "usr_cit_039",
+    "aiAnalysis": {
+      "detected": "edge_damage",
+      "severity": "high",
+      "confidence": 93,
+      "recommendation": "Immediate repair required. Potential risk to vehicles and two-wheelers.",
+      "isRoadImage": true,
+      "tags": [
+        "edge damage",
+        "high-risk",
+        "wear-and-tear"
+      ],
+      "model": "yolov8s-rdd2022-v1",
+      "analyzedAt": "2025-06-04T00:00:00.000Z"
+    },
+    "timestamps": {
+      "created": "2025-06-04T00:00:00.000Z",
+      "updated": "2025-06-04T00:00:00.000Z"
+    }
+  },
+  {
+    "id": "cmp_008",
+    "reportNumber": "TNR-2008",
+    "title": "Depression in road near Sripuram junction",
+    "description": "A noticeable depression has formed near the Sripuram junction. Water pools here after rain creating a hidden hazard for vehicles approaching from the temple road.",
+    "images": [],
+    "location": {
+      "lat": 12.881,
+      "lng": 79.1355
+    },
+    "address": "Sripuram Junction, near Golden Temple Road, Vellore",
+    "district": "Sripuram",
+    "type": "depression",
+    "status": "submitted",
+    "priority": "medium",
+    "reporter": "usr_cit_038",
+    "aiAnalysis": {
+      "detected": "depression",
+      "severity": "medium",
+      "confidence": 89,
+      "recommendation": "Plan repair within the next 2 weeks. Monitor drainage to prevent expansion.",
+      "isRoadImage": true,
+      "tags": [
+        "depression",
+        "maintenance",
+        "wear-and-tear"
+      ],
+      "model": "yolov8s-rdd2022-v1",
+      "analyzedAt": "2025-06-05T00:00:00.000Z"
+    },
+    "timestamps": {
+      "created": "2025-06-05T00:00:00.000Z",
+      "updated": "2025-06-05T00:00:00.000Z"
+    }
+  },
+  {
+    "id": "cmp_009",
+    "reportNumber": "TNR-2009",
+    "title": "Pothole at Brough Road junction, Trichy",
+    "description": "A deep pothole has appeared right at the Brough Road junction. Vehicles braking at the signal hit this pothole regularly causing underbody damage.",
+    "images": [],
+    "location": {
+      "lat": 10.791,
+      "lng": 78.7055
+    },
+    "address": "Brough Road Junction, Tiruchirappalli",
+    "district": "Tiruchirappalli",
+    "type": "pothole",
+    "status": "under_review",
+    "priority": "high",
+    "reporter": "usr_cit_032",
+    "aiAnalysis": {
+      "detected": "pothole",
+      "severity": "high",
+      "confidence": 96,
+      "recommendation": "Immediate repair required. Potential risk to vehicles and two-wheelers.",
+      "isRoadImage": true,
+      "tags": [
+        "pothole",
+        "high-risk",
+        "water-damage"
+      ],
+      "model": "yolov8s-rdd2022-v1",
+      "analyzedAt": "2025-06-06T00:00:00.000Z"
+    },
+    "timestamps": {
+      "created": "2025-06-06T00:00:00.000Z",
+      "updated": "2025-06-07T00:00:00.000Z"
+    }
+  },
+  {
+    "id": "cmp_010",
+    "reportNumber": "TNR-2010",
+    "title": "Crack lines across Attur Road, Salem",
+    "description": "Multiple transverse cracks have appeared across the full width of Attur Road near the bus stand. The cracks have widened over the past month.",
+    "images": [],
+    "location": {
+      "lat": 11.665,
+      "lng": 78.147
+    },
+    "address": "Attur Road, near Salem Bus Stand",
+    "district": "Salem",
+    "type": "crack",
+    "status": "under_review",
+    "priority": "medium",
+    "reporter": "usr_cit_029",
+    "aiAnalysis": {
+      "detected": "crack",
+      "severity": "medium",
+      "confidence": 92,
+      "recommendation": "Plan repair within the next 2 weeks. Monitor drainage to prevent expansion.",
+      "isRoadImage": true,
+      "tags": [
+        "crack",
+        "maintenance",
+        "wear-and-tear"
+      ],
+      "model": "yolov8s-rdd2022-v1",
+      "analyzedAt": "2025-06-07T00:00:00.000Z"
+    },
+    "timestamps": {
+      "created": "2025-06-07T00:00:00.000Z",
+      "updated": "2025-06-08T00:00:00.000Z"
+    }
+  },
+  {
+    "id": "cmp_011",
+    "reportNumber": "TNR-2011",
+    "title": "Pothole after Perundurai flyover, Erode",
+    "description": "Immediately after the Perundurai flyover there is a deep pothole that catches vehicles coming down at speed. Several complaints from auto drivers.",
+    "images": [],
+    "location": {
+      "lat": 11.342,
+      "lng": 77.718
+    },
+    "address": "Perundurai Road, after flyover, Erode",
+    "district": "Erode",
+    "type": "pothole",
+    "status": "under_review",
+    "priority": "high",
+    "reporter": "usr_cit_035",
+    "aiAnalysis": {
+      "detected": "pothole",
+      "severity": "high",
+      "confidence": 88,
+      "recommendation": "Immediate repair required. Potential risk to vehicles and two-wheelers.",
+      "isRoadImage": true,
+      "tags": [
+        "pothole",
+        "high-risk",
+        "wear-and-tear"
+      ],
+      "model": "yolov8s-rdd2022-v1",
+      "analyzedAt": "2025-06-09T00:00:00.000Z"
+    },
+    "timestamps": {
+      "created": "2025-06-08T00:00:00.000Z",
+      "updated": "2025-06-09T00:00:00.000Z"
+    }
+  },
+  {
+    "id": "cmp_012",
+    "reportNumber": "TNR-2012",
+    "title": "Broken surface near Katpadi Road junction",
+    "description": "The road surface near the Katpadi Road junction has broken apart into loose chunks. Heavy vehicles passing through have worsened the condition.",
+    "images": [],
+    "location": {
+      "lat": 12.917,
+      "lng": 79.133
+    },
+    "address": "Katpadi Road Junction, Vellore",
+    "district": "Vellore",
+    "type": "surface_damage",
+    "status": "under_review",
+    "priority": "medium",
+    "reporter": "usr_cit_037",
+    "aiAnalysis": {
+      "detected": "surface_damage",
+      "severity": "medium",
+      "confidence": 95,
+      "recommendation": "Plan repair within the next 2 weeks. Monitor drainage to prevent expansion.",
+      "isRoadImage": true,
+      "tags": [
+        "surface damage",
+        "maintenance",
+        "water-damage"
+      ],
+      "model": "yolov8s-rdd2022-v1",
+      "analyzedAt": "2025-06-10T00:00:00.000Z"
+    },
+    "timestamps": {
+      "created": "2025-06-10T00:00:00.000Z",
+      "updated": "2025-06-10T00:00:00.000Z"
+    }
+  },
+  {
+    "id": "cmp_013",
+    "reportNumber": "TNR-2013",
+    "title": "Crack and water ingress on Peelamedu flyover ramp",
+    "description": "A diagonal crack has formed on the Peelamedu flyover ramp. Rainwater is seeping through and weakening the underlying layer. Structural inspection recommended.",
+    "images": [],
+    "location": {
+      "lat": 11.031,
+      "lng": 76.991
+    },
+    "address": "Peelamedu Flyover Ramp, Avinashi Road, Coimbatore",
+    "district": "Peelamedu",
+    "type": "crack",
+    "status": "under_review",
+    "priority": "critical",
+    "reporter": "usr_cit_022",
+    "aiAnalysis": {
+      "detected": "crack",
+      "severity": "critical",
+      "confidence": 91,
+      "recommendation": "Urgent intervention required. Isolate area with signage and repair within 24 hours.",
+      "isRoadImage": true,
+      "tags": [
+        "crack",
+        "hazard",
+        "wear-and-tear"
+      ],
+      "model": "yolov8s-rdd2022-v1",
+      "analyzedAt": "2025-06-11T00:00:00.000Z"
+    },
+    "timestamps": {
+      "created": "2025-06-11T00:00:00.000Z",
+      "updated": "2025-06-11T00:00:00.000Z"
+    }
+  },
+  {
+    "id": "cmp_014",
+    "reportNumber": "TNR-2014",
+    "title": "Depression near Melapalayam canal bridge",
+    "description": "A significant depression has formed near the canal bridge in Melapalayam. Vehicles dip sharply when crossing this section.",
+    "images": [],
+    "location": {
+      "lat": 8.721,
+      "lng": 77.749
+    },
+    "address": "Melapalayam Canal Bridge, Tirunelveli",
+    "district": "Melapalayam",
+    "type": "depression",
+    "status": "under_review",
+    "priority": "high",
+    "reporter": "usr_cit_040",
+    "aiAnalysis": {
+      "detected": "depression",
+      "severity": "high",
+      "confidence": 98,
+      "recommendation": "Immediate repair required. Potential risk to vehicles and two-wheelers.",
+      "isRoadImage": true,
+      "tags": [
+        "depression",
+        "high-risk",
+        "wear-and-tear"
+      ],
+      "model": "yolov8s-rdd2022-v1",
+      "analyzedAt": "2025-06-12T00:00:00.000Z"
+    },
+    "timestamps": {
+      "created": "2025-06-12T00:00:00.000Z",
+      "updated": "2025-06-13T00:00:00.000Z"
+    }
+  },
+  {
+    "id": "cmp_015",
+    "reportNumber": "TNR-2015",
+    "title": "Pothole at Thillai Nagar 10th Street crossing",
+    "description": "A pothole right at the street crossing in Thillai Nagar. School buses pass through this route daily and children are at risk.",
+    "images": [],
+    "location": {
+      "lat": 10.806,
+      "lng": 78.686
+    },
+    "address": "10th Street Crossing, Thillai Nagar, Trichy",
+    "district": "Thillai Nagar",
+    "type": "pothole",
+    "status": "verified",
+    "priority": "high",
+    "reporter": "usr_cit_033",
+    "aiAnalysis": {
+      "detected": "pothole",
+      "severity": "high",
+      "confidence": 94,
+      "recommendation": "Immediate repair required. Potential risk to vehicles and two-wheelers.",
+      "isRoadImage": true,
+      "tags": [
+        "pothole",
+        "high-risk",
+        "water-damage"
+      ],
+      "model": "yolov8s-rdd2022-v1",
+      "analyzedAt": "2025-06-13T00:00:00.000Z"
+    },
+    "timestamps": {
+      "created": "2025-06-13T00:00:00.000Z",
+      "updated": "2025-06-14T00:00:00.000Z"
+    },
+    "verifiedBy": "usr_adm_001",
+    "verifiedAt": "2025-06-14T00:00:00.000Z"
+  },
+  {
+    "id": "cmp_016",
+    "reportNumber": "TNR-2016",
+    "title": "Rutting on RS Puram 4th Street",
+    "description": "Heavy rutting along the center of RS Puram 4th Street. The wheel path has become a trench nearly 3 inches deep. Cars scrape their underbody.",
+    "images": [],
+    "location": {
+      "lat": 11.006,
+      "lng": 76.954
+    },
+    "address": "4th Street, RS Puram, Coimbatore",
+    "district": "RS Puram",
+    "type": "rutting",
+    "status": "verified",
+    "priority": "high",
+    "reporter": "usr_cit_023",
+    "aiAnalysis": {
+      "detected": "rutting",
+      "severity": "high",
+      "confidence": 90,
+      "recommendation": "Immediate repair required. Potential risk to vehicles and two-wheelers.",
+      "isRoadImage": true,
+      "tags": [
+        "rutting",
+        "high-risk",
+        "wear-and-tear"
+      ],
+      "model": "yolov8s-rdd2022-v1",
+      "analyzedAt": "2025-06-15T00:00:00.000Z"
+    },
+    "timestamps": {
+      "created": "2025-06-14T00:00:00.000Z",
+      "updated": "2025-06-15T00:00:00.000Z"
+    },
+    "verifiedBy": "usr_adm_001",
+    "verifiedAt": "2025-06-15T00:00:00.000Z"
+  },
+  {
+    "id": "cmp_017",
+    "reportNumber": "TNR-2017",
+    "title": "Pothole near Alagar Koil Road junction, Madurai",
+    "description": "A deep pothole near the Alagar Koil Road junction has been growing for the past month. Two auto-rickshaws reported tire punctures here.",
+    "images": [],
+    "location": {
+      "lat": 9.929,
+      "lng": 78.119
+    },
+    "address": "Alagar Koil Road Junction, Madurai",
+    "district": "Madurai Central",
+    "type": "pothole",
+    "status": "verified",
+    "priority": "high",
+    "reporter": "usr_cit_026",
+    "aiAnalysis": {
+      "detected": "pothole",
+      "severity": "high",
+      "confidence": 97,
+      "recommendation": "Immediate repair required. Potential risk to vehicles and two-wheelers.",
+      "isRoadImage": true,
+      "tags": [
+        "pothole",
+        "high-risk",
+        "wear-and-tear"
+      ],
+      "model": "yolov8s-rdd2022-v1",
+      "analyzedAt": "2025-06-16T00:00:00.000Z"
+    },
+    "timestamps": {
+      "created": "2025-06-16T00:00:00.000Z",
+      "updated": "2025-06-16T00:00:00.000Z"
+    },
+    "verifiedBy": "usr_adm_001",
+    "verifiedAt": "2025-06-16T00:00:00.000Z"
+  },
+  {
+    "id": "cmp_018",
+    "reportNumber": "TNR-2018",
+    "title": "Surface damage on Fairlands Main Road",
+    "description": "Large sections of the road surface have disintegrated on Fairlands Main Road. Exposed gravel and loose stones make this stretch hazardous.",
+    "images": [],
+    "location": {
+      "lat": 11.656,
+      "lng": 78.151
+    },
+    "address": "Fairlands Main Road, Salem",
+    "district": "Fairlands",
+    "type": "surface_damage",
+    "status": "verified",
+    "priority": "medium",
+    "reporter": "usr_cit_030",
+    "aiAnalysis": {
+      "detected": "surface_damage",
+      "severity": "medium",
+      "confidence": 93,
+      "recommendation": "Plan repair within the next 2 weeks. Monitor drainage to prevent expansion.",
+      "isRoadImage": true,
+      "tags": [
+        "surface damage",
+        "maintenance",
+        "water-damage"
+      ],
+      "model": "yolov8s-rdd2022-v1",
+      "analyzedAt": "2025-06-17T00:00:00.000Z"
+    },
+    "timestamps": {
+      "created": "2025-06-17T00:00:00.000Z",
+      "updated": "2025-06-17T00:00:00.000Z"
+    },
+    "verifiedBy": "usr_adm_001",
+    "verifiedAt": "2025-06-17T00:00:00.000Z"
+  },
+  {
+    "id": "cmp_019",
+    "reportNumber": "TNR-2019",
+    "title": "Pothole on Nungambakkam High Road",
+    "description": "A wide pothole near the Nungambakkam High Road intersection. Traffic builds up as vehicles slow down to navigate around it during peak hours.",
+    "images": [],
+    "location": {
+      "lat": 13.061,
+      "lng": 80.246
+    },
+    "address": "Nungambakkam High Road, near Gemini Flyover",
+    "district": "Chennai Central",
+    "type": "pothole",
+    "status": "verified",
+    "priority": "medium",
+    "reporter": "usr_cit_047",
+    "aiAnalysis": {
+      "detected": "pothole",
+      "severity": "medium",
+      "confidence": 89,
+      "recommendation": "Plan repair within the next 2 weeks. Monitor drainage to prevent expansion.",
+      "isRoadImage": true,
+      "tags": [
+        "pothole",
+        "maintenance",
+        "wear-and-tear"
+      ],
+      "model": "yolov8s-rdd2022-v1",
+      "analyzedAt": "2025-06-18T00:00:00.000Z"
+    },
+    "timestamps": {
+      "created": "2025-06-18T00:00:00.000Z",
+      "updated": "2025-06-19T00:00:00.000Z"
+    },
+    "verifiedBy": "usr_adm_001",
+    "verifiedAt": "2025-06-19T00:00:00.000Z"
+  },
+  {
+    "id": "cmp_020",
+    "reportNumber": "TNR-2020",
+    "title": "Edge breakage near Kamakshi Temple Road",
+    "description": "The road edge along Kamakshi Temple Road has collapsed in two places. Pedestrians are forced to walk on the carriageway.",
+    "images": [],
+    "location": {
+      "lat": 12.839,
+      "lng": 79.701
+    },
+    "address": "Kamakshi Temple Road, Kanchipuram",
+    "district": "Kanchipuram",
+    "type": "edge_damage",
+    "status": "verified",
+    "priority": "medium",
+    "reporter": "usr_cit_042",
+    "aiAnalysis": {
+      "detected": "edge_damage",
+      "severity": "medium",
+      "confidence": 96,
+      "recommendation": "Plan repair within the next 2 weeks. Monitor drainage to prevent expansion.",
+      "isRoadImage": true,
+      "tags": [
+        "edge damage",
+        "maintenance",
+        "wear-and-tear"
+      ],
+      "model": "yolov8s-rdd2022-v1",
+      "analyzedAt": "2025-06-19T00:00:00.000Z"
+    },
+    "timestamps": {
+      "created": "2025-06-19T00:00:00.000Z",
+      "updated": "2025-06-20T00:00:00.000Z"
+    },
+    "verifiedBy": "usr_adm_001",
+    "verifiedAt": "2025-06-20T00:00:00.000Z"
+  },
+  {
+    "id": "cmp_021",
+    "reportNumber": "TNR-2021",
+    "title": "Pothole at Mission Street crossing, Pondicherry",
+    "description": "A deep pothole right at the Mission Street crossing. Tourists and locals navigate this area daily. Several near-misses reported.",
+    "images": [],
+    "location": {
+      "lat": 11.942,
+      "lng": 79.809
+    },
+    "address": "Mission Street Crossing, Pondicherry",
+    "district": "Pondicherry",
+    "type": "pothole",
+    "status": "assigned",
+    "priority": "high",
+    "reporter": "usr_cit_043",
+    "aiAnalysis": {
+      "detected": "pothole",
+      "severity": "high",
+      "confidence": 92,
+      "recommendation": "Immediate repair required. Potential risk to vehicles and two-wheelers.",
+      "isRoadImage": true,
+      "tags": [
+        "pothole",
+        "high-risk",
+        "water-damage"
+      ],
+      "model": "yolov8s-rdd2022-v1",
+      "analyzedAt": "2025-06-21T00:00:00.000Z"
+    },
+    "timestamps": {
+      "created": "2025-06-20T00:00:00.000Z",
+      "updated": "2025-06-21T00:00:00.000Z"
+    },
+    "verifiedBy": "usr_adm_001",
+    "verifiedAt": "2025-06-21T00:00:00.000Z",
+    "assignedContractor": "usr_ctr_010",
+    "assignedAt": "2025-06-21T00:00:00.000Z"
+  },
+  {
+    "id": "cmp_022",
+    "reportNumber": "TNR-2022",
+    "title": "Crack pattern on Vepery High Road",
+    "description": "Alligator cracking pattern has developed across the full width of Vepery High Road near the hospital. Surface is crumbling and loose aggregate scattered.",
+    "images": [],
+    "location": {
+      "lat": 13.071,
+      "lng": 80.251
+    },
+    "address": "Vepery High Road, near Vepery Hospital",
+    "district": "Chennai Central",
+    "type": "crack",
+    "status": "assigned",
+    "priority": "medium",
+    "reporter": "usr_cit_048",
+    "aiAnalysis": {
+      "detected": "crack",
+      "severity": "medium",
+      "confidence": 88,
+      "recommendation": "Plan repair within the next 2 weeks. Monitor drainage to prevent expansion.",
+      "isRoadImage": true,
+      "tags": [
+        "crack",
+        "maintenance",
+        "wear-and-tear"
+      ],
+      "model": "yolov8s-rdd2022-v1",
+      "analyzedAt": "2025-06-22T00:00:00.000Z"
+    },
+    "timestamps": {
+      "created": "2025-06-22T00:00:00.000Z",
+      "updated": "2025-06-23T00:00:00.000Z"
+    },
+    "verifiedBy": "usr_adm_001",
+    "verifiedAt": "2025-06-22T00:00:00.000Z",
+    "assignedContractor": "usr_ctr_001",
+    "assignedAt": "2025-06-23T00:00:00.000Z"
+  },
+  {
+    "id": "cmp_023",
+    "reportNumber": "TNR-2023",
+    "title": "Deep pothole near Sholinganallur IT corridor",
+    "description": "A dangerous pothole near the Sholinganallur IT corridor on the service road. IT employees commuting on two-wheelers face high risk.",
+    "images": [],
+    "location": {
+      "lat": 12.902,
+      "lng": 80.227
+    },
+    "address": "Sholinganallur IT Expressway, Service Road",
+    "district": "Sholinganallur",
+    "type": "pothole",
+    "status": "assigned",
+    "priority": "critical",
+    "reporter": "usr_cit_006",
+    "aiAnalysis": {
+      "detected": "pothole",
+      "severity": "critical",
+      "confidence": 95,
+      "recommendation": "Urgent intervention required. Isolate area with signage and repair within 24 hours.",
+      "isRoadImage": true,
+      "tags": [
+        "pothole",
+        "hazard",
+        "wear-and-tear"
+      ],
+      "model": "yolov8s-rdd2022-v1",
+      "analyzedAt": "2025-06-23T00:00:00.000Z"
+    },
+    "timestamps": {
+      "created": "2025-06-23T00:00:00.000Z",
+      "updated": "2025-06-24T00:00:00.000Z"
+    },
+    "verifiedBy": "usr_adm_001",
+    "verifiedAt": "2025-06-23T00:00:00.000Z",
+    "assignedContractor": "usr_ctr_002",
+    "assignedAt": "2025-06-24T00:00:00.000Z"
+  },
+  {
+    "id": "cmp_024",
+    "reportNumber": "TNR-2024",
+    "title": "Pothole near Thillai Nagar main road, Trichy",
+    "description": "A cluster of potholes near Thillai Nagar main road entrance. Water stagnation after rain hides the depth. Multiple two-wheeler incidents reported.",
+    "images": [],
+    "location": {
+      "lat": 10.804,
+      "lng": 78.687
+    },
+    "address": "Thillai Nagar Main Road, Tiruchirappalli",
+    "district": "Thillai Nagar",
+    "type": "pothole",
+    "status": "assigned",
+    "priority": "high",
+    "reporter": "usr_cit_033",
+    "aiAnalysis": {
+      "detected": "pothole",
+      "severity": "high",
+      "confidence": 91,
+      "recommendation": "Immediate repair required. Potential risk to vehicles and two-wheelers.",
+      "isRoadImage": true,
+      "tags": [
+        "pothole",
+        "high-risk",
+        "water-damage"
+      ],
+      "model": "yolov8s-rdd2022-v1",
+      "analyzedAt": "2025-06-24T00:00:00.000Z"
+    },
+    "timestamps": {
+      "created": "2025-06-24T00:00:00.000Z",
+      "updated": "2025-06-25T00:00:00.000Z"
+    },
+    "verifiedBy": "usr_adm_001",
+    "verifiedAt": "2025-06-25T00:00:00.000Z",
+    "assignedContractor": "usr_ctr_007",
+    "assignedAt": "2025-06-25T00:00:00.000Z"
+  },
+  {
+    "id": "cmp_025",
+    "reportNumber": "TNR-2025",
+    "title": "Pothole at Pasumalai Hill Road bend",
+    "description": "A deep pothole at the bend of Pasumalai Hill Road. Vehicles coming downhill from the university campus hit this at speed.",
+    "images": [],
+    "location": {
+      "lat": 9.919,
+      "lng": 78.131
+    },
+    "address": "Pasumalai Hill Road Bend, Madurai",
+    "district": "Pasumalai",
+    "type": "pothole",
+    "status": "assigned",
+    "priority": "critical",
+    "reporter": "usr_cit_027",
+    "aiAnalysis": {
+      "detected": "pothole",
+      "severity": "critical",
+      "confidence": 98,
+      "recommendation": "Urgent intervention required. Isolate area with signage and repair within 24 hours.",
+      "isRoadImage": true,
+      "tags": [
+        "pothole",
+        "hazard",
+        "wear-and-tear"
+      ],
+      "model": "yolov8s-rdd2022-v1",
+      "analyzedAt": "2025-06-25T00:00:00.000Z"
+    },
+    "timestamps": {
+      "created": "2025-06-25T00:00:00.000Z",
+      "updated": "2025-06-26T00:00:00.000Z"
+    },
+    "verifiedBy": "usr_adm_001",
+    "verifiedAt": "2025-06-26T00:00:00.000Z",
+    "assignedContractor": "usr_ctr_006",
+    "assignedAt": "2025-06-26T00:00:00.000Z"
+  },
+  {
+    "id": "cmp_026",
+    "reportNumber": "TNR-2026",
+    "title": "Crack on Hasthampatti Main Road",
+    "description": "A longitudinal crack running 15 meters along Hasthampatti Main Road. Monsoon water is widening the crack week by week.",
+    "images": [],
+    "location": {
+      "lat": 11.671,
+      "lng": 78.139
+    },
+    "address": "Hasthampatti Main Road, near bus stop, Salem",
+    "district": "Hasthampatti",
+    "type": "crack",
+    "status": "assigned",
+    "priority": "medium",
+    "reporter": "usr_cit_031",
+    "aiAnalysis": {
+      "detected": "crack",
+      "severity": "medium",
+      "confidence": 94,
+      "recommendation": "Plan repair within the next 2 weeks. Monitor drainage to prevent expansion.",
+      "isRoadImage": true,
+      "tags": [
+        "crack",
+        "maintenance",
+        "wear-and-tear"
+      ],
+      "model": "yolov8s-rdd2022-v1",
+      "analyzedAt": "2025-06-27T00:00:00.000Z"
+    },
+    "timestamps": {
+      "created": "2025-06-26T00:00:00.000Z",
+      "updated": "2025-06-27T00:00:00.000Z"
+    },
+    "verifiedBy": "usr_adm_001",
+    "verifiedAt": "2025-06-27T00:00:00.000Z",
+    "assignedContractor": "usr_ctr_008",
+    "assignedAt": "2025-06-27T00:00:00.000Z"
+  },
+  {
+    "id": "cmp_027",
+    "reportNumber": "TNR-2027",
+    "title": "Depression near Perundurai Road bridge, Erode",
+    "description": "A depression has formed in the approach to the Perundurai Road bridge. Vehicles dip sharply here causing multiple tire blowouts this month.",
+    "images": [],
+    "location": {
+      "lat": 11.338,
+      "lng": 77.72
+    },
+    "address": "Perundurai Road Bridge Approach, Erode",
+    "district": "Erode",
+    "type": "depression",
+    "status": "assigned",
+    "priority": "high",
+    "reporter": "usr_cit_036",
+    "aiAnalysis": {
+      "detected": "depression",
+      "severity": "high",
+      "confidence": 90,
+      "recommendation": "Immediate repair required. Potential risk to vehicles and two-wheelers.",
+      "isRoadImage": true,
+      "tags": [
+        "depression",
+        "high-risk",
+        "water-damage"
+      ],
+      "model": "yolov8s-rdd2022-v1",
+      "analyzedAt": "2025-06-28T00:00:00.000Z"
+    },
+    "timestamps": {
+      "created": "2025-06-28T00:00:00.000Z",
+      "updated": "2025-06-29T00:00:00.000Z"
+    },
+    "verifiedBy": "usr_adm_001",
+    "verifiedAt": "2025-06-28T00:00:00.000Z",
+    "assignedContractor": "usr_ctr_005",
+    "assignedAt": "2025-06-29T00:00:00.000Z"
+  },
+  {
+    "id": "cmp_028",
+    "reportNumber": "TNR-2028",
+    "title": "Pothole on Singanallur OS Road",
+    "description": "A wide pothole on Singanallur OS Road near the railway crossing. Heavy traffic from buses and trucks has made this a recurring problem.",
+    "images": [],
+    "location": {
+      "lat": 11.013,
+      "lng": 77.011
+    },
+    "address": "Singanallur OS Road, near Railway Crossing, Coimbatore",
+    "district": "Singanallur",
+    "type": "pothole",
+    "status": "assigned",
+    "priority": "high",
+    "reporter": "usr_cit_024",
+    "aiAnalysis": {
+      "detected": "pothole",
+      "severity": "high",
+      "confidence": 97,
+      "recommendation": "Immediate repair required. Potential risk to vehicles and two-wheelers.",
+      "isRoadImage": true,
+      "tags": [
+        "pothole",
+        "high-risk",
+        "wear-and-tear"
+      ],
+      "model": "yolov8s-rdd2022-v1",
+      "analyzedAt": "2025-06-29T00:00:00.000Z"
+    },
+    "timestamps": {
+      "created": "2025-06-29T00:00:00.000Z",
+      "updated": "2025-06-30T00:00:00.000Z"
+    },
+    "verifiedBy": "usr_adm_001",
+    "verifiedAt": "2025-06-29T00:00:00.000Z",
+    "assignedContractor": "usr_ctr_005",
+    "assignedAt": "2025-06-30T00:00:00.000Z"
+  },
+  {
+    "id": "cmp_029",
+    "reportNumber": "TNR-2029",
+    "title": "Pothole near Thiruppalai Main Road junction",
+    "description": "A deep pothole at the Thiruppalai junction. Heavy vehicle traffic from the nearby market area has severely damaged this section.",
+    "images": [],
+    "location": {
+      "lat": 9.961,
+      "lng": 78.141
+    },
+    "address": "Thiruppalai Main Road Junction, Madurai",
+    "district": "Thiruppalai",
+    "type": "pothole",
+    "status": "in_progress",
+    "priority": "high",
+    "reporter": "usr_cit_028",
+    "aiAnalysis": {
+      "detected": "pothole",
+      "severity": "high",
+      "confidence": 93,
+      "recommendation": "Immediate repair required. Potential risk to vehicles and two-wheelers.",
+      "isRoadImage": true,
+      "tags": [
+        "pothole",
+        "high-risk",
+        "wear-and-tear"
+      ],
+      "model": "yolov8s-rdd2022-v1",
+      "analyzedAt": "2025-06-30T00:00:00.000Z"
+    },
+    "timestamps": {
+      "created": "2025-06-30T00:00:00.000Z",
+      "updated": "2025-07-02T00:00:00.000Z"
+    },
+    "verifiedBy": "usr_adm_001",
+    "verifiedAt": "2025-07-01T00:00:00.000Z",
+    "assignedContractor": "usr_ctr_006",
+    "assignedAt": "2025-07-01T00:00:00.000Z",
+    "startedAt": "2025-07-02T00:00:00.000Z",
+    "completion": {
+      "beforeImages": [],
+      "afterImages": [],
+      "notes": "Excavation complete, base layer being prepared",
+      "completedBy": "usr_ctr_006"
+    }
+  },
+  {
+    "id": "cmp_030",
+    "reportNumber": "TNR-2030",
+    "title": "Crack pattern on Purasawalkam High Road",
+    "description": "Extensive alligator cracking on Purasawalkam High Road near the store. The surface is about to give way.",
+    "images": [],
+    "location": {
+      "lat": 13.059,
+      "lng": 80.253
+    },
+    "address": "Purasawalkam High Road, near Surya Store",
+    "district": "Chennai Central",
+    "type": "crack",
+    "status": "in_progress",
+    "priority": "critical",
+    "reporter": "usr_cit_049",
+    "aiAnalysis": {
+      "detected": "crack",
+      "severity": "critical",
+      "confidence": 89,
+      "recommendation": "Urgent intervention required. Isolate area with signage and repair within 24 hours.",
+      "isRoadImage": true,
+      "tags": [
+        "crack",
+        "hazard",
+        "water-damage"
+      ],
+      "model": "yolov8s-rdd2022-v1",
+      "analyzedAt": "2025-07-01T00:00:00.000Z"
+    },
+    "timestamps": {
+      "created": "2025-07-01T00:00:00.000Z",
+      "updated": "2025-07-03T00:00:00.000Z"
+    },
+    "verifiedBy": "usr_adm_001",
+    "verifiedAt": "2025-07-02T00:00:00.000Z",
+    "assignedContractor": "usr_ctr_002",
+    "assignedAt": "2025-07-02T00:00:00.000Z",
+    "startedAt": "2025-07-03T00:00:00.000Z",
+    "completion": {
+      "beforeImages": [],
+      "afterImages": [],
+      "notes": "Milling done, fresh asphalt being laid",
+      "completedBy": "usr_ctr_002"
+    }
+  },
+  {
+    "id": "cmp_031",
+    "reportNumber": "TNR-2031",
+    "title": "Rutting on Chromepet Radial Road",
+    "description": "Severe rutting along the bus lane on Chromepet Radial Road. The grooves are deep enough to trap bicycle wheels.",
+    "images": [],
+    "location": {
+      "lat": 12.952,
+      "lng": 80.14
+    },
+    "address": "Chromepet Radial Road, near Bus Stand",
+    "district": "Chromepet",
+    "type": "rutting",
+    "status": "in_progress",
+    "priority": "high",
+    "reporter": "usr_cit_017",
+    "aiAnalysis": {
+      "detected": "rutting",
+      "severity": "high",
+      "confidence": 96,
+      "recommendation": "Immediate repair required. Potential risk to vehicles and two-wheelers.",
+      "isRoadImage": true,
+      "tags": [
+        "rutting",
+        "high-risk",
+        "wear-and-tear"
+      ],
+      "model": "yolov8s-rdd2022-v1",
+      "analyzedAt": "2025-07-03T00:00:00.000Z"
+    },
+    "timestamps": {
+      "created": "2025-07-02T00:00:00.000Z",
+      "updated": "2025-07-04T00:00:00.000Z"
+    },
+    "verifiedBy": "usr_adm_001",
+    "verifiedAt": "2025-07-03T00:00:00.000Z",
+    "assignedContractor": "usr_ctr_001",
+    "assignedAt": "2025-07-03T00:00:00.000Z",
+    "startedAt": "2025-07-04T00:00:00.000Z",
+    "completion": {
+      "beforeImages": [],
+      "afterImages": [],
+      "notes": "Old surface removed, leveling course being applied",
+      "completedBy": "usr_ctr_001"
+    }
+  },
+  {
+    "id": "cmp_032",
+    "reportNumber": "TNR-2032",
+    "title": "Pothole cluster on Tambaram Sanatorium Road",
+    "description": "Multiple potholes have appeared on Tambaram Sanatorium Road after the recent monsoon. Barely passable for two-wheelers.",
+    "images": [],
+    "location": {
+      "lat": 12.9255,
+      "lng": 80.101
+    },
+    "address": "Tambaram Sanatorium Road, near Railway Station",
+    "district": "Tambaram",
+    "type": "pothole",
+    "status": "in_progress",
+    "priority": "critical",
+    "reporter": "usr_cit_008",
+    "aiAnalysis": {
+      "detected": "pothole",
+      "severity": "critical",
+      "confidence": 92,
+      "recommendation": "Urgent intervention required. Isolate area with signage and repair within 24 hours.",
+      "isRoadImage": true,
+      "tags": [
+        "pothole",
+        "hazard",
+        "wear-and-tear"
+      ],
+      "model": "yolov8s-rdd2022-v1",
+      "analyzedAt": "2025-07-04T00:00:00.000Z"
+    },
+    "timestamps": {
+      "created": "2025-07-04T00:00:00.000Z",
+      "updated": "2025-07-05T00:00:00.000Z"
+    },
+    "verifiedBy": "usr_adm_001",
+    "verifiedAt": "2025-07-04T00:00:00.000Z",
+    "assignedContractor": "usr_ctr_009",
+    "assignedAt": "2025-07-05T00:00:00.000Z",
+    "startedAt": "2025-07-05T00:00:00.000Z",
+    "completion": {
+      "beforeImages": [],
+      "afterImages": [],
+      "notes": "Deep excavation completed, filling with new aggregate",
+      "completedBy": "usr_ctr_009"
+    }
+  },
+  {
+    "id": "cmp_033",
+    "reportNumber": "TNR-2033",
+    "title": "Pothole at Srirangam Island Road entrance",
+    "description": "A dangerous pothole at the entrance to Srirangam Island Road. Devotees heading to the temple and tourist vehicles pass through here.",
+    "images": [],
+    "location": {
+      "lat": 10.856,
+      "lng": 78.696
+    },
+    "address": "Srirangam Island Road Entrance, Tiruchirappalli",
+    "district": "Srirangam",
+    "type": "pothole",
+    "status": "in_progress",
+    "priority": "high",
+    "reporter": "usr_cit_034",
+    "aiAnalysis": {
+      "detected": "pothole",
+      "severity": "high",
+      "confidence": 88,
+      "recommendation": "Immediate repair required. Potential risk to vehicles and two-wheelers.",
+      "isRoadImage": true,
+      "tags": [
+        "pothole",
+        "high-risk",
+        "water-damage"
+      ],
+      "model": "yolov8s-rdd2022-v1",
+      "analyzedAt": "2025-07-05T00:00:00.000Z"
+    },
+    "timestamps": {
+      "created": "2025-07-05T00:00:00.000Z",
+      "updated": "2025-07-06T00:00:00.000Z"
+    },
+    "verifiedBy": "usr_adm_001",
+    "verifiedAt": "2025-07-05T00:00:00.000Z",
+    "assignedContractor": "usr_ctr_007",
+    "assignedAt": "2025-07-06T00:00:00.000Z",
+    "startedAt": "2025-07-06T00:00:00.000Z",
+    "completion": {
+      "beforeImages": [],
+      "afterImages": [],
+      "notes": "Base repair done, surface layer being compacted",
+      "completedBy": "usr_ctr_007"
+    }
+  },
+  {
+    "id": "cmp_034",
+    "reportNumber": "TNR-2034",
+    "title": "Surface damage on Chetpet High Road",
+    "description": "The road surface on Chetpet High Road has deteriorated significantly near the park. Loose gravel and uneven patches.",
+    "images": [],
+    "location": {
+      "lat": 13.072,
+      "lng": 80.244
+    },
+    "address": "Chetpet High Road, near Chetpet Lake",
+    "district": "Chetpet",
+    "type": "surface_damage",
+    "status": "in_progress",
+    "priority": "medium",
+    "reporter": "usr_cit_050",
+    "aiAnalysis": {
+      "detected": "surface_damage",
+      "severity": "medium",
+      "confidence": 95,
+      "recommendation": "Plan repair within the next 2 weeks. Monitor drainage to prevent expansion.",
+      "isRoadImage": true,
+      "tags": [
+        "surface damage",
+        "maintenance",
+        "wear-and-tear"
+      ],
+      "model": "yolov8s-rdd2022-v1",
+      "analyzedAt": "2025-07-06T00:00:00.000Z"
+    },
+    "timestamps": {
+      "created": "2025-07-06T00:00:00.000Z",
+      "updated": "2025-07-08T00:00:00.000Z"
+    },
+    "verifiedBy": "usr_adm_001",
+    "verifiedAt": "2025-07-07T00:00:00.000Z",
+    "assignedContractor": "usr_ctr_003",
+    "assignedAt": "2025-07-07T00:00:00.000Z",
+    "startedAt": "2025-07-08T00:00:00.000Z",
+    "completion": {
+      "beforeImages": [],
+      "afterImages": [],
+      "notes": "Surface milling in progress, resurfacing expected within 2 days",
+      "completedBy": "usr_ctr_003"
+    }
+  },
+  {
+    "id": "cmp_035",
+    "reportNumber": "TNR-2035",
+    "title": "Deep pothole near Kanchipuram MGR Road",
+    "description": "A deep pothole near the Kanchipuram MGR Road junction. Heavy vehicles passing through on the way to the highway have worsened the damage.",
+    "images": [],
+    "location": {
+      "lat": 12.835,
+      "lng": 79.704
+    },
+    "address": "Kanchipuram MGR Road Junction",
+    "district": "Kanchipuram",
+    "type": "pothole",
+    "status": "in_progress",
+    "priority": "high",
+    "reporter": "usr_cit_041",
+    "aiAnalysis": {
+      "detected": "pothole",
+      "severity": "high",
+      "confidence": 91,
+      "recommendation": "Immediate repair required. Potential risk to vehicles and two-wheelers.",
+      "isRoadImage": true,
+      "tags": [
+        "pothole",
+        "high-risk",
+        "wear-and-tear"
+      ],
+      "model": "yolov8s-rdd2022-v1",
+      "analyzedAt": "2025-07-07T00:00:00.000Z"
+    },
+    "timestamps": {
+      "created": "2025-07-07T00:00:00.000Z",
+      "updated": "2025-07-09T00:00:00.000Z"
+    },
+    "verifiedBy": "usr_adm_001",
+    "verifiedAt": "2025-07-08T00:00:00.000Z",
+    "assignedContractor": "usr_ctr_009",
+    "assignedAt": "2025-07-08T00:00:00.000Z",
+    "startedAt": "2025-07-09T00:00:00.000Z",
+    "completion": {
+      "beforeImages": [],
+      "afterImages": [],
+      "notes": "Excavation and debris removal complete, hot mix being prepared",
+      "completedBy": "usr_ctr_009"
+    }
+  },
+  {
+    "id": "cmp_036",
+    "reportNumber": "TNR-2036",
+    "title": "Pothole near Nungambakkam railway crossing",
+    "description": "Pothole that forms every monsoon near the Nungambakkam railway crossing. Last year patch job has already failed.",
+    "images": [],
+    "location": {
+      "lat": 13.0595,
+      "lng": 80.2475
+    },
+    "address": "Nungambakkam Railway Crossing",
+    "district": "Chennai Central",
+    "type": "pothole",
+    "status": "in_progress",
+    "priority": "medium",
+    "reporter": "usr_cit_047",
+    "aiAnalysis": {
+      "detected": "pothole",
+      "severity": "medium",
+      "confidence": 98,
+      "recommendation": "Plan repair within the next 2 weeks. Monitor drainage to prevent expansion.",
+      "isRoadImage": true,
+      "tags": [
+        "pothole",
+        "maintenance",
+        "water-damage"
+      ],
+      "model": "yolov8s-rdd2022-v1",
+      "analyzedAt": "2025-07-09T00:00:00.000Z"
+    },
+    "timestamps": {
+      "created": "2025-07-08T00:00:00.000Z",
+      "updated": "2025-07-10T00:00:00.000Z"
+    },
+    "verifiedBy": "usr_adm_001",
+    "verifiedAt": "2025-07-09T00:00:00.000Z",
+    "assignedContractor": "usr_ctr_001",
+    "assignedAt": "2025-07-09T00:00:00.000Z",
+    "startedAt": "2025-07-10T00:00:00.000Z",
+    "completion": {
+      "beforeImages": [],
+      "afterImages": [],
+      "notes": "Old patch removed, excavation to sub-base level in progress",
+      "completedBy": "usr_ctr_001"
+    }
+  },
+  {
+    "id": "cmp_037",
+    "reportNumber": "TNR-2037",
+    "title": "Pothole at Bypass Road signal, Erode",
+    "description": "A pothole right at the Bypass Road traffic signal in Erode. Vehicles stopping at the signal hit this while accelerating.",
+    "images": [],
+    "location": {
+      "lat": 11.336,
+      "lng": 77.726
+    },
+    "address": "Bypass Road Signal, Erode",
+    "district": "Erode",
+    "type": "pothole",
+    "status": "completed",
+    "priority": "high",
+    "reporter": "usr_cit_036",
+    "aiAnalysis": {
+      "detected": "pothole",
+      "severity": "high",
+      "confidence": 94,
+      "recommendation": "Immediate repair required. Potential risk to vehicles and two-wheelers.",
+      "isRoadImage": true,
+      "tags": [
+        "pothole",
+        "high-risk",
+        "wear-and-tear"
+      ],
+      "model": "yolov8s-rdd2022-v1",
+      "analyzedAt": "2025-07-10T00:00:00.000Z"
+    },
+    "timestamps": {
+      "created": "2025-07-10T00:00:00.000Z",
+      "updated": "2025-07-13T00:00:00.000Z"
+    },
+    "verifiedBy": "usr_adm_001",
+    "verifiedAt": "2025-07-10T00:00:00.000Z",
+    "assignedContractor": "usr_ctr_005",
+    "assignedAt": "2025-07-11T00:00:00.000Z",
+    "startedAt": "2025-07-11T00:00:00.000Z",
+    "completedAt": "2025-07-13T00:00:00.000Z",
+    "completion": {
+      "beforeImages": [],
+      "afterImages": [],
+      "notes": "Full-depth patching completed. Area excavated to 200mm, aggregate base laid, hot mix asphalt compacted.",
+      "repairType": "full-depth-repair",
+      "completedBy": "usr_ctr_005",
+      "completedAt": "2025-07-13T00:00:00.000Z",
+      "durationHours": 55
+    },
+    "feedback": {
+      "rating": 5,
+      "comment": "Excellent work by the team. Road is smooth and the repair looks very professional. Thank you!",
+      "createdAt": "2025-07-13T00:00:00.000Z"
+    }
+  },
+  {
+    "id": "cmp_038",
+    "reportNumber": "TNR-2038",
+    "title": "Crack on Katpadi Road near bus depot",
+    "description": "A long transverse crack on Katpadi Road near the Vellore bus depot. Heavy buses passing daily have widened the crack.",
+    "images": [],
+    "location": {
+      "lat": 12.918,
+      "lng": 79.134
+    },
+    "address": "Katpadi Road, near Vellore Bus Depot",
+    "district": "Vellore",
+    "type": "crack",
+    "status": "completed",
+    "priority": "medium",
+    "reporter": "usr_cit_037",
+    "aiAnalysis": {
+      "detected": "crack",
+      "severity": "medium",
+      "confidence": 90,
+      "recommendation": "Plan repair within the next 2 weeks. Monitor drainage to prevent expansion.",
+      "isRoadImage": true,
+      "tags": [
+        "crack",
+        "maintenance",
+        "wear-and-tear"
+      ],
+      "model": "yolov8s-rdd2022-v1",
+      "analyzedAt": "2025-07-11T00:00:00.000Z"
+    },
+    "timestamps": {
+      "created": "2025-07-11T00:00:00.000Z",
+      "updated": "2025-07-14T00:00:00.000Z"
+    },
+    "verifiedBy": "usr_adm_001",
+    "verifiedAt": "2025-07-11T00:00:00.000Z",
+    "assignedContractor": "usr_ctr_002",
+    "assignedAt": "2025-07-12T00:00:00.000Z",
+    "startedAt": "2025-07-12T00:00:00.000Z",
+    "completedAt": "2025-07-14T00:00:00.000Z",
+    "completion": {
+      "beforeImages": [],
+      "afterImages": [],
+      "notes": "Crack sealed with hot pour sealant. Surface resealed with tack coat.",
+      "repairType": "surface-treatment",
+      "completedBy": "usr_ctr_002",
+      "completedAt": "2025-07-14T00:00:00.000Z",
+      "durationHours": 57
+    },
+    "feedback": {
+      "rating": 4,
+      "comment": "Good repair quality. The crack is fully sealed now.",
+      "createdAt": "2025-07-14T00:00:00.000Z"
+    }
+  },
+  {
+    "id": "cmp_039",
+    "reportNumber": "TNR-2039",
+    "title": "Pothole on 2nd Avenue, Anna Nagar",
+    "description": "A pothole has formed near the Anna Nagar 2nd Avenue park entrance. Children walking to the nearby school are at risk.",
+    "images": [],
+    "location": {
+      "lat": 13.086,
+      "lng": 80.2105
+    },
+    "address": "2nd Avenue, near Park Entrance, Anna Nagar",
+    "district": "Anna Nagar",
+    "type": "pothole",
+    "status": "completed",
+    "priority": "critical",
+    "reporter": "usr_cit_004",
+    "aiAnalysis": {
+      "detected": "pothole",
+      "severity": "critical",
+      "confidence": 97,
+      "recommendation": "Urgent intervention required. Isolate area with signage and repair within 24 hours.",
+      "isRoadImage": true,
+      "tags": [
+        "pothole",
+        "hazard",
+        "water-damage"
+      ],
+      "model": "yolov8s-rdd2022-v1",
+      "analyzedAt": "2025-07-12T00:00:00.000Z"
+    },
+    "timestamps": {
+      "created": "2025-07-12T00:00:00.000Z",
+      "updated": "2025-07-15T00:00:00.000Z"
+    },
+    "verifiedBy": "usr_adm_001",
+    "verifiedAt": "2025-07-13T00:00:00.000Z",
+    "assignedContractor": "usr_ctr_009",
+    "assignedAt": "2025-07-13T00:00:00.000Z",
+    "startedAt": "2025-07-14T00:00:00.000Z",
+    "completedAt": "2025-07-15T00:00:00.000Z",
+    "completion": {
+      "beforeImages": [],
+      "afterImages": [],
+      "notes": "Emergency repair completed. Deep excavation done, new sub-base and surface course laid.",
+      "repairType": "full-depth-repair",
+      "completedBy": "usr_ctr_009",
+      "completedAt": "2025-07-15T00:00:00.000Z",
+      "durationHours": 52
+    },
+    "feedback": {
+      "rating": 5,
+      "comment": "Very impressed with the speed of response. Road is perfectly smooth now.",
+      "createdAt": "2025-07-16T00:00:00.000Z"
+    }
+  },
+  {
+    "id": "cmp_040",
+    "reportNumber": "TNR-2040",
+    "title": "Depression near KK Nagar main road",
+    "description": "A large depression on KK Nagar main road near the water tank. During monsoon this becomes a small lake blocking pedestrian access.",
+    "images": [],
+    "location": {
+      "lat": 9.947,
+      "lng": 78.123
+    },
+    "address": "KK Nagar Main Road, near Water Tank, Madurai",
+    "district": "KK Nagar",
+    "type": "depression",
+    "status": "completed",
+    "priority": "high",
+    "reporter": "usr_cit_025",
+    "aiAnalysis": {
+      "detected": "depression",
+      "severity": "high",
+      "confidence": 93,
+      "recommendation": "Immediate repair required. Potential risk to vehicles and two-wheelers.",
+      "isRoadImage": true,
+      "tags": [
+        "depression",
+        "high-risk",
+        "wear-and-tear"
+      ],
+      "model": "yolov8s-rdd2022-v1",
+      "analyzedAt": "2025-07-13T00:00:00.000Z"
+    },
+    "timestamps": {
+      "created": "2025-07-13T00:00:00.000Z",
+      "updated": "2025-07-16T00:00:00.000Z"
+    },
+    "verifiedBy": "usr_adm_001",
+    "verifiedAt": "2025-07-14T00:00:00.000Z",
+    "assignedContractor": "usr_ctr_006",
+    "assignedAt": "2025-07-14T00:00:00.000Z",
+    "startedAt": "2025-07-15T00:00:00.000Z",
+    "completedAt": "2025-07-16T00:00:00.000Z",
+    "completion": {
+      "beforeImages": [],
+      "afterImages": [],
+      "notes": "Full-depth repair done. Removed damaged sub-grade, added new aggregate, compacted and paved.",
+      "repairType": "full-depth-repair",
+      "completedBy": "usr_ctr_006",
+      "completedAt": "2025-07-16T00:00:00.000Z",
+      "durationHours": 80
+    },
+    "feedback": {
+      "rating": 4,
+      "comment": "Work done well. The depression is completely gone. Slightly delayed due to rain but satisfied.",
+      "createdAt": "2025-07-17T00:00:00.000Z"
+    }
+  },
+  {
+    "id": "cmp_041",
+    "reportNumber": "TNR-2041",
+    "title": "Pothole on Ashok Nagar 100 Feet Road",
+    "description": "A deep pothole on the busy 100 Feet Road in Ashok Nagar. Vehicles swerving to avoid it are causing traffic jams.",
+    "images": [],
+    "location": {
+      "lat": 13.0495,
+      "lng": 80.2155
+    },
+    "address": "100 Feet Road, Ashok Nagar",
+    "district": "Ashok Nagar",
+    "type": "pothole",
+    "status": "completed",
+    "priority": "high",
+    "reporter": "usr_cit_015",
+    "aiAnalysis": {
+      "detected": "pothole",
+      "severity": "high",
+      "confidence": 89,
+      "recommendation": "Immediate repair required. Potential risk to vehicles and two-wheelers.",
+      "isRoadImage": true,
+      "tags": [
+        "pothole",
+        "high-risk",
+        "wear-and-tear"
+      ],
+      "model": "yolov8s-rdd2022-v1",
+      "analyzedAt": "2025-07-15T00:00:00.000Z"
+    },
+    "timestamps": {
+      "created": "2025-07-14T00:00:00.000Z",
+      "updated": "2025-07-17T00:00:00.000Z"
+    },
+    "verifiedBy": "usr_adm_001",
+    "verifiedAt": "2025-07-15T00:00:00.000Z",
+    "assignedContractor": "usr_ctr_001",
+    "assignedAt": "2025-07-15T00:00:00.000Z",
+    "startedAt": "2025-07-16T00:00:00.000Z",
+    "completedAt": "2025-07-17T00:00:00.000Z",
+    "completion": {
+      "beforeImages": [],
+      "afterImages": [],
+      "notes": "Asphalt patching completed. Old material removed, new hot mix laid and compacted.",
+      "repairType": "asphalt-patching",
+      "completedBy": "usr_ctr_001",
+      "completedAt": "2025-07-17T00:00:00.000Z",
+      "durationHours": 57
+    },
+    "feedback": {
+      "rating": 5,
+      "comment": "The new surface is much better than before. Excellent work!",
+      "createdAt": "2025-07-18T00:00:00.000Z"
+    }
+  },
+  {
+    "id": "cmp_042",
+    "reportNumber": "TNR-2042",
+    "title": "Edge damage near Gandhipuram bus stand",
+    "description": "The road edge near Gandhipuram bus stand has broken away leaving a 1-foot drop. Buses parking here risk tire damage.",
+    "images": [],
+    "location": {
+      "lat": 11.018,
+      "lng": 76.957
+    },
+    "address": "Near Gandhipuram Bus Stand, Coimbatore",
+    "district": "Gandhipuram",
+    "type": "edge_damage",
+    "status": "completed",
+    "priority": "high",
+    "reporter": "usr_cit_021",
+    "aiAnalysis": {
+      "detected": "edge_damage",
+      "severity": "high",
+      "confidence": 96,
+      "recommendation": "Immediate repair required. Potential risk to vehicles and two-wheelers.",
+      "isRoadImage": true,
+      "tags": [
+        "edge damage",
+        "high-risk",
+        "water-damage"
+      ],
+      "model": "yolov8s-rdd2022-v1",
+      "analyzedAt": "2025-07-16T00:00:00.000Z"
+    },
+    "timestamps": {
+      "created": "2025-07-16T00:00:00.000Z",
+      "updated": "2025-07-19T00:00:00.000Z"
+    },
+    "verifiedBy": "usr_adm_001",
+    "verifiedAt": "2025-07-16T00:00:00.000Z",
+    "assignedContractor": "usr_ctr_005",
+    "assignedAt": "2025-07-17T00:00:00.000Z",
+    "startedAt": "2025-07-17T00:00:00.000Z",
+    "completedAt": "2025-07-19T00:00:00.000Z",
+    "completion": {
+      "beforeImages": [],
+      "afterImages": [],
+      "notes": "Edge repaired with new concrete curb and asphalt overlay. Bus bay area reinforced.",
+      "repairType": "full-depth-repair",
+      "completedBy": "usr_ctr_005",
+      "completedAt": "2025-07-19T00:00:00.000Z",
+      "durationHours": 72
+    },
+    "feedback": {
+      "rating": 4,
+      "comment": "Good repair quality. The edge is secure now.",
+      "createdAt": "2025-07-19T00:00:00.000Z"
+    }
+  },
+  {
+    "id": "cmp_043",
+    "reportNumber": "TNR-2043",
+    "title": "Rutting near Palayamkottai Road, Tirunelveli",
+    "description": "Severe rutting along the Palayamkottai Road near the court complex. Heavy vehicle traffic has created deep wheel tracks.",
+    "images": [],
+    "location": {
+      "lat": 8.715,
+      "lng": 77.758
+    },
+    "address": "Palayamkottai Road, near Court Complex, Tirunelveli",
+    "district": "Tirunelveli",
+    "type": "rutting",
+    "status": "completed",
+    "priority": "high",
+    "reporter": "usr_cit_039",
+    "aiAnalysis": {
+      "detected": "rutting",
+      "severity": "high",
+      "confidence": 92,
+      "recommendation": "Immediate repair required. Potential risk to vehicles and two-wheelers.",
+      "isRoadImage": true,
+      "tags": [
+        "rutting",
+        "high-risk",
+        "wear-and-tear"
+      ],
+      "model": "yolov8s-rdd2022-v1",
+      "analyzedAt": "2025-07-17T00:00:00.000Z"
+    },
+    "timestamps": {
+      "created": "2025-07-17T00:00:00.000Z",
+      "updated": "2025-07-20T00:00:00.000Z"
+    },
+    "verifiedBy": "usr_adm_001",
+    "verifiedAt": "2025-07-17T00:00:00.000Z",
+    "assignedContractor": "usr_ctr_004",
+    "assignedAt": "2025-07-18T00:00:00.000Z",
+    "startedAt": "2025-07-18T00:00:00.000Z",
+    "completedAt": "2025-07-20T00:00:00.000Z",
+    "completion": {
+      "beforeImages": [],
+      "afterImages": [],
+      "notes": "Surface milled and full-depth patching completed. New asphalt overlay applied.",
+      "repairType": "full-depth-repair",
+      "completedBy": "usr_ctr_004",
+      "completedAt": "2025-07-20T00:00:00.000Z",
+      "durationHours": 72
+    },
+    "feedback": {
+      "rating": 5,
+      "comment": "Excellent work! Road surface is now smooth and level.",
+      "createdAt": "2025-07-20T00:00:00.000Z"
+    }
+  },
+  {
+    "id": "cmp_044",
+    "reportNumber": "TNR-2044",
+    "title": "Pothole on South Mada Street, T. Nagar",
+    "description": "A pothole right in the middle of the busy South Mada Street in T. Nagar. Thousands of pedestrians and vehicles daily.",
+    "images": [],
+    "location": {
+      "lat": 13.0425,
+      "lng": 80.235
+    },
+    "address": "South Mada Street, T. Nagar, Chennai",
+    "district": "T. Nagar",
+    "type": "pothole",
+    "status": "completed",
+    "priority": "critical",
+    "reporter": "usr_cit_011",
+    "aiAnalysis": {
+      "detected": "pothole",
+      "severity": "critical",
+      "confidence": 88,
+      "recommendation": "Urgent intervention required. Isolate area with signage and repair within 24 hours.",
+      "isRoadImage": true,
+      "tags": [
+        "pothole",
+        "hazard",
+        "wear-and-tear"
+      ],
+      "model": "yolov8s-rdd2022-v1",
+      "analyzedAt": "2025-07-18T00:00:00.000Z"
+    },
+    "timestamps": {
+      "created": "2025-07-18T00:00:00.000Z",
+      "updated": "2025-07-21T00:00:00.000Z"
+    },
+    "verifiedBy": "usr_adm_001",
+    "verifiedAt": "2025-07-19T00:00:00.000Z",
+    "assignedContractor": "usr_ctr_002",
+    "assignedAt": "2025-07-19T00:00:00.000Z",
+    "startedAt": "2025-07-20T00:00:00.000Z",
+    "completedAt": "2025-07-21T00:00:00.000Z",
+    "completion": {
+      "beforeImages": [],
+      "afterImages": [],
+      "notes": "Emergency repair executed. Full-depth excavation and relaying completed during off-peak hours.",
+      "repairType": "full-depth-repair",
+      "completedBy": "usr_ctr_002",
+      "completedAt": "2025-07-21T00:00:00.000Z",
+      "durationHours": 52
+    },
+    "feedback": {
+      "rating": 5,
+      "comment": "Amazing speed! Repair done overnight with minimal disruption.",
+      "createdAt": "2025-07-22T00:00:00.000Z"
+    }
+  },
+  {
+    "id": "cmp_045",
+    "reportNumber": "TNR-2045",
+    "title": "Surface damage on Velachery Tambaram Main Road",
+    "description": "Widespread surface damage on the Velachery Tambaram Main Road. Multiple patches of loose aggregate forming.",
+    "images": [],
+    "location": {
+      "lat": 12.9835,
+      "lng": 80.216
+    },
+    "address": "Velachery Tambaram Main Road",
+    "district": "Velachery",
+    "type": "surface_damage",
+    "status": "completed",
+    "priority": "high",
+    "reporter": "usr_cit_013",
+    "aiAnalysis": {
+      "detected": "surface_damage",
+      "severity": "high",
+      "confidence": 95,
+      "recommendation": "Immediate repair required. Potential risk to vehicles and two-wheelers.",
+      "isRoadImage": true,
+      "tags": [
+        "surface damage",
+        "high-risk",
+        "water-damage"
+      ],
+      "model": "yolov8s-rdd2022-v1",
+      "analyzedAt": "2025-07-19T00:00:00.000Z"
+    },
+    "timestamps": {
+      "created": "2025-07-19T00:00:00.000Z",
+      "updated": "2025-07-22T00:00:00.000Z"
+    },
+    "verifiedBy": "usr_adm_001",
+    "verifiedAt": "2025-07-20T00:00:00.000Z",
+    "assignedContractor": "usr_ctr_003",
+    "assignedAt": "2025-07-20T00:00:00.000Z",
+    "startedAt": "2025-07-21T00:00:00.000Z",
+    "completedAt": "2025-07-22T00:00:00.000Z",
+    "completion": {
+      "beforeImages": [],
+      "afterImages": [],
+      "notes": "Full-width resurfacing completed. Old surface milled, new DBM layer laid and rolled.",
+      "repairType": "surface-treatment",
+      "completedBy": "usr_ctr_003",
+      "completedAt": "2025-07-22T00:00:00.000Z",
+      "durationHours": 81
+    },
+    "feedback": {
+      "rating": 4,
+      "comment": "Road looks great now. Smooth ride all the way.",
+      "createdAt": "2025-07-23T00:00:00.000Z"
+    }
+  },
+  {
+    "id": "cmp_046",
+    "reportNumber": "TNR-2046",
+    "title": "Pothole near Thiruvanmiyur Beach Road",
+    "description": "A large pothole near the Thiruvanmiyur Beach Road entrance. Weekend traffic to the beach makes this a high-risk spot.",
+    "images": [],
+    "location": {
+      "lat": 12.984,
+      "lng": 80.264
+    },
+    "address": "Thiruvanmiyur Beach Road Entrance",
+    "district": "Thiruvanmiyur",
+    "type": "pothole",
+    "status": "completed",
+    "priority": "high",
+    "reporter": "usr_cit_010",
+    "aiAnalysis": {
+      "detected": "pothole",
+      "severity": "high",
+      "confidence": 91,
+      "recommendation": "Immediate repair required. Potential risk to vehicles and two-wheelers.",
+      "isRoadImage": true,
+      "tags": [
+        "pothole",
+        "high-risk",
+        "wear-and-tear"
+      ],
+      "model": "yolov8s-rdd2022-v1",
+      "analyzedAt": "2025-07-21T00:00:00.000Z"
+    },
+    "timestamps": {
+      "created": "2025-07-20T00:00:00.000Z",
+      "updated": "2025-07-23T00:00:00.000Z"
+    },
+    "verifiedBy": "usr_adm_001",
+    "verifiedAt": "2025-07-21T00:00:00.000Z",
+    "assignedContractor": "usr_ctr_001",
+    "assignedAt": "2025-07-21T00:00:00.000Z",
+    "startedAt": "2025-07-22T00:00:00.000Z",
+    "completedAt": "2025-07-23T00:00:00.000Z",
+    "completion": {
+      "beforeImages": [],
+      "afterImages": [],
+      "notes": "Asphalt patching completed. Excavation, new aggregate base and hot mix applied.",
+      "repairType": "asphalt-patching",
+      "completedBy": "usr_ctr_001",
+      "completedAt": "2025-07-23T00:00:00.000Z",
+      "durationHours": 57
+    },
+    "feedback": {
+      "rating": 5,
+      "comment": "Very impressed with the speed. Weekend beach traffic is smooth now.",
+      "createdAt": "2025-07-24T00:00:00.000Z"
+    }
+  },
+  {
+    "id": "cmp_047",
+    "reportNumber": "TNR-2047",
+    "title": "Pothole near Kodambakkam Salai junction",
+    "description": "A deep pothole right at the Kodambakkam Salai junction. Heavy traffic throughout the day. Two-wheeler riders at risk.",
+    "images": [],
+    "location": {
+      "lat": 13.0535,
+      "lng": 80.2245
+    },
+    "address": "Kodambakkam Salai Junction",
+    "district": "Kodambakkam",
+    "type": "pothole",
+    "status": "completed",
+    "priority": "high",
+    "reporter": "usr_cit_019",
+    "aiAnalysis": {
+      "detected": "pothole",
+      "severity": "high",
+      "confidence": 98,
+      "recommendation": "Immediate repair required. Potential risk to vehicles and two-wheelers.",
+      "isRoadImage": true,
+      "tags": [
+        "pothole",
+        "high-risk",
+        "wear-and-tear"
+      ],
+      "model": "yolov8s-rdd2022-v1",
+      "analyzedAt": "2025-07-22T00:00:00.000Z"
+    },
+    "timestamps": {
+      "created": "2025-07-22T00:00:00.000Z",
+      "updated": "2025-07-25T00:00:00.000Z"
+    },
+    "verifiedBy": "usr_adm_001",
+    "verifiedAt": "2025-07-22T00:00:00.000Z",
+    "assignedContractor": "usr_ctr_002",
+    "assignedAt": "2025-07-23T00:00:00.000Z",
+    "startedAt": "2025-07-23T00:00:00.000Z",
+    "completedAt": "2025-07-25T00:00:00.000Z",
+    "completion": {
+      "beforeImages": [],
+      "afterImages": [],
+      "notes": "Full-depth patching done. Junction area reinforced.",
+      "repairType": "full-depth-repair",
+      "completedBy": "usr_ctr_002",
+      "completedAt": "2025-07-25T00:00:00.000Z",
+      "durationHours": 72
+    },
+    "feedback": {
+      "rating": 3,
+      "comment": "Work done but the patch is slightly uneven. Acceptable overall.",
+      "createdAt": "2025-07-25T00:00:00.000Z"
+    }
+  },
+  {
+    "id": "cmp_048",
+    "reportNumber": "TNR-2048",
+    "title": "Crack on Mission Street near church, Pondicherry",
+    "description": "A deep crack running across Mission Street near the old church. Heritage area affected, tourist foot traffic impacted.",
+    "images": [],
+    "location": {
+      "lat": 11.943,
+      "lng": 79.8095
+    },
+    "address": "Mission Street, near Old Church, Pondicherry",
+    "district": "Pondicherry",
+    "type": "crack",
+    "status": "completed",
+    "priority": "medium",
+    "reporter": "usr_cit_043",
+    "aiAnalysis": {
+      "detected": "crack",
+      "severity": "medium",
+      "confidence": 94,
+      "recommendation": "Plan repair within the next 2 weeks. Monitor drainage to prevent expansion.",
+      "isRoadImage": true,
+      "tags": [
+        "crack",
+        "maintenance",
+        "water-damage"
+      ],
+      "model": "yolov8s-rdd2022-v1",
+      "analyzedAt": "2025-07-23T00:00:00.000Z"
+    },
+    "timestamps": {
+      "created": "2025-07-23T00:00:00.000Z",
+      "updated": "2025-07-26T00:00:00.000Z"
+    },
+    "verifiedBy": "usr_adm_001",
+    "verifiedAt": "2025-07-23T00:00:00.000Z",
+    "assignedContractor": "usr_ctr_010",
+    "assignedAt": "2025-07-24T00:00:00.000Z",
+    "startedAt": "2025-07-24T00:00:00.000Z",
+    "completedAt": "2025-07-26T00:00:00.000Z",
+    "completion": {
+      "beforeImages": [],
+      "afterImages": [],
+      "notes": "Crack sealed and surface overlay applied. Heritage zone required careful texture matching.",
+      "repairType": "surface-treatment",
+      "completedBy": "usr_ctr_010",
+      "completedAt": "2025-07-26T00:00:00.000Z",
+      "durationHours": 57
+    },
+    "feedback": {
+      "rating": 4,
+      "comment": "Good repair quality. Tourists can walk safely now.",
+      "createdAt": "2025-07-26T00:00:00.000Z"
+    }
+  },
+  {
+    "id": "cmp_049",
+    "reportNumber": "TNR-2049",
+    "title": "Pothole at Adyar Bridge approach road",
+    "description": "Pothole at the approach to Adyar Bridge. Constant heavy traffic from IT corridor commuters has damaged this stretch.",
+    "images": [],
+    "location": {
+      "lat": 13.0075,
+      "lng": 80.258
+    },
+    "address": "Adyar Bridge Approach Road",
+    "district": "Adyar",
+    "type": "pothole",
+    "status": "completed",
+    "priority": "high",
+    "reporter": "usr_cit_012",
+    "aiAnalysis": {
+      "detected": "pothole",
+      "severity": "high",
+      "confidence": 90,
+      "recommendation": "Immediate repair required. Potential risk to vehicles and two-wheelers.",
+      "isRoadImage": true,
+      "tags": [
+        "pothole",
+        "high-risk",
+        "wear-and-tear"
+      ],
+      "model": "yolov8s-rdd2022-v1",
+      "analyzedAt": "2025-07-24T00:00:00.000Z"
+    },
+    "timestamps": {
+      "created": "2025-07-24T00:00:00.000Z",
+      "updated": "2025-07-27T00:00:00.000Z"
+    },
+    "verifiedBy": "usr_adm_001",
+    "verifiedAt": "2025-07-25T00:00:00.000Z",
+    "assignedContractor": "usr_ctr_002",
+    "assignedAt": "2025-07-25T00:00:00.000Z",
+    "startedAt": "2025-07-26T00:00:00.000Z",
+    "completedAt": "2025-07-27T00:00:00.000Z",
+    "completion": {
+      "beforeImages": [],
+      "afterImages": [],
+      "notes": "Full-depth patching done. Deep excavation to remove weak subgrade. Drainage improved.",
+      "repairType": "full-depth-repair",
+      "completedBy": "usr_ctr_002",
+      "completedAt": "2025-07-27T00:00:00.000Z",
+      "durationHours": 72
+    },
+    "feedback": {
+      "rating": 5,
+      "comment": "Daily commute to IT park is much better now. Thank you!",
+      "createdAt": "2025-07-28T00:00:00.000Z"
+    }
+  },
+  {
+    "id": "cmp_050",
+    "reportNumber": "TNR-2050",
+    "title": "Pothole near Alagar Koil Road, Madurai",
+    "description": "A recurring pothole near Alagar Koil Road that gets patched every monsoon but reappears. Needs full-depth reconstruction.",
+    "images": [],
+    "location": {
+      "lat": 9.9295,
+      "lng": 78.1195
+    },
+    "address": "Alagar Koil Road, near Meenakshi Temple bypass",
+    "district": "Madurai Central",
+    "type": "pothole",
+    "status": "completed",
+    "priority": "high",
+    "reporter": "usr_cit_026",
+    "aiAnalysis": {
+      "detected": "pothole",
+      "severity": "high",
+      "confidence": 97,
+      "recommendation": "Immediate repair required. Potential risk to vehicles and two-wheelers.",
+      "isRoadImage": true,
+      "tags": [
+        "pothole",
+        "high-risk",
+        "wear-and-tear"
+      ],
+      "model": "yolov8s-rdd2022-v1",
+      "analyzedAt": "2025-07-25T00:00:00.000Z"
+    },
+    "timestamps": {
+      "created": "2025-07-25T00:00:00.000Z",
+      "updated": "2025-07-28T00:00:00.000Z"
+    },
+    "verifiedBy": "usr_adm_001",
+    "verifiedAt": "2025-07-26T00:00:00.000Z",
+    "assignedContractor": "usr_ctr_006",
+    "assignedAt": "2025-07-26T00:00:00.000Z",
+    "startedAt": "2025-07-27T00:00:00.000Z",
+    "completedAt": "2025-07-28T00:00:00.000Z",
+    "completion": {
+      "beforeImages": [],
+      "afterImages": [],
+      "notes": "Full-depth reconstruction done. Excavated to 300mm, new sub-base and surface course installed.",
+      "repairType": "full-depth-repair",
+      "completedBy": "usr_ctr_006",
+      "completedAt": "2025-07-28T00:00:00.000Z",
+      "durationHours": 96
+    },
+    "feedback": {
+      "rating": 5,
+      "comment": "Excellent work! This time the repair looks solid.",
+      "createdAt": "2025-07-29T00:00:00.000Z"
+    }
+  },
+  {
+    "id": "cmp_051",
+    "reportNumber": "TNR-2051",
+    "title": "Deep pothole on Vepery High Road",
+    "description": "A deep pothole has formed on Vepery High Road near the shopping area. Vehicles slow down abruptly causing fender benders.",
+    "images": [],
+    "location": {
+      "lat": 13.072,
+      "lng": 80.252
+    },
+    "address": "Vepery High Road, near Parekh Street",
+    "district": "Chennai Central",
+    "type": "pothole",
+    "status": "completed",
+    "priority": "high",
+    "reporter": "usr_cit_048",
+    "aiAnalysis": {
+      "detected": "pothole",
+      "severity": "high",
+      "confidence": 93,
+      "recommendation": "Immediate repair required. Potential risk to vehicles and two-wheelers.",
+      "isRoadImage": true,
+      "tags": [
+        "pothole",
+        "high-risk",
+        "water-damage"
+      ],
+      "model": "yolov8s-rdd2022-v1",
+      "analyzedAt": "2025-07-27T00:00:00.000Z"
+    },
+    "timestamps": {
+      "created": "2025-07-26T00:00:00.000Z",
+      "updated": "2025-07-29T00:00:00.000Z"
+    },
+    "verifiedBy": "usr_adm_001",
+    "verifiedAt": "2025-07-27T00:00:00.000Z",
+    "assignedContractor": "usr_ctr_001",
+    "assignedAt": "2025-07-27T00:00:00.000Z",
+    "startedAt": "2025-07-28T00:00:00.000Z",
+    "completedAt": "2025-07-29T00:00:00.000Z",
+    "completion": {
+      "beforeImages": [],
+      "afterImages": [],
+      "notes": "Asphalt patching completed. New hot mix laid and compacted.",
+      "repairType": "asphalt-patching",
+      "completedBy": "usr_ctr_001",
+      "completedAt": "2025-07-29T00:00:00.000Z",
+      "durationHours": 72
+    },
+    "feedback": {
+      "rating": 4,
+      "comment": "Satisfied with the result. The pothole is gone and road is safe.",
+      "createdAt": "2025-07-30T00:00:00.000Z"
+    }
+  },
+  {
+    "id": "cmp_052",
+    "reportNumber": "TNR-2052",
+    "title": "Pothole on Chennai Central railway station road",
+    "description": "Large pothole on the road leading to Chennai Central railway station. Thousands of passengers daily.",
+    "images": [],
+    "location": {
+      "lat": 13.083,
+      "lng": 80.271
+    },
+    "address": "Road near Chennai Central Railway Station",
+    "district": "Chennai Central",
+    "type": "pothole",
+    "status": "completed",
+    "priority": "critical",
+    "reporter": "usr_cit_046",
+    "aiAnalysis": {
+      "detected": "pothole",
+      "severity": "critical",
+      "confidence": 89,
+      "recommendation": "Urgent intervention required. Isolate area with signage and repair within 24 hours.",
+      "isRoadImage": true,
+      "tags": [
+        "pothole",
+        "hazard",
+        "wear-and-tear"
+      ],
+      "model": "yolov8s-rdd2022-v1",
+      "analyzedAt": "2025-07-28T00:00:00.000Z"
+    },
+    "timestamps": {
+      "created": "2025-07-28T00:00:00.000Z",
+      "updated": "2025-07-31T00:00:00.000Z"
+    },
+    "verifiedBy": "usr_adm_001",
+    "verifiedAt": "2025-07-28T00:00:00.000Z",
+    "assignedContractor": "usr_ctr_009",
+    "assignedAt": "2025-07-29T00:00:00.000Z",
+    "startedAt": "2025-07-29T00:00:00.000Z",
+    "completedAt": "2025-07-31T00:00:00.000Z",
+    "completion": {
+      "beforeImages": [],
+      "afterImages": [],
+      "notes": "Emergency repair done overnight. Deep excavation, new base and surface course laid.",
+      "repairType": "full-depth-repair",
+      "completedBy": "usr_ctr_009",
+      "completedAt": "2025-07-31T00:00:00.000Z",
+      "durationHours": 52
+    },
+    "feedback": {
+      "rating": 5,
+      "comment": "Amazing speed! Repair done overnight with minimal disruption.",
+      "createdAt": "2025-07-31T00:00:00.000Z"
+    }
+  },
+  {
+    "id": "cmp_053",
+    "reportNumber": "TNR-2053",
+    "title": "Pothole at Sholinganallur Navalur Road",
+    "description": "Multiple potholes forming along Navalur road in Sholinganallur. IT professionals commuting daily face risk.",
+    "images": [],
+    "location": {
+      "lat": 12.904,
+      "lng": 80.2265
+    },
+    "address": "Navalur Road, Sholinganallur",
+    "district": "Sholinganallur",
+    "type": "pothole",
+    "status": "completed",
+    "priority": "high",
+    "reporter": "usr_cit_006",
+    "aiAnalysis": {
+      "detected": "pothole",
+      "severity": "high",
+      "confidence": 96,
+      "recommendation": "Immediate repair required. Potential risk to vehicles and two-wheelers.",
+      "isRoadImage": true,
+      "tags": [
+        "pothole",
+        "high-risk",
+        "wear-and-tear"
+      ],
+      "model": "yolov8s-rdd2022-v1",
+      "analyzedAt": "2025-07-29T00:00:00.000Z"
+    },
+    "timestamps": {
+      "created": "2025-07-29T00:00:00.000Z",
+      "updated": "2025-07-31T00:00:00.000Z"
+    },
+    "verifiedBy": "usr_adm_001",
+    "verifiedAt": "2025-07-29T00:00:00.000Z",
+    "assignedContractor": "usr_ctr_002",
+    "assignedAt": "2025-07-30T00:00:00.000Z",
+    "startedAt": "2025-07-30T00:00:00.000Z",
+    "completedAt": "2025-07-31T00:00:00.000Z",
+    "completion": {
+      "beforeImages": [],
+      "afterImages": [],
+      "notes": "Cluster of potholes repaired. Each excavated individually, hot mix surface course compacted.",
+      "repairType": "asphalt-patching",
+      "completedBy": "usr_ctr_002",
+      "completedAt": "2025-07-31T00:00:00.000Z",
+      "durationHours": 96
+    },
+    "feedback": {
+      "rating": 4,
+      "comment": "Good repair quality. All potholes filled. Worth the wait.",
+      "createdAt": "2025-07-31T00:00:00.000Z"
+    }
+  },
+  {
+    "id": "cmp_054",
+    "reportNumber": "TNR-2054",
+    "title": "Crack on Chromepet main road",
+    "description": "A longitudinal crack running along the center line of Chromepet main road near the railway station.",
+    "images": [],
+    "location": {
+      "lat": 12.953,
+      "lng": 80.142
+    },
+    "address": "Chromepet Main Road, near Railway Station",
+    "district": "Chromepet",
+    "type": "crack",
+    "status": "completed",
+    "priority": "medium",
+    "reporter": "usr_cit_017",
+    "aiAnalysis": {
+      "detected": "crack",
+      "severity": "medium",
+      "confidence": 92,
+      "recommendation": "Plan repair within the next 2 weeks. Monitor drainage to prevent expansion.",
+      "isRoadImage": true,
+      "tags": [
+        "crack",
+        "maintenance",
+        "water-damage"
+      ],
+      "model": "yolov8s-rdd2022-v1",
+      "analyzedAt": "2025-07-30T00:00:00.000Z"
+    },
+    "timestamps": {
+      "created": "2025-07-30T00:00:00.000Z",
+      "updated": "2025-08-01T00:00:00.000Z"
+    },
+    "verifiedBy": "usr_adm_001",
+    "verifiedAt": "2025-07-31T00:00:00.000Z",
+    "assignedContractor": "usr_ctr_003",
+    "assignedAt": "2025-07-31T00:00:00.000Z",
+    "startedAt": "2025-07-31T00:00:00.000Z",
+    "completedAt": "2025-08-01T00:00:00.000Z",
+    "completion": {
+      "beforeImages": [],
+      "afterImages": [],
+      "notes": "Crack sealing and surface overlay completed. Hot pour sealant applied along full crack length.",
+      "repairType": "surface-treatment",
+      "completedBy": "usr_ctr_003",
+      "completedAt": "2025-08-01T00:00:00.000Z",
+      "durationHours": 57
+    },
+    "feedback": {
+      "rating": 4,
+      "comment": "Good repair. Crack is properly sealed. Should last through monsoon.",
+      "createdAt": "2025-08-02T00:00:00.000Z"
+    }
+  },
+  {
+    "id": "cmp_055",
+    "reportNumber": "TNR-2055",
+    "title": "Pothole on Tirumalai Nagar main road, Salem",
+    "description": "A pothole on Tirumalai Nagar main road near the vegetable market. Heavy auto and truck traffic.",
+    "images": [],
+    "location": {
+      "lat": 11.6655,
+      "lng": 78.1475
+    },
+    "address": "Tirumalai Nagar Main Road, near Market, Salem",
+    "district": "Salem",
+    "type": "pothole",
+    "status": "completed",
+    "priority": "high",
+    "reporter": "usr_cit_029",
+    "aiAnalysis": {
+      "detected": "pothole",
+      "severity": "high",
+      "confidence": 88,
+      "recommendation": "Immediate repair required. Potential risk to vehicles and two-wheelers.",
+      "isRoadImage": true,
+      "tags": [
+        "pothole",
+        "high-risk",
+        "wear-and-tear"
+      ],
+      "model": "yolov8s-rdd2022-v1",
+      "analyzedAt": "2025-07-31T00:00:00.000Z"
+    },
+    "timestamps": {
+      "created": "2025-07-31T00:00:00.000Z",
+      "updated": "2025-08-02T00:00:00.000Z"
+    },
+    "verifiedBy": "usr_adm_001",
+    "verifiedAt": "2025-07-31T00:00:00.000Z",
+    "assignedContractor": "usr_ctr_008",
+    "assignedAt": "2025-07-31T00:00:00.000Z",
+    "startedAt": "2025-08-01T00:00:00.000Z",
+    "completedAt": "2025-08-02T00:00:00.000Z",
+    "completion": {
+      "beforeImages": [],
+      "afterImages": [],
+      "notes": "Full-depth patching completed. New base course and surface course laid.",
+      "repairType": "full-depth-repair",
+      "completedBy": "usr_ctr_008",
+      "completedAt": "2025-08-02T00:00:00.000Z",
+      "durationHours": 72
+    },
+    "feedback": {
+      "rating": 5,
+      "comment": "Excellent work! Road is perfectly smooth now.",
+      "createdAt": "2025-08-03T00:00:00.000Z"
+    }
+  },
+  {
+    "id": "cmp_056",
+    "reportNumber": "TNR-2056",
+    "title": "Same pothole reported again (duplicate)",
+    "description": "Reporting the same pothole on Alagar Koil Road that was already repaired. Appears the patch has started to crack again.",
+    "images": [],
+    "location": {
+      "lat": 9.9298,
+      "lng": 78.1198
+    },
+    "address": "Alagar Koil Road, Madurai",
+    "district": "Madurai Central",
+    "type": "pothole",
+    "status": "rejected",
+    "priority": "low",
+    "reporter": "usr_cit_026",
+    "aiAnalysis": {
+      "detected": "pothole",
+      "severity": "medium",
+      "confidence": 95,
+      "recommendation": "Plan repair within the next 2 weeks. Monitor drainage to prevent expansion.",
+      "isRoadImage": true,
+      "tags": [
+        "pothole",
+        "maintenance",
+        "wear-and-tear"
+      ],
+      "model": "yolov8s-rdd2022-v1",
+      "analyzedAt": "2025-08-01T00:00:00.000Z"
+    },
+    "timestamps": {
+      "created": "2025-08-01T00:00:00.000Z",
+      "updated": "2025-08-01T00:00:00.000Z"
+    },
+    "rejectedReason": "Duplicate complaint. This location was already repaired under TNR-2050. If the patch has cracked, please submit a new complaint with fresh images.",
+    "duplicateOf": "cmp_050"
+  },
+  {
+    "id": "cmp_057",
+    "reportNumber": "TNR-2057",
+    "title": "Reported damage already under municipal project",
+    "description": "A section of Palayamkottai Road is heavily damaged. Multiple vehicles have been damaged.",
+    "images": [],
+    "location": {
+      "lat": 8.7155,
+      "lng": 77.7585
+    },
+    "address": "Palayamkottai Road Extension, Tirunelveli",
+    "district": "Tirunelveli",
+    "type": "surface_damage",
+    "status": "rejected",
+    "priority": "low",
+    "reporter": "usr_cit_039",
+    "aiAnalysis": {
+      "detected": "surface_damage",
+      "severity": "medium",
+      "confidence": 91,
+      "recommendation": "Plan repair within the next 2 weeks. Monitor drainage to prevent expansion.",
+      "isRoadImage": true,
+      "tags": [
+        "surface damage",
+        "maintenance",
+        "water-damage"
+      ],
+      "model": "yolov8s-rdd2022-v1",
+      "analyzedAt": "2025-08-02T00:00:00.000Z"
+    },
+    "timestamps": {
+      "created": "2025-08-02T00:00:00.000Z",
+      "updated": "2025-08-02T00:00:00.000Z"
+    },
+    "rejectedReason": "This section is already scheduled for full reconstruction under the TN State Highways project beginning next month."
+  },
+  {
+    "id": "cmp_058",
+    "reportNumber": "TNR-2058",
+    "title": "Insufficient evidence for verification",
+    "description": "There is a bad road near the temple. Please fix it.",
+    "images": [],
+    "location": {
+      "lat": 11.944,
+      "lng": 79.81
+    },
+    "address": "Near Manakula Vinayagar Temple, Pondicherry",
+    "district": "Pondicherry",
+    "type": "other",
+    "status": "rejected",
+    "priority": "low",
+    "reporter": "usr_cit_044",
+    "aiAnalysis": {
+      "detected": "other",
+      "severity": "low",
+      "confidence": 98,
+      "recommendation": "Schedule routine inspection. Low-priority patching recommended within 30 days.",
+      "isRoadImage": false,
+      "tags": [
+        "other",
+        "maintenance",
+        "wear-and-tear"
+      ],
+      "model": "yolov8s-rdd2022-v1",
+      "analyzedAt": "2025-08-03T00:00:00.000Z"
+    },
+    "timestamps": {
+      "created": "2025-08-03T00:00:00.000Z",
+      "updated": "2025-08-03T00:00:00.000Z"
+    },
+    "rejectedReason": "Complaint lacks sufficient detail. No images attached, description does not match detectable road damage. Please resubmit with a photo and exact location."
+  },
+  {
+    "id": "cmp_059",
+    "reportNumber": "TNR-2059",
+    "title": "Pothole on road - no location specified",
+    "description": "Please fix the pothole on the road near my house. It is very bad and needs repair urgently.",
+    "images": [],
+    "location": {
+      "lat": 13.0835,
+      "lng": 80.2715
+    },
+    "address": "Unspecified location, Chennai",
+    "district": "Chennai Central",
+    "type": "pothole",
+    "status": "rejected",
+    "priority": "low",
+    "reporter": "usr_cit_046",
+    "aiAnalysis": {
+      "detected": "pothole",
+      "severity": "low",
+      "confidence": 94,
+      "recommendation": "Schedule routine inspection. Low-priority patching recommended within 30 days.",
+      "isRoadImage": false,
+      "tags": [
+        "pothole",
+        "maintenance",
+        "wear-and-tear"
+      ],
+      "model": "yolov8s-rdd2022-v1",
+      "analyzedAt": "2025-08-04T00:00:00.000Z"
+    },
+    "timestamps": {
+      "created": "2025-08-04T00:00:00.000Z",
+      "updated": "2025-08-04T00:00:00.000Z"
+    },
+    "rejectedReason": "Cannot identify the complaint location. No identifiable landmark or address provided. Please resubmit with the exact road name and location."
+  },
+  {
+    "id": "cmp_060",
+    "reportNumber": "TNR-2060",
+    "title": "Crack on private property road",
+    "description": "There is a crack on the road inside our apartment complex. The builder should fix this.",
+    "images": [],
+    "location": {
+      "lat": 11.9385,
+      "lng": 79.8055
+    },
+    "address": "Private Apartment Complex Road, Pondicherry",
+    "district": "Pondicherry",
+    "type": "crack",
+    "status": "rejected",
+    "priority": "low",
+    "reporter": "usr_cit_045",
+    "aiAnalysis": {
+      "detected": "crack",
+      "severity": "low",
+      "confidence": 90,
+      "recommendation": "Schedule routine inspection. Low-priority patching recommended within 30 days.",
+      "isRoadImage": false,
+      "tags": [
+        "crack",
+        "maintenance",
+        "water-damage"
+      ],
+      "model": "yolov8s-rdd2022-v1",
+      "analyzedAt": "2025-08-05T00:00:00.000Z"
+    },
+    "timestamps": {
+      "created": "2025-08-05T00:00:00.000Z",
+      "updated": "2025-08-06T00:00:00.000Z"
+    },
+    "rejectedReason": "This is a road on private property maintained by the apartment association. Municipal jurisdiction does not apply. Please contact your association."
+  }
+]

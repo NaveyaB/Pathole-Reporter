@@ -25,9 +25,17 @@ export type RoadDamageType =
   | "sinkhole"
   | "other";
 
+export type ComplaintSource = "citizen" | "ai" | "imported" | "seed";
+
 export interface GeoPoint {
   lat: number;
   lng: number;
+}
+
+/** GeoJSON Point. MongoDB stores coordinates as [lng, lat] per the spec. */
+export interface GeoJSONPoint {
+  type: "Point";
+  coordinates: [number, number];
 }
 
 export interface ImageAsset {
@@ -99,8 +107,17 @@ export interface Complaint {
   description?: string;
   images: ImageAsset[];
   location: GeoPoint;
+  geopoint?: GeoJSONPoint;
+  /** Citizen-entered exact address of the damage (required). */
+  exactAddress?: string;
   address?: string;
+  formattedAddress?: string;
+  placeId?: string;
+  locality?: string;
+  city?: string;
   district?: string;
+  source?: ComplaintSource;
+  reporterLocation?: GeoPoint;
   type: RoadDamageType;
   status: ComplaintStatus;
   priority: Priority;
